@@ -243,7 +243,8 @@ label en_H1:
 
     "How unfortunate; he's getting too good at knowing when I'm fishing for praise. I just smirk."
 
-    "Taking him into my mouth once more, I return to my motions. He seems to enjoy what I'm doing so far, so I just stick with that I've been doing."
+    "Taking him into my mouth once more, I window hide
+    return to my motions. He seems to enjoy what I'm doing so far, so I just stick with that I've been doing."
 
     "Hisao must be getting close, as his breathing is beginning to get more ragged and the muscles in his groin begin to tighten. His concentration on controlling his urges is written to his face."
 
@@ -403,7 +404,7 @@ label en_H1:
 
     "All I can do as we recover ourselves, is tiredly pet his dishevelled hair."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With the both of us cleaned up and clothed once more, we lie beneath the sheets next to each other as we try to go to sleep. Not that we try very hard, admittedly."
 
@@ -419,6 +420,7 @@ label en_H1:
 
     mk "You'll see. I reckon you'll like it."
 
+    window hide
     return
     
 label en_H2:
@@ -541,7 +543,7 @@ label en_H2:
 
     "Suzu just shrugs and chooses the front without a fight. To be honest, I didn't expect one."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "It's nice to travel like this. The wind freely blowing past you, the occasional pothole and hump in the road bumping you up and down, and no windows to get between you and the outside world. It's far less boring than being bundled up in a little metal box."
 
@@ -571,7 +573,7 @@ label en_H2:
 
     "As time goes on he gets more used to the experience. By the time we turn off the main road and onto the side streets, it almost looks like he's genuinely enjoying himself."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With the familiar rumble of braking wheels on rough dirt, the truck pulls to a stop a few feet from the house. Without further ado, Hisao and I hop off as the doors around the front can be heard opening."
 
@@ -625,6 +627,7 @@ label en_H2:
 
     "But somehow... I think it's going to be good. The three of us together, enjoying summer in the country."
 
+    window hide
     return
     
 label en_H3:
@@ -685,7 +688,7 @@ label en_H3:
 
     mk "Sounds like it's settled, then."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "It didn't take long for us to escape the house after breakfast, the urge to explore the area on everyone's minds as dad went to feed the chickens."
 
@@ -737,7 +740,7 @@ label en_H3:
 
     "Hisao really does look better when he's like this, finally freed from his inhibitions as he lets himself enjoy the moment."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Having arrived at our destination, Hisao and I prop our bikes up against a large tree as Suzu dusts herself off, and perhaps tries to collect herself a little."
 
@@ -807,7 +810,7 @@ label en_H3:
 
     mk "...twice."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "After wanting to have a look inside my old classroom, Hisao suggested he and Suzu wander the school grounds outside. I guess they're getting bored by now, as admittedly the place is pretty bare. To them, anyway."
 
@@ -833,7 +836,7 @@ label en_H3:
 
     mk "Yeah. Let's go."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With Suzu's endurance beginning to flag, the decision was made to save the trip to town for another day. With Hisao and I slowly walking our bikes along the road with Suzu in tow, we make our way towards one of my other favourite corners of the town."
 
@@ -849,7 +852,7 @@ label en_H3:
 
     "I give the dubious Hisao and Suzu a salute before quickly ducking away, leaving Suzu to quickly grab my falling bike."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Walking back up to the two of them, I motion for them to follow me up to the tree."
 
@@ -919,7 +922,7 @@ label en_H3:
 
     "With that, the three of us set off for the creek once more, satisfied with our haul."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I've always enjoyed coming here as a kid, and even now I can appreciate it. Water quietly trickles along the small creek, a small bird or two crying out occasionally from the trees above. The place was just large enough to run around with a few friends in as a kid, and the ponds had enough water to float various makeshift boats."
 
@@ -987,7 +990,7 @@ label en_H3:
 
     hi "I'm fine. Let's go."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The house is always so quiet at night. Aside from the chirping of crickets outside and my footsteps on the floorboards, there isn't really anything around to make much noise."
 
@@ -1263,7 +1266,8 @@ label en_H3:
 
     "I raises his hand, probably to try and make an obscene gesture at me or something, but lets it flop back to the ground as he finds himself unable to muster the energy."
 
-    "With my senses returning to me, I let my head roll to the side. The stars that Hisao had been so wrapt in sit above us, twinkling away."
+    "With my senses window hide
+    returning to me, I let my head roll to the side. The stars that Hisao had been so wrapt in sit above us, twinkling away."
 
     "Realising that I've stopped panting, Hisao looks to me, and then to the same stars that I watch."
 
@@ -1277,6 +1281,7 @@ label en_H3:
 
     hi "I know."
 
+    window hide
     return
     
 label en_H4:
@@ -1393,11 +1398,12 @@ label en_H4:
 
     jun "Alright. Let's just get you inside for now."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The fracas of earlier is finally over, with Hisao's pain having passed. An air of uncertainty still lingers though, as I'm pretty sure nobody is really convinced by Hisao's assurances that everything is fine now."
 
-    "With noon approaching and nobody having the stomach for returning to the fields, Suzu and I sit at the low table in preparation for lunch. Given what's on the menu, the reason for Suzu's fidgeting is obvious."
+    "With noon approaching and nobody having the stomach for window hide
+    returning to the fields, Suzu and I sit at the low table in preparation for lunch. Given what's on the menu, the reason for Suzu's fidgeting is obvious."
 
     "Fresh chicken, and actually fresh unlike the crap in the supermarkets. I've seen it all before, but while I didn't expect Suzu to have the stomach to observe, I'm rather impressed that Hisao went with dad to see the process. I do wonder how much of that was trying to regain his manly pride, though."
 
@@ -1439,7 +1445,8 @@ label en_H4:
 
     jun "Go on, eat. Kids your age need all the food you can get."
 
-    "Hisao manages to force a bite own after taking his food, followed by more in quick succession as his appetite returns. I have no such reluctance, taking my chopsticks in hand and starting on my fish without any reluctance."
+    "Hisao manages to force a bite own after taking his food, followed by more in quick succession as his appetite window hide
+    returns. I have no such reluctance, taking my chopsticks in hand and starting on my fish without any reluctance."
 
     "I guess you can take a city boy out of the city, but you can't make him into a country boy so quickly."
 
@@ -1453,7 +1460,7 @@ label en_H4:
 
     "Suzu seems nonplussed by the offer, but Hisao looks mightily interested. Today's looking up after all."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     mk "Aaah... This is heaven."
 
@@ -1545,6 +1552,7 @@ label en_H4:
 
     "Well, I guess staying in for a few more minutes wouldn't hurt."
 
+    window hide
     return
     
 label en_H5:
@@ -1615,7 +1623,7 @@ label en_H5:
 
     hi "You don't say."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "While some things might be the same, there are a few oddities that have popped up since I left. This place is one of them."
 
@@ -1703,7 +1711,7 @@ label en_H5:
 
     hi "Let's go. I'm sure the others are waiting for us to get back."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "As soon as we walk in the door, bikes left propped against the wall, I can hear the voices of Suzu and dad from the living room. Wondering what they'd have to talk about, Hisao and I head towards the source."
 
@@ -1787,7 +1795,7 @@ label en_H5:
 
     "With that, he solemnly closes the album."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Once again, I find myself sitting on the porch in the cool nighttime air. I suppose it's natural to want some time alone when surrounded by people the entire day, even if it does mean getting less sleep."
 
@@ -1861,7 +1869,8 @@ label en_H5:
 
     hi "I suppose that's why I couldn't throw out that letter. It'd be easy to say my life got reset when I started at Yamaku, but that'd be a lie."
 
-    hi "I lived. It was a good life, too. Even if I can't return to those times any more, I think I want to remember them."
+    hi "I lived. It was a good life, too. Even if I can't window hide
+    return to those times any more, I think I want to remember them."
 
     mk "And that's what you wanted to say to me before."
 
@@ -1883,6 +1892,7 @@ label en_H5:
 
     "He just smiles, the two of us looking up into the night sky."
 
+    window hide
     return
     
 label en_H6:
@@ -1995,7 +2005,8 @@ label en_H6:
 
     "Sound like a solid plan. Hisao goes to one log as I walk to the other, propping my trusty stick against it and undoing the zip to my backback and rifling around for the rice balls I packed. Managing to grasp the small bag they're in with the tips of my fingers, I pull them out as I take a seat."
 
-    "Hisao unclips the bag slung around his shoulder, lifting the flap and grabbing a bottle filled with water. I'm glad to have a chance to rest my legs, but it's Hisao I'm more worried about. Now that he's seated, that terrible wheeze he sometimes gets has returned."
+    "Hisao unclips the bag slung around his shoulder, lifting the flap and grabbing a bottle filled with water. I'm glad to have a chance to rest my legs, but it's Hisao I'm more worried about. Now that he's seated, that terrible wheeze he sometimes gets has window hide
+    returned."
 
     mk "Doing okay? You look pretty beat."
 
@@ -2093,7 +2104,7 @@ label en_H6:
 
     mk "You know it."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The trek takes its toll on our legs as we push ourselves along, the incline up the hill now quite severe. Not only that, but the overgrown roots sticking out of the ground and uneven rocks leading upwards force us to be careful that we don't break or twist an ankle."
 
@@ -2179,6 +2190,7 @@ label en_H6:
 
     mk "That doesn't sound so bad when you say it."
 
+    window hide
     return
     
 label en_H7:
@@ -2203,7 +2215,7 @@ label en_H7:
 
     "Hello again, Yamaku."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     har "Yo, Miki."
 
@@ -2293,7 +2305,7 @@ label en_H7:
 
     mk "Shit..."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     mk "Shit damn bloody shit."
 
@@ -2363,7 +2375,7 @@ label en_H7:
 
     "I feel the tips of Hisao's fingers brush against my arm, but I slip from his grasp and slide out the door. I'm finally free."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Wandering past the trees to the track, all the usual suspects are hanging around. Emi and the track captain pelt around at high speed, as if they had any other speed they go at, while most of the others are stretching and chatting between themselves."
 
@@ -2485,6 +2497,7 @@ label en_H7:
 
     mk "Cool."
 
+    window hide
     return
     
 label en_H8:
@@ -2557,7 +2570,7 @@ label en_H8:
 
     "He looks to me with concerned eyes, having no idea of what's to come."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Cloaked in a deep blue glow, Hisao stands wide eyed as he stares up at the tank before him. I'd tease him for being so amazed, but I'm doing just the same."
 
@@ -2645,7 +2658,7 @@ label en_H8:
 
     hi "Sure. See you there."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Hisao and I slowly walk across the school grounds together, the oversized plastic bag at Hisao's side crunches away with each step. With the sun finally setting, it looks like our day together's finally over."
 
@@ -2697,6 +2710,7 @@ label en_H8:
 
     "This dork really can be something."
 
+    window hide
     return
     
 label en_H9:
@@ -2773,7 +2787,7 @@ label en_H9:
 
     "As the teacher finally shows up and begins to stride in, she gives me more than a passing glance. I have feeling this is going to be a very long lesson."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "A good jog around the track is probably one of the more productive ways to deal with stress. God knows I'd be in a world of hurt if I told that woman what I really thought of her."
 
@@ -2983,6 +2997,7 @@ label en_H9:
 
     "I playfully bat him on the face with what little force I can muster. For all I chide him about thinking too much, he really chooses the worst times."
 
+    window hide
     return
     
 label en_H10:
@@ -3115,6 +3130,7 @@ label en_H10:
 
     "I don't need someone like that."
 
+    window hide
     return
     
 label en_H11:
@@ -3237,7 +3253,7 @@ label en_H11:
 
     "After all, one thing has always stayed constant, no matter what's happened around me in life."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "It's been a damn long time since I've punished my body like this before. I don't even know precisely where this is, my legs carrying me a good distance beyond the small town below Yamaku. I barely even managed to get off the road before collapsing beside it, utterly drained of every ounce of energy I had."
 
@@ -3361,4 +3377,5 @@ label en_H11:
 
     "Like this, the two of us will walk towards that unknown future ahead of us. Together."
 
+    window hide
     return

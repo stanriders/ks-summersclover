@@ -13,12 +13,16 @@ label en_C0:
 
     "Three years ago, that world ended."
     
+    window hide
+    
     return
     
 label en_C1:
 
     scene black
     with dissolve
+    
+    window show
     
     "The rattle of a can hitting the vending machine rings out across the empty school grounds. With the orange of sunset settling over the campus, everyone's retreated to their dormitories and homes for an early start to their studying and various hobbies."
 
@@ -112,7 +116,7 @@ label en_C1:
 
     hi "Fine, I'll go along with you."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The Shanghai's location within the nearby town has always been convenient. I had thought even this might be too much for Hisao given his exhaustion, but he managed to drag himself here just fine."
 
@@ -206,10 +210,14 @@ label en_C1:
 
     "The weather really is nice today."
     
+    window hide
+        
     return
     
 label en_C2:
 
+    window show
+    
     "I find myself lazily sitting at the base of a particularly tree in the school gardens, making the most of its shade while watching the goings on ahead."
 
     "With the events over and medals dispensed, the people gathered for the track meet have now fanned out over the grounds. Runners excitedly talk with their friends and parents, with the handful who have romantic interests in the other participating school using the opportunity to catch up on more affectionate matters."
@@ -272,7 +280,7 @@ label en_C2:
 
     hi "Alright, you got me. I'll come."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The moment we all entered the dimly-lit room, we started acting as if it were home. People laid on the couches, draped themselves over the arms and backs to talk to friends, threw snacks and drink bottles to each other, and generally made a din from all the arguing over the day's events."
 
@@ -358,10 +366,14 @@ label en_C2:
 
     "Looking back at the duo finishing up their song at the front of the room, I can't help but see him in a new light."
     
+    window hide
+    
     return
     
 label en_C3:
 
+    window show
+    
     "If I had to choose which room embodied the feeling of this school the most, it'd have to be the library."
 
     "It looks normal, at a glance. Large, sure, but otherwise normal. It's only when you start walking through the aisles that you realise the odd little allowances for the students. Audiobooks, braille books, wider passages, and the like. Then there's the cane or two propped against the desks of reading students."
@@ -524,10 +536,13 @@ label en_C3:
 
     "At least they're useful for something. If studying's going to be how she expands her social circle, then all the better. Given how hard she works for her rather average marks, maybe he can help turn things around."
     
+    window hide
+    
     return
     
 label en_C4:
 
+    window show
     "I've always found the cafeteria to be a fun place to watch people."
 
     "Deftly manouvering through the rapidly filling room after being among the first to have their tray filled by the old ladies behind the counter, I can't help but glance around at the other students on my way to a free table."
@@ -734,10 +749,13 @@ label en_C4:
 
     "Haru clamps onto Hisao's shoulder and gives him a playful shake. It's nice to see Hisao loosening up, even if it is just a little."
     
+    window hide
+    
     return
     
 label en_C5:
 
+    window show
     "Walking into class, my gaze immediately falls to Suzu's desk. Each and every morning she enters class long before I do, and though I might have hoped to catch her out, today is no different than any other."
 
     "It's one of life's small wonders; I never did understand how someone in a perpetual state of sleep deficiency manages to get here on time every day. Well, it's not that I don't understand how, so much as why."
@@ -782,7 +800,7 @@ label en_C5:
 
     "Damn it."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Jogging past the school gates, Suzu and Hisao can be seen patiently waiting for me. By now the main throng of leaving students has passed, reduced to to little more than the occasional person or two."
 
@@ -1048,7 +1066,7 @@ label en_C5:
 
     "He probably doesn't know it yet, but it looks like he'll be able to handle her just fine. Not many people can."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "As I chow down the last of my pie, I notice a subtle movement from the corner of my eye. Turning to where it came from, I see Suzu's head beginning to slowly nod, her eyelids also having trouble staying up. She might be working to hide it, but the harder she tries, the more obvious it is."
 
@@ -1096,7 +1114,7 @@ label en_C5:
 
     "Acting fast before he can retract his offer, I smile and call Yuuko over. With the bill paid over Suzu's peacefully sleeping body, our little outing comes to an end."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The trudge up the hill back up to Yamaku from town is a journey I've made countless times by now. I'm pretty sure I've lost count of the number of times I've made it while carrying a slumbering girl on my back, too."
 
@@ -1132,7 +1150,7 @@ label en_C5:
 
     "But even now, as I carry her still body up the hill like this, I still feel the slightest bit comforted by her warmth."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Having parted and gone our separate ways, Hisao to the male dormitory building - after telling me his room number, in case I decide to visit - and the two of us to the female one, I find myself shuffling up the hallway to Suzu's room. It's the floor below my own, unfortunately; if we were neighbors, it'd be a lot more convenient."
 
@@ -1215,11 +1233,14 @@ label en_C5:
     "With that, I give her a parting wave before leaving the room and its girly smell."
 
     "Entering the hallway and carefully closing her door behind me, all I can do is rest my back against it as I close my eyes and sigh. Looks like the last few months of my time here won't be as simple as I expected."
+    
+    window hide
     
     return
     
 label en_C6:
 
+    window show
     "Walking into class, my gaze immediately falls to Suzu's desk. Each and every morning she enters class long before I do, and though I might have hoped to catch her out, today is no different than any other."
 
     "It's one of life's small wonders; I never did understand how someone in a perpetual state of sleep deficiency manages to get here on time every day. Well, it's not that I don't understand how, so much as why."
@@ -1264,7 +1285,7 @@ label en_C6:
 
     "Damn it."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Jogging past the school gates, Suzu and Hisao can be seen patiently waiting for me. By now the main throng of leaving students has passed, reduced to to little more than the occasional person or two."
 
@@ -1530,7 +1551,7 @@ label en_C6:
 
     "He probably doesn't know it yet, but it looks like he'll be able to handle her just fine. Not many people can."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "As I chow down the last of my pie, I notice a subtle movement from the corner of my eye. Turning to where it came from, I see Suzu's head beginning to slowly nod, her eyelids also having trouble staying up. She might be working to hide it, but the harder she tries, the more obvious it is."
 
@@ -1578,7 +1599,7 @@ label en_C6:
 
     "Acting fast before he can retract his offer, I smile and call Yuuko over. With the bill paid over Suzu's peacefully sleeping body, our little outing comes to an end."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The trudge up the hill back up to Yamaku from town is a journey I've made countless times by now. I'm pretty sure I've lost count of the number of times I've made it while carrying a slumbering girl on my back, too."
 
@@ -1614,7 +1635,7 @@ label en_C6:
 
     "But even now, as I carry her still body up the hill like this, I still feel the slightest bit comforted by her warmth."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Having parted and gone our separate ways, Hisao to the male dormitory building - after telling me his room number, in case I decide to visit - and the two of us to the female one, I find myself shuffling up the hallway to Suzu's room. It's the floor below my own, unfortunately; if we were neighbors, it'd be a lot more convenient."
 
@@ -1698,10 +1719,13 @@ label en_C6:
 
     "Entering the hallway and carefully closing her door behind me, all I can do is rest my back against it as I close my eyes and sigh. Looks like the last few months of my time here won't be as simple as I expected."
     
+    window hide
+    
     return
     
 label en_C7:
 
+    window show
     "Sprinting has never been my thing. I've never managed to hype myself up for the competitive nature of the track meets, either."
 
     "But the act of running, of putting one foot in front of the other, that's what I've found pleasure in. I couldn't care less if other people are on the track with me or not. That isn't really the point of it."
@@ -1756,7 +1780,7 @@ label en_C7:
 
     "I reluctantly slink off after a sympathetic pat on the shoulder, knowing full well that my goose is cooked. Guess I'll hit the library first; where better to find a nerd studying for exams, after all?"
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "After failing to see him in the gardens leading back to the main building, poking my head into the largely empty classroom, and finding the library a bust, I make the trek back down the flights of stairs and across the school grounds to the dormitories."
 
@@ -1912,10 +1936,13 @@ label en_C7:
 
     hi "He's... yeah. I guess he is."
     
+    window hide
+    
     return
     
 label en_C8:
 
+    window show
     "With the sun well and truly having set, Haru, Hisao, and I pass the time lazing around in front of the convenience store. The light from the store illuminates the street around us as we sit on the ground, backs propped up against the window."
 
     "A couple of bags sit between us, holding a late dinner of onigiri, potato croquettes, and some canned drinks. Not exactly five-star cuisine, but it's edible and filling."
@@ -2140,10 +2167,13 @@ label en_C8:
 
     "But in any case, the both of us end up laughing together for a good, long while."
     
+    window hide
+    
     return
     
 label en_C9:
 
+    window show
     "The ringing of the school bell heralds the end of yet another school day."
 
     "With the exams finally over and the wait until summer break down to days rather than weeks, the mood of the class has lifted immeasurably. Even for those that don't care particularly about their marks, the stress felt by everyone else is contagious."
@@ -2310,7 +2340,7 @@ label en_C9:
 
     "All I can do is stay beside her as I've always done. Given that she's stayed at my side all this time, she must think the same."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I give a quick nod to a passing first-year girl as I make my way back to my dormitory room, my hand occupied by a soft drink can. She returns the greeting as we pass, her eyes momentarily lingering on the arms bared by my tank top before we pass each other. At least that's one thing I can be proud of."
 
@@ -2366,6 +2396,8 @@ label en_C9:
 
     # Choice point
     
+    window hide
+    
     return
     
 label en_choiceC9:
@@ -2383,6 +2415,7 @@ menu:
 label en_C9a:
     # Follow existing plan
 
+    window show
     "As much as the idea may tempt me, I told Suzu that I'd stay with her family."
 
     mk "I kinda already promised Suzuki I'd stay with her. Sorry."
@@ -2404,11 +2437,13 @@ label en_C9a:
     "Son of a bitch."
 
     # Continue onto Suzu branch
+    window hide
     return
     
 label en_C9b:
     # Agree to go
 
+    window show
     "After thinking about it, I finally come to a decison."
 
     mk "Alright, I'll come. I'll be bringing two of my friends, though."
@@ -2436,4 +2471,5 @@ label en_C9b:
     "After all these years, I'll finally be returning home."
 
     # Continue to Hisao branch
+    window hide
     return

@@ -3,6 +3,8 @@ label en_S1:
     scene black
     with dissolve
     
+    window show
+    
     "With classes over for the day and most club activities winding up for the semester, the long process of pre-holiday cleanup has begun. With most of the track club members having fled using various terrible excuses, a half dozen of us are left to finish the job."
 
     "That said, we make good progress even with the reduced manpower. A couple of students are dedicated to organising the mess in the storage shed, and another to fossicking around for litter. Equipment collection duty ended up assigned to Hisao, Haru, and I, though I can't remember agreeing to it."
@@ -89,7 +91,7 @@ label en_S1:
 
     "Shrugging in deference to her instructions, I pass the bundle of running blocks to Hisao before leaving with her. Neither of the two seem to mind as they get back to work with the others."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "A mighty yawn rings out as we descend down the hill into town, a good stretch loosening up my muscles a bit."
 
@@ -121,7 +123,7 @@ label en_S1:
 
     "That said, I'm not willing to retreat from the point, either. After we graduate, she isn't going to be able to rely on my company. Hisao was a first good step out of her comfort zone, but that isn't enough."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With a deep bow, Yuuko takes her leave after setting down our drinks. A coffee for me, and tea for Suzu."
 
@@ -209,9 +211,11 @@ label en_S1:
 
     "I don't know what I'm supposed to say, or what to do. All I know, is that the life I, no, we, had led until just a few minutes ago... has disappeared forever."
     
+    window hide
     return
 label en_S2:
-
+    
+    window show
     "I wonder how long it's been since Suzu missed a class. At least a good few months, I think."
 
     "Carefully scheduled naps, along with her meds, allow her to drag her feet to class every morning. Even if she sometimes doesn't quite last out the whole day, she makes damned sure she's at least present and accounted for."
@@ -244,7 +248,7 @@ label en_S2:
 
     hi "...Come with me."
 
-    # timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The cafeteria is humming with activity already, but the two of us thankfully managed to score a free table by getting in before the rush."
 
@@ -380,6 +384,7 @@ label en_S2:
 
     "She really is a troublesome girl."
     
+    window hide
     return
 label en_S3:
 
@@ -563,6 +568,7 @@ label en_S3:
 
     "And so, I press my lips to those of my precious Sleeping Beauty."
     
+    window hide
     return
 label en_S4:
 
@@ -720,7 +726,8 @@ label en_S4:
 
     "Holding her to me as I do now feels different, somehow. Not because I can feel her soft, warm body against mine, but because such a normally apprehensive girl would allow me to get so close at all. She trusts me."
 
-    "For a moment it looks like she might not reciprocate, taken too off guard to return the gesture. Eventually, though, she picks her arms up and wraps them around my back, drawing me into a tight embrace. With her face turned to the side, I press my lips to the top of her head."
+    "For a moment it looks like she might not reciprocate, taken too off guard to window hide
+    return the gesture. Eventually, though, she picks her arms up and wraps them around my back, drawing me into a tight embrace. With her face turned to the side, I press my lips to the top of her head."
 
     suz "Sorry. I just..."
 
@@ -750,7 +757,7 @@ label en_S4:
 
     "Suzu just nods at him, but both of us know she's thankful."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The clatter of knives and forks rings out as the Suzuki family, plus their two guests, dig in to a lavish dinner. Various bowls of different salads sit on the table, complimenting the still steaming pieces of roast chicken on our plates."
 
@@ -910,7 +917,7 @@ label en_S4:
 
     "As much as I hate to say it, that's probably for the best."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With the fracas of dinner over, things have settled down a little by late evening."
 
@@ -1014,7 +1021,7 @@ label en_S4:
 
     "My heart freezes. I have absolutely no doubt that she means every word she says, delivered in that chilling voice."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Suzu's bedroom as the same as it's always been, bookshelves filled with a mix of girly manga, a few shelves holding various characters from shows she's watched, and a number of plush animals sitting around the largely white and light pink room."
 
@@ -1062,6 +1069,7 @@ label en_S4:
 
     "Maybe that's why everything feels like it'll be alright. Because Suzu's there, and even after all I've done, she loves me. She accepts me."
 
+    window hide
     return
 label en_S5:
 
@@ -1111,7 +1119,7 @@ label en_S5:
 
     "I don't even bother hiding the slumping of my shoulders."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Her fancy grey car is right there, keys clutched in her hand as she stands with her arms crossed. If only I could will her to just get inside and drive off, leaving us in peace."
 
@@ -1171,7 +1179,7 @@ label en_S5:
 
     tsu "And don't you forget it."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With Tsubasa having retreated to her room and Hisao finally awake, the three of us settle in on the couch as the console slowly boots up. Miyu quietly lays on the recliner, content to sleep the day away."
 
@@ -1299,7 +1307,8 @@ label en_S5:
 
     "Passing by the recliner on the way, she gives Miyu a much-appreciated rub on the head before leaving. For his part, Hisao jumps off the couch and goes to grab his phone and wallet from the guest room."
 
-    "As he returns and heads towards outside, he briefly stops to give us a wave of goodbye. I pucker my lips and make kissing motions to tease him in response, earning an obscene gesture before he disappears out the door."
+    "As he window hide
+    returns and heads towards outside, he briefly stops to give us a wave of goodbye. I pucker my lips and make kissing motions to tease him in response, earning an obscene gesture before he disappears out the door."
 
     "Come to think of it, he never used to do that before. Maybe I'm starting to rub off on him."
 
@@ -1397,7 +1406,8 @@ label en_S5:
 
     "Sitting the thing in my lap in practiced fashion, I use my stump to carefully move the left stick and operate the buttons with my hand, managing to, eventually, save the game. As it writes to the memory card, a movement from the corner of my eye draws my eyes from the television."
 
-    "With her muscle control returned to her, Suzu brings her arm over her face, hiding her eyes underneath. She doesn't say a word, nor make any other movement."
+    "With her muscle control window hide
+    returned to her, Suzu brings her arm over her face, hiding her eyes underneath. She doesn't say a word, nor make any other movement."
 
     "Bereft of anything to say that could make the mood any better, I decide to just avoid the topic completely."
 
@@ -1405,7 +1415,7 @@ label en_S5:
 
     suz "Do as you want."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Having settled in for the night, Suzu lies at the end of the bed on her stomach watching TV. The small flatscreen, perched on a low dresser at the end of the room, is unsurprisngly tuned to some late-night animated series."
 
@@ -1559,7 +1569,8 @@ label en_S5:
 
     "I smile at her breathless words as she squirms in my lap."
 
-    "Suzu's breaths becoming faster and moans more frequent, a slight sweat forming on her skin. I quickly pat her a few times  to excite her further before returning to rubbing, my motions settling on a speed and motion. With her body beginning to heave and tighten in my grasp, I can only guess she's nearing the end."
+    "Suzu's breaths becoming faster and moans more frequent, a slight sweat forming on her skin. I quickly pat her a few times  to excite her further before window hide
+    returning to rubbing, my motions settling on a speed and motion. With her body beginning to heave and tighten in my grasp, I can only guess she's nearing the end."
 
     suz "Miki... Nnnnnn..."
 
@@ -1655,6 +1666,7 @@ label en_S5:
 
     "Well, whatever. Words were overrated anyway."
 
+    window hide
     return
 label en_S6:
 
@@ -1738,7 +1750,7 @@ label en_S6:
 
     "As Suzu looks at me, I find myself slightly pleased by her eagerness. She isn't the type to enjoy going outside and getting exercise for its own sake, after all."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With Hisao deciding the allure of Suzu's game collection was greater than his want to take a walk with us, she, her sister, and I end up making a mishappen trio as we walk along the sunbaked street."
 
@@ -1828,6 +1840,7 @@ label en_S6:
 
     "I really could get used to these quiet days."
 
+    window hide
     return
 label en_S7:
 
@@ -1871,7 +1884,7 @@ label en_S7:
 
     "It all makes me wonder how they, or any other watching us, would see the relationship between Suzu and I. The question plays on my mind for the rest of the journey."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "It takes a bit of a scan to find where Tsubasa's set up the umbrella, towel, and bags, given the multitude of similar little areas set up around the beach's expanse. Looks like it's a pretty busy day, thanks to the good weather and summer holidays."
 
@@ -1939,7 +1952,7 @@ label en_S7:
 
     mk "Alright, fine, I'll go pick her up."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I trudge back to camp with my mission accomplished, Suzu's body held under my right arm. She kicks and struggles a little, but moreso out of obligation than any real attempt to work herself free. Not that she probably could, anyway."
 
@@ -2149,7 +2162,7 @@ label en_S7:
 
     "I do my best to sound convincing, but I don't quite think I manage it."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With Suzu and I too pooped to mess around much more, Hisao's gone to explore around the edge of the beach while I grab a few drinks from the nearby vending machines. With my left arm holding the small juice boxes, the walk back to home camp begins."
 
@@ -2211,7 +2224,7 @@ label en_S7:
 
     "I look back to her sister as I drag Suzu towards the water line, Tsubasa just smiling as she watches the two of us leave."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With the both of us drained from the day's activities, Suzu and I slowly walk along the beach as Hisao and Tsubasa pack the car. With the both of us changed back into our normal clothes and the sun setting, it feels like an appropriate way to send off a nice day."
 
@@ -2253,6 +2266,7 @@ label en_S7:
 
     "With the two of us basking in each other's joy in the setting sun, I know that I'll ever forget this holiday with Suzu."
 
+    window hide
     return
 label en_S8:
 
@@ -2316,7 +2330,7 @@ label en_S8:
 
     har "Just a quiet little traditional place. Nothin' fancy, just real solid food."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Looking around the numerous low tables and cushions at their sides, Haru's definition of 'little' might be questionable. That might be for the best, though, given the number of track club members that showed up."
 
@@ -2364,7 +2378,8 @@ label en_S8:
 
     "My brief look of confusion at whether she's deaf, and if so, whether she could read my lips, is quickly answered as she points to her mouth and makes a shaking motion with a balled fist. At least being mute wouldn't be as troublesome as being deaf."
 
-    "The wairtres returns with the tea for Suzu and I, gently placing it down before each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
+    "The wairtres window hide
+    returns with the tea for Suzu and I, gently placing it down before each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
 
     "Evidently wanting to continue the conversation futher, Junko quickly takes out her blue pen and scrawls on the notepad with both astonishing speed and immaculate handwriting. I guess this must be what Shizune's like when she's separated from her bright, bubbly shadow."
 
@@ -2422,15 +2437,17 @@ label en_S8:
 
     mk "Well... let's just say people change."
 
-    "I glance to Suzu to acknowledge her, but she's already back to her tea. I know that she changed me, but despite my best efforts, I'm not sure I've helped her much in return."
+    "I glance to Suzu to acknowledge her, but she's already back to her tea. I know that she changed me, but despite my best efforts, I'm not sure I've helped her much in window hide
+    return."
 
     "It's a shame the conversation got awkward so quickly, but respite comes in the form of two waitresss bring in massive platters of assorted food. Sushi, nigiri, tempura, and various other little delicacies abound. The collective anticipation in the room can be heard from everyone."
 
     "Junko gives a nod before retreating to her own table. While she seems a nice enough person, I can't say the conversation left me in higher spirits."
 
-    "Haru just gives a weak smile to try and cheer me up. I do my best to return the gesture. It's people like he, Suzu, Shizune, and Misha who I owe everything to, after all."
+    "Haru just gives a weak smile to try and cheer me up. I do my best to window hide
+    return the gesture. It's people like he, Suzu, Shizune, and Misha who I owe everything to, after all."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     mk "I'm dead."
 
@@ -2518,13 +2535,14 @@ label en_S8:
 
     "Suzu doesn't look thrilled by the idea, but closes her eyes as she realises she's not going to get out of this. No further prompting's needed as I bring my arm around her neck, tugging her closer."
 
-    "With Yukio reluctantly returning to his seat amidst the chaotic movements and orders being given, we end up with a haphazard arrangement of third-years and the teacher sitting in the front and first-years standing over us."
+    "With Yukio reluctantly window hide
+    returning to his seat amidst the chaotic movements and orders being given, we end up with a haphazard arrangement of third-years and the teacher sitting in the front and first-years standing over us."
 
     "I can't help but give a wide grin as the waitress's finger comes down on the camera's trigger. Suzu's body is held tight to mine as everyone crushes together to fit into the shot, and the new generation of the track club stands behind, ready to take our places once we leave."
 
     "For a brief moment as the camera flash blinds us, it feels like everything really will work out."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With the event over and time marching on, I idly stand around on the dark street outside the restaurant, a slumbering girl held to my back. Only Haru and the teacher are still around, the rest of the students having left by bus."
 
@@ -2564,7 +2582,7 @@ label en_S8:
 
     "He gives a grin and a salute as the teacher calls out for us to get in. Knowing him, we'd better get a move on."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "After giving thanks to the teacher for the lift back to Yamaku, and letting Haru go on ahead to the male dorms, I slowly continue the journey to the female dormitories."
 
@@ -2624,7 +2642,7 @@ label en_S8:
 
     "With no offense or refusal forthcoming, she gingerly leads on down the hallway."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I open the door with my copy of her key, and the moment Suzu closes the door behind us, I pull her into a tight embrace and press my mouth to hers with all the force I dare use."
 
@@ -2694,9 +2712,10 @@ label en_S8:
 
     mk "Aaaaaah!"
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
-    "The cool night air sticks to my skin, the first sensation to return as my eyes blearily flicker open. The plain white ceiling hangs over me, a faint light from the front of the room just barely illuminating it."
+    "The cool night air sticks to my skin, the first sensation to window hide
+    return as my eyes blearily flicker open. The plain white ceiling hangs over me, a faint light from the front of the room just barely illuminating it."
 
     "I reach out with my hand to feel out Suzu, but I only end up patting at the bed. A brief glance confirms the fact."
 
@@ -2754,6 +2773,7 @@ label en_S8:
 
     "My hand is removed from her mouth. She closes the laptop with a solemn click. Hope for working tonight leaves her."
 
+    window hide
     return
 label en_S9:
 
@@ -2863,7 +2883,8 @@ label en_S9:
 
     "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much, the forearm absorbing his next punch."
 
-    "It's obvious from his face that he has no idea what he's doing, simply flailing about in a violent rage. With my senses returned and Yukio on the back foot as he shakes his sore hand, now's the time to counterattack."
+    "It's obvious from his face that he has no idea what he's doing, simply flailing about in a violent rage. With my senses window hide
+    returned and Yukio on the back foot as he shakes his sore hand, now's the time to counterattack."
 
     "I drop my right knee as he starts another wild swing, his balled fist sailing over my shoulder as I drive my own into his undefended stomach."
 
@@ -2951,7 +2972,7 @@ label en_S9:
 
     "With that, my world goes black."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I've always hated the nurse's office. The smell of bleach and strong cleaning agents, the pure white light flooding the room, the way everything is so immaculately clean and perfect... it's unnatural."
 
@@ -3035,6 +3056,7 @@ label en_S9:
 
     "In the end, I was right. I really am a horrible person."
 
+    window hide
     return
 label en_S10:
 
@@ -3156,9 +3178,11 @@ label en_S10:
 
     "I feel like I'm spluttering out excuses, but I've no reason to considering who I'm with."
 
-    "There's no point in continuing to push myself. I've done enough damage already, and it's clear that I'll never fit in with the others any more. It's one thing to get in a scrap or two, but another to make past events return to people's minds."
+    "There's no point in continuing to push myself. I've done enough damage already, and it's clear that I'll never fit in with the others any more. It's one thing to get in a scrap or two, but another to make past events window hide
+    return to people's minds."
 
-    "I look to Suzu expecting a smile in return for my thinking of her, but she just calls out that she wants to fold instead. As impenetrable as ever."
+    "I look to Suzu expecting a smile in window hide
+    return for my thinking of her, but she just calls out that she wants to fold instead. As impenetrable as ever."
 
     har "Geez. I mean, it is up to you, but isn't that kinda overdoing it? The club ain't gonna be the same without you around."
 
@@ -3238,7 +3262,7 @@ label en_S10:
 
     "I guess that's that, then."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "The warm water of the shower brings to mind the hot baths I used to enjoy back home. It's exactly the kind of relaxation I needed."
 
@@ -3292,7 +3316,8 @@ label en_S10:
 
     "My mind blanks as the bliss of climax washes over me, every sense forgotten as I focus on that most wonderful feeling."
 
-    "But all too soon, it leaves me. The water running over my body, Suzu's hands holding my thighs and butt, those beautiful eyes of hers with their mix of happiness and timidity; it all returns, with each as comforting as the last."
+    "But all too soon, it leaves me. The water running over my body, Suzu's hands holding my thighs and butt, those beautiful eyes of hers with their mix of happiness and timidity; it all window hide
+    returns, with each as comforting as the last."
 
     "Suzu stands back up, holding me tightly. It's far from unappreciated, as even now the feeling of her against me feels somehow more vivid than ever. My hand sinks tightly into her skin, pressing us together as tightly as I can."
 
@@ -3372,6 +3397,7 @@ label en_S10:
 
     "She manages to mumble the words despite her muscles still being weak, barely even able to lift her eyelids. It only makes me hold her all the tighter."
 
+    window hide
     return
 label en_S11:
 
@@ -3413,7 +3439,7 @@ label en_S11:
 
     mk "I'll get dressed now. Wait outside the gate so the teachers don't see you."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Walking through the shopping centre hand in hand with Suzu, I can't help but notice how few people are milling about. Aside from a few housewives and old people, the place isn't exactly doing a brisk trade. Maybe I shouldn't be surprised, given that most adults are going to be at their workplaces around this time, and teenagers would be in school."
 
@@ -3445,11 +3471,12 @@ label en_S11:
 
     suz "So, do you want to check out the movie?"
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "This is awesome. Nothing beats a good samurai movie."
 
-    "As we sit in the darkened theatre and watch the big screen, I grin as another fight scene finishes up, the blood flicked off the main character's blade before it's returned to its scabbard. We timed this well; I haven't seen this one before, and there are no annoying kids talking through the movie."
+    "As we sit in the darkened theatre and watch the big screen, I grin as another fight scene finishes up, the blood flicked off the main character's blade before it's window hide
+    returned to its scabbard. We timed this well; I haven't seen this one before, and there are no annoying kids talking through the movie."
 
     "Leaning back and taking a swig of my gigantic drink, I cast a glance to my companion."
 
@@ -3467,7 +3494,7 @@ label en_S11:
 
     "I lunge over and take a large handful while she's distracted, stuffing the lot into my mouth at once. My chipmunk-like cheeks don't win any favours."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "Both of us end up squinting a little as we emerge back into the bright late-morning light of the shopping centre."
 
@@ -3505,7 +3532,7 @@ label en_S11:
 
     "A nod is all the response I need, the two of us setting off."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "With lunch eaten and a nap had, we end up aimlesly wandering around for something to do."
 
@@ -3535,7 +3562,7 @@ label en_S11:
 
     "I smile a little in spite of myself. Maybe this won't last, maybe it will. What I do know, is that this girl cares for me. That's enough. At least right now, that's all I need to keep going on."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "After hitting up about half the stores, mostly just breezing in and out, the two of us settle in for dinner."
 
@@ -3561,7 +3588,8 @@ label en_S11:
 
     "Suzu looks ahead of her, mouth just slightly open. She might as well be frozen in stone for all she moves, her face slowly becoming more and more flushed until she's become a bright scarlet. I might have taken things too far, as she looks totally dazed."
 
-    "The girl's senses finally return to her as she buries her face into her hands, desperately hiding from the outside world."
+    "The girl's senses finally window hide
+    return to her as she buries her face into her hands, desperately hiding from the outside world."
 
     mk "That's what you get for ignoring me."
 
@@ -3689,7 +3717,7 @@ label en_S11:
 
     "Accepting my fate and considering the day's fun over, I motion to a passing waiter and ask for the bill."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
     "I wonder how many times I've made my way up this hill with a slumbering girl on my back."
 
@@ -3725,7 +3753,8 @@ label en_S11:
 
     mk "Compared to me, you come out pretty good."
 
-    "Silence returns as I continue to trudge up the hill. I come so very close to asking the one question I want an answer to, but also the one that would likely mean the end of us being together if I asked it."
+    "Silence window hide
+    returns as I continue to trudge up the hill. I come so very close to asking the one question I want an answer to, but also the one that would likely mean the end of us being together if I asked it."
 
     "I wish I could say that I'm trying to keep us together for the sake of Suzu's happiness, but I know I'd be lying to myself. I need her. I needed her ever since that fateful day those years go, and if I lost her, I don't know what I'd do."
 
@@ -3735,6 +3764,7 @@ label en_S11:
 
     mk "You're welcome."
 
+    window hide
     return
 label en_S12:
 
@@ -3788,9 +3818,10 @@ label en_S12:
 
     "With Haru skipping into the room moments before the first teacher of the day walks in, the both of them very nearly late, I hop off my desk and take a seat. Suzu really does seem out of sorts today, but that wall between her and I is strong as ever."
 
-    # Timeskip
+    centered "~ Timeskip ~" with dissolve
 
-    "With the class having returned from lunch, Mutou begins his lecturing on what today's test will cover. Little more than a retread of what we've been taught on the current topic, with a few harder questions thrown in to check what we've retained over the holidays."
+    "With the class having window hide
+    returned from lunch, Mutou begins his lecturing on what today's test will cover. Little more than a retread of what we've been taught on the current topic, with a few harder questions thrown in to check what we've retained over the holidays."
 
     "I might pass, though it'll be close if I do. In any case, that's less of a concern to me right now than the empty desk to my left."
 
@@ -3882,6 +3913,7 @@ label en_S12:
 
     "I'm so sorry, Suzu..."
 
+    window hide
     return
 label en_S13:
 
@@ -4035,6 +4067,7 @@ label en_S13:
 
     hi "It's Tsubasa..."
 
+    window hide
     return
 label en_S14:
 
@@ -4162,4 +4195,5 @@ label en_S14:
 
     "My precious Suzu, who I so nearly lost."
 
+    window hide
     return
