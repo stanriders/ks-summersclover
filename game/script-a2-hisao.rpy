@@ -243,8 +243,7 @@ label en_H1:
 
     "How unfortunate; he's getting too good at knowing when I'm fishing for praise. I just smirk."
 
-    "Taking him into my mouth once more, I window hide
-    return to my motions. He seems to enjoy what I'm doing so far, so I just stick with that I've been doing."
+    "Taking him into my mouth once more, I return to my motions. He seems to enjoy what I'm doing so far, so I just stick with that I've been doing."
 
     "Hisao must be getting close, as his breathing is beginning to get more ragged and the muscles in his groin begin to tighten. His concentration on controlling his urges is written to his face."
 
@@ -1266,8 +1265,7 @@ label en_H3:
 
     "I raises his hand, probably to try and make an obscene gesture at me or something, but lets it flop back to the ground as he finds himself unable to muster the energy."
 
-    "With my senses window hide
-    returning to me, I let my head roll to the side. The stars that Hisao had been so wrapt in sit above us, twinkling away."
+    "With my senses returning to me, I let my head roll to the side. The stars that Hisao had been so wrapt in sit above us, twinkling away."
 
     "Realising that I've stopped panting, Hisao looks to me, and then to the same stars that I watch."
 
@@ -1402,8 +1400,7 @@ label en_H4:
 
     "The fracas of earlier is finally over, with Hisao's pain having passed. An air of uncertainty still lingers though, as I'm pretty sure nobody is really convinced by Hisao's assurances that everything is fine now."
 
-    "With noon approaching and nobody having the stomach for window hide
-    returning to the fields, Suzu and I sit at the low table in preparation for lunch. Given what's on the menu, the reason for Suzu's fidgeting is obvious."
+    "With noon approaching and nobody having the stomach for returning to the fields, Suzu and I sit at the low table in preparation for lunch. Given what's on the menu, the reason for Suzu's fidgeting is obvious."
 
     "Fresh chicken, and actually fresh unlike the crap in the supermarkets. I've seen it all before, but while I didn't expect Suzu to have the stomach to observe, I'm rather impressed that Hisao went with dad to see the process. I do wonder how much of that was trying to regain his manly pride, though."
 
@@ -1445,8 +1442,7 @@ label en_H4:
 
     jun "Go on, eat. Kids your age need all the food you can get."
 
-    "Hisao manages to force a bite own after taking his food, followed by more in quick succession as his appetite window hide
-    returns. I have no such reluctance, taking my chopsticks in hand and starting on my fish without any reluctance."
+    "Hisao manages to force a bite own after taking his food, followed by more in quick succession as his appetite returns. I have no such reluctance, taking my chopsticks in hand and starting on my fish without any reluctance."
 
     "I guess you can take a city boy out of the city, but you can't make him into a country boy so quickly."
 
@@ -1869,8 +1865,7 @@ label en_H5:
 
     hi "I suppose that's why I couldn't throw out that letter. It'd be easy to say my life got reset when I started at Yamaku, but that'd be a lie."
 
-    hi "I lived. It was a good life, too. Even if I can't window hide
-    return to those times any more, I think I want to remember them."
+    hi "I lived. It was a good life, too. Even if I can't return to those times any more, I think I want to remember them."
 
     mk "And that's what you wanted to say to me before."
 
@@ -2005,8 +2000,7 @@ label en_H6:
 
     "Sound like a solid plan. Hisao goes to one log as I walk to the other, propping my trusty stick against it and undoing the zip to my backback and rifling around for the rice balls I packed. Managing to grasp the small bag they're in with the tips of my fingers, I pull them out as I take a seat."
 
-    "Hisao unclips the bag slung around his shoulder, lifting the flap and grabbing a bottle filled with water. I'm glad to have a chance to rest my legs, but it's Hisao I'm more worried about. Now that he's seated, that terrible wheeze he sometimes gets has window hide
-    returned."
+    "Hisao unclips the bag slung around his shoulder, lifting the flap and grabbing a bottle filled with water. I'm glad to have a chance to rest my legs, but it's Hisao I'm more worried about. Now that he's seated, that terrible wheeze he sometimes gets has returned."
 
     mk "Doing okay? You look pretty beat."
 

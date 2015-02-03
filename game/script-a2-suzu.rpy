@@ -726,8 +726,7 @@ label en_S4:
 
     "Holding her to me as I do now feels different, somehow. Not because I can feel her soft, warm body against mine, but because such a normally apprehensive girl would allow me to get so close at all. She trusts me."
 
-    "For a moment it looks like she might not reciprocate, taken too off guard to window hide
-    return the gesture. Eventually, though, she picks her arms up and wraps them around my back, drawing me into a tight embrace. With her face turned to the side, I press my lips to the top of her head."
+    "For a moment it looks like she might not reciprocate, taken too off guard to return the gesture. Eventually, though, she picks her arms up and wraps them around my back, drawing me into a tight embrace. With her face turned to the side, I press my lips to the top of her head."
 
     suz "Sorry. I just..."
 
@@ -1307,8 +1306,7 @@ label en_S5:
 
     "Passing by the recliner on the way, she gives Miyu a much-appreciated rub on the head before leaving. For his part, Hisao jumps off the couch and goes to grab his phone and wallet from the guest room."
 
-    "As he window hide
-    returns and heads towards outside, he briefly stops to give us a wave of goodbye. I pucker my lips and make kissing motions to tease him in response, earning an obscene gesture before he disappears out the door."
+    "As he returns and heads towards outside, he briefly stops to give us a wave of goodbye. I pucker my lips and make kissing motions to tease him in response, earning an obscene gesture before he disappears out the door."
 
     "Come to think of it, he never used to do that before. Maybe I'm starting to rub off on him."
 
@@ -1406,8 +1404,7 @@ label en_S5:
 
     "Sitting the thing in my lap in practiced fashion, I use my stump to carefully move the left stick and operate the buttons with my hand, managing to, eventually, save the game. As it writes to the memory card, a movement from the corner of my eye draws my eyes from the television."
 
-    "With her muscle control window hide
-    returned to her, Suzu brings her arm over her face, hiding her eyes underneath. She doesn't say a word, nor make any other movement."
+    "With her muscle control returned to her, Suzu brings her arm over her face, hiding her eyes underneath. She doesn't say a word, nor make any other movement."
 
     "Bereft of anything to say that could make the mood any better, I decide to just avoid the topic completely."
 
@@ -1569,8 +1566,7 @@ label en_S5:
 
     "I smile at her breathless words as she squirms in my lap."
 
-    "Suzu's breaths becoming faster and moans more frequent, a slight sweat forming on her skin. I quickly pat her a few times  to excite her further before window hide
-    returning to rubbing, my motions settling on a speed and motion. With her body beginning to heave and tighten in my grasp, I can only guess she's nearing the end."
+    "Suzu's breaths becoming faster and moans more frequent, a slight sweat forming on her skin. I quickly pat her a few times  to excite her further before returning to rubbing, my motions settling on a speed and motion. With her body beginning to heave and tighten in my grasp, I can only guess she's nearing the end."
 
     suz "Miki... Nnnnnn..."
 
@@ -2378,8 +2374,7 @@ label en_S8:
 
     "My brief look of confusion at whether she's deaf, and if so, whether she could read my lips, is quickly answered as she points to her mouth and makes a shaking motion with a balled fist. At least being mute wouldn't be as troublesome as being deaf."
 
-    "The wairtres window hide
-    returns with the tea for Suzu and I, gently placing it down before each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
+    "The wairtres returns with the tea for Suzu and I, gently placing it down before each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
 
     "Evidently wanting to continue the conversation futher, Junko quickly takes out her blue pen and scrawls on the notepad with both astonishing speed and immaculate handwriting. I guess this must be what Shizune's like when she's separated from her bright, bubbly shadow."
 
@@ -2437,15 +2432,13 @@ label en_S8:
 
     mk "Well... let's just say people change."
 
-    "I glance to Suzu to acknowledge her, but she's already back to her tea. I know that she changed me, but despite my best efforts, I'm not sure I've helped her much in window hide
-    return."
+    "I glance to Suzu to acknowledge her, but she's already back to her tea. I know that she changed me, but despite my best efforts, I'm not sure I've helped her much in return."
 
     "It's a shame the conversation got awkward so quickly, but respite comes in the form of two waitresss bring in massive platters of assorted food. Sushi, nigiri, tempura, and various other little delicacies abound. The collective anticipation in the room can be heard from everyone."
 
     "Junko gives a nod before retreating to her own table. While she seems a nice enough person, I can't say the conversation left me in higher spirits."
 
-    "Haru just gives a weak smile to try and cheer me up. I do my best to window hide
-    return the gesture. It's people like he, Suzu, Shizune, and Misha who I owe everything to, after all."
+    "Haru just gives a weak smile to try and cheer me up. I do my best to return the gesture. It's people like he, Suzu, Shizune, and Misha who I owe everything to, after all."
 
     centered "~ Timeskip ~" with dissolve
 
@@ -2535,8 +2528,7 @@ label en_S8:
 
     "Suzu doesn't look thrilled by the idea, but closes her eyes as she realises she's not going to get out of this. No further prompting's needed as I bring my arm around her neck, tugging her closer."
 
-    "With Yukio reluctantly window hide
-    returning to his seat amidst the chaotic movements and orders being given, we end up with a haphazard arrangement of third-years and the teacher sitting in the front and first-years standing over us."
+    "With Yukio reluctantly returning to his seat amidst the chaotic movements and orders being given, we end up with a haphazard arrangement of third-years and the teacher sitting in the front and first-years standing over us."
 
     "I can't help but give a wide grin as the waitress's finger comes down on the camera's trigger. Suzu's body is held tight to mine as everyone crushes together to fit into the shot, and the new generation of the track club stands behind, ready to take our places once we leave."
 
@@ -2714,8 +2706,7 @@ label en_S8:
 
     centered "~ Timeskip ~" with dissolve
 
-    "The cool night air sticks to my skin, the first sensation to window hide
-    return as my eyes blearily flicker open. The plain white ceiling hangs over me, a faint light from the front of the room just barely illuminating it."
+    "The cool night air sticks to my skin, the first sensation to return as my eyes blearily flicker open. The plain white ceiling hangs over me, a faint light from the front of the room just barely illuminating it."
 
     "I reach out with my hand to feel out Suzu, but I only end up patting at the bed. A brief glance confirms the fact."
 
@@ -2883,8 +2874,7 @@ label en_S9:
 
     "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much, the forearm absorbing his next punch."
 
-    "It's obvious from his face that he has no idea what he's doing, simply flailing about in a violent rage. With my senses window hide
-    returned and Yukio on the back foot as he shakes his sore hand, now's the time to counterattack."
+    "It's obvious from his face that he has no idea what he's doing, simply flailing about in a violent rage. With my senses returned and Yukio on the back foot as he shakes his sore hand, now's the time to counterattack."
 
     "I drop my right knee as he starts another wild swing, his balled fist sailing over my shoulder as I drive my own into his undefended stomach."
 
@@ -3178,11 +3168,9 @@ label en_S10:
 
     "I feel like I'm spluttering out excuses, but I've no reason to considering who I'm with."
 
-    "There's no point in continuing to push myself. I've done enough damage already, and it's clear that I'll never fit in with the others any more. It's one thing to get in a scrap or two, but another to make past events window hide
-    return to people's minds."
+    "There's no point in continuing to push myself. I've done enough damage already, and it's clear that I'll never fit in with the others any more. It's one thing to get in a scrap or two, but another to make past events return to people's minds."
 
-    "I look to Suzu expecting a smile in window hide
-    return for my thinking of her, but she just calls out that she wants to fold instead. As impenetrable as ever."
+    "I look to Suzu expecting a smile in return for my thinking of her, but she just calls out that she wants to fold instead. As impenetrable as ever."
 
     har "Geez. I mean, it is up to you, but isn't that kinda overdoing it? The club ain't gonna be the same without you around."
 
@@ -3316,8 +3304,7 @@ label en_S10:
 
     "My mind blanks as the bliss of climax washes over me, every sense forgotten as I focus on that most wonderful feeling."
 
-    "But all too soon, it leaves me. The water running over my body, Suzu's hands holding my thighs and butt, those beautiful eyes of hers with their mix of happiness and timidity; it all window hide
-    returns, with each as comforting as the last."
+    "But all too soon, it leaves me. The water running over my body, Suzu's hands holding my thighs and butt, those beautiful eyes of hers with their mix of happiness and timidity; it all returns, with each as comforting as the last."
 
     "Suzu stands back up, holding me tightly. It's far from unappreciated, as even now the feeling of her against me feels somehow more vivid than ever. My hand sinks tightly into her skin, pressing us together as tightly as I can."
 
@@ -3475,8 +3462,7 @@ label en_S11:
 
     "This is awesome. Nothing beats a good samurai movie."
 
-    "As we sit in the darkened theatre and watch the big screen, I grin as another fight scene finishes up, the blood flicked off the main character's blade before it's window hide
-    returned to its scabbard. We timed this well; I haven't seen this one before, and there are no annoying kids talking through the movie."
+    "As we sit in the darkened theatre and watch the big screen, I grin as another fight scene finishes up, the blood flicked off the main character's blade before it's returned to its scabbard. We timed this well; I haven't seen this one before, and there are no annoying kids talking through the movie."
 
     "Leaning back and taking a swig of my gigantic drink, I cast a glance to my companion."
 
@@ -3588,8 +3574,7 @@ label en_S11:
 
     "Suzu looks ahead of her, mouth just slightly open. She might as well be frozen in stone for all she moves, her face slowly becoming more and more flushed until she's become a bright scarlet. I might have taken things too far, as she looks totally dazed."
 
-    "The girl's senses finally window hide
-    return to her as she buries her face into her hands, desperately hiding from the outside world."
+    "The girl's senses finally return to her as she buries her face into her hands, desperately hiding from the outside world."
 
     mk "That's what you get for ignoring me."
 
@@ -3753,8 +3738,7 @@ label en_S11:
 
     mk "Compared to me, you come out pretty good."
 
-    "Silence window hide
-    returns as I continue to trudge up the hill. I come so very close to asking the one question I want an answer to, but also the one that would likely mean the end of us being together if I asked it."
+    "Silence returns as I continue to trudge up the hill. I come so very close to asking the one question I want an answer to, but also the one that would likely mean the end of us being together if I asked it."
 
     "I wish I could say that I'm trying to keep us together for the sake of Suzu's happiness, but I know I'd be lying to myself. I need her. I needed her ever since that fateful day those years go, and if I lost her, I don't know what I'd do."
 
@@ -3820,8 +3804,7 @@ label en_S12:
 
     centered "~ Timeskip ~" with dissolve
 
-    "With the class having window hide
-    returned from lunch, Mutou begins his lecturing on what today's test will cover. Little more than a retread of what we've been taught on the current topic, with a few harder questions thrown in to check what we've retained over the holidays."
+    "With the class having returned from lunch, Mutou begins his lecturing on what today's test will cover. Little more than a retread of what we've been taught on the current topic, with a few harder questions thrown in to check what we've retained over the holidays."
 
     "I might pass, though it'll be close if I do. In any case, that's less of a concern to me right now than the empty desk to my left."
 
