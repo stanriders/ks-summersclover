@@ -47,7 +47,6 @@
     displayDict["en"].game_menu_current_scene = u"Current Scene"
     displayDict['en'].game_menu_current_music = u"Current music track"
     displayDict["en"].game_menu_replay_indicator = u"Replay"
-    displayDict["en"].game_menu_jumper = u"Select Act"
 
     displayDict["en"].return_button_text = u"Return"
 
@@ -178,16 +177,16 @@
     displayDict["en"].name_mot = "Suzuki's mother"
     
     # Scenes available in the extras -> scene select menu. Name, label, description, path (path may also be a tuple).
-    displayDict["en"].s_scenes = (("Prologue", "C0", True, "Common"),
-                                    ("The Runner", "C1", True, "Common"),
-                                    ("Singalong", "C2", True, "Common"),
-                                    ("A Girl Named Suzu", "C3", True, "Common"),
-                                    ("Shared Table", "C4", True, "Common"),
-                                    ("Evening Stroll", "C5", True, "Common"),
-                                    ("To Town, To Town", "C6", True, "Common"),
-                                    ("Troubled Correspondence", "C7", True, "Common"),
-                                    ("One Night in July", "C8", True, "Common"),
-                                    ("Echoes of the Past", "C9", True, "Common"),
+    displayDict["en"].s_scenes = (("Prologue", "C0", True, "Act 1"),
+                                    ("The Runner", "C1", True, "Act 1"),
+                                    ("Singalong", "C2", True, "Act 1"),
+                                    ("A Girl Named Suzu", "C3", True, "Act 1"),
+                                    ("Shared Table", "C4", True, "Act 1"),
+                                    ("Evening Stroll", "C5", True, "Act 1"),
+                                    ("To Town, To Town", "C6", True, "Act 1"),
+                                    ("Troubled Correspondence", "C7", True, "Act 1"),
+                                    ("One Night in July", "C8", True, "Act 1"),
+                                    ("Echoes of the Past", "C9", True, "Act 1"),
                                     
                                     ("Study and Such", "H1", True, "Hisao"),
                                     ("Homecoming", "H2", True, "Hisao"),
@@ -233,17 +232,9 @@ Suriko
 Nicol Armarfi
 
 {b}Artists{/b}
-Ambi07
-gebyy-terar
-Kamifish
-moekki
-Raide
 raemz
+Katawa Shoujo artists
 
-{b}Additional Artists{/b}
-climatic
-Doomfest
-yujovi
 
 {b}Engineering{/b}
 StanR
@@ -255,29 +246,13 @@ Suriko
                                      
 
 {b}Thanks{/b}
-Celiest
-chendo
-climatic
-Dark_Mercury
-DeuceTrick
-frumplstlskn
-Ismuth
-Kagami
-konflikti
-Magaran
-Moogy
-OverCoat
-Peorth
-Petaru
-skim
-Solaris
-silentkyon
-stirfriedweasel
-Syureria
+Four Leaf Studios
+
 
 
 
 {b}Special Thanks{/b}
 PyTom
 KSG Threads on /vg/
-RAITA"""
+RAITA
+Prealpha Repair Team"""

@@ -636,11 +636,11 @@ label scene_select_loop:
         ui.vbox(xpos=180, ypos=120, background=None)
         ui.text(displayStrings.scene_page_caption, style="page_caption")
         ui.hbox()
-        shown_buttons = ("Common", "Hisao", "Suzuki")
+        shown_buttons = ("Act 1", "Hisao", "Suzuki")
         
         for button in shown_buttons:
-            if button == "Common":
-                label = "Common"
+            if button == "Act 1":
+                label = displayStrings.act_term + " 1"
             elif button == "Hisao":
                 label = displayStrings.name_hi
             else: # button == "Suzuki":
@@ -888,7 +888,7 @@ label en_rintimeskip:
     return
 
 
-label credits (simple=False):
+label credits (simple=True): # simple credits for SC [str]
     
     python:
         if not simple:
@@ -1018,18 +1018,12 @@ label credits (simple=False):
     
     $ renpy.pause(52.0, hard=True)
     
-    if not simple:
-        scene endscreen
-        with None
-    else:
-    #don't ask me why, I have NO idea
-        scene endscreen at Position(xpos=0.5128) #397
-        with None
-    
+    scene endscreen
+    with None
     
     $ renpy.pause(2.0, hard=True)
     
-    $ renpy.show("copyright", what=Text("© 2006 - 2009", text_align=0.5, size=15), at_list=[Position(xpos=0.5, xanchor=0.5, yalign=0.605)])
+    $ renpy.show("copyright", what=Text("© 2006 - 2014", text_align=0.5, size=15), at_list=[Position(xpos=0.5, xanchor=0.5, yalign=0.605)])
     with Dissolve(2.0)
     $ renpy.pause(3.0, hard=True)
     
@@ -1078,71 +1072,22 @@ label start:
 # The following are I-Machine exit points.
 # They also track stuff for the benchmark.
 
-label emiend:
+label suzuend:
     $ wdt_off()
     scene white
     with Dissolve(4.0)
-    $ persistent.emi += 1
-    $ multipersistent.emi = True
-    $ multipersistent.save()
+    $ persistent.suzu += 1
     if not automode:
         call credits
     jump restart
 
-label hanakoend:
+label hisaoend:
     $ wdt_off()
     scene white
     with Dissolve(4.0)
-    $ persistent.hanako += 1
-    $ multipersistent.hanako = True
-    $ multipersistent.save()
+    $ persistent.hisao += 1
     if not automode:
         call credits
-    jump restart
-
-label lillyend:
-    $ wdt_off()
-    scene white
-    with Dissolve(4.0)
-    $ persistent.lilly += 1
-    $ multipersistent.lilly = True
-    $ multipersistent.save()
-    if not automode:
-        call credits
-    jump restart
-
-label rinend:
-    $ wdt_off()
-    scene white
-    with Dissolve(4.0)
-    $ persistent.rin += 1
-    $ multipersistent.rin = True
-    $ multipersistent.save()
-    if not automode:
-        call credits
-    jump restart
-
-label shizuneend:
-    $ wdt_off()
-    scene white
-    with Dissolve(4.0)
-    $ persistent.shizune += 1
-    $ multipersistent.shizune = True
-    $ multipersistent.save()
-    if not automode:
-        call credits
-    jump restart
-
-label badend:
-    $ wdt_off()
-    scene bloodred
-    with Dissolve(4.0)
-    $ persistent.bad += 1
-    $ multipersistent.bad = True
-    $ multipersistent.save()
-    if not automode:
-        call credits(True)
-    call iscene("A45")
     jump restart
 
 ################

@@ -19,7 +19,7 @@ label en_C0:
     
 label en_C1:
 
-    scene black
+    scene bg school_gardens_ss #black
     with dissolve
     
     window show
@@ -37,7 +37,10 @@ label en_C1:
     "It's not that I hate such a life. Compared to how I've lived before now, it's something I feel I should probably treasure."
 
     "But my life is also finite. No matter how blissfully unaware I am of it, time still passes. Maybe it's summer holidays that've focused my thinking, or maybe the exams beforehand. Either way, this way of living will end."
-
+ 
+    scene bg school_track_ss
+    with locationchange
+    
     "Emerging through the line of trees separating the track from the main grounds, the movement of a lone person immediately catches my eye."
 
     "His figure casts a long shadow in the evening's light as he slowly runs along the far side of the track. Looks like it's hard going, with his arms swaying to and fro as he valiantly pushes himself onwards."
@@ -116,10 +119,15 @@ label en_C1:
 
     hi "Fine, I'll go along with you."
 
-    centered "~ Timeskip ~" with dissolve
-
+    #centered "~ Timeskip ~" with dissolve
+    scene bg suburb_shanghaiext_ss
+    with shorttimeskip#locationchange
+    
     "The Shanghai's location within the nearby town has always been convenient. I had thought even this might be too much for Hisao given his exhaustion, but he managed to drag himself here just fine."
-
+    
+    scene bg suburb_shanghaiint
+    with locationchange
+    
     "I like the uniforms they have here, even if they do strike me as a little unconventional. Our meals placed before us, the waitress takes her leave to attend to a handful of other customers at the opposite end of the cafe."
 
     "Not being especially hungry, my meal's just a slice of pie and a drink. Hisao's pack of sandwhiches don't look like it'll last for long, one of them already having disappeared into his mouth."
@@ -211,11 +219,17 @@ label en_C1:
     "The weather really is nice today."
     
     window hide
-        
+    
+    scene black
+    with dissolve
+    
     return
     
 label en_C2:
 
+    scene bg school_gardens3
+    with dissolve
+    
     window show
     
     "I find myself lazily sitting at the base of a particularly tree in the school gardens, making the most of its shade while watching the goings on ahead."
@@ -280,7 +294,8 @@ label en_C2:
 
     hi "Alright, you got me. I'll come."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg city_karaokeint
+    with shorttimeskip
 
     "The moment we all entered the dimly-lit room, we started acting as if it were home. People laid on the couches, draped themselves over the arms and backs to talk to friends, threw snacks and drink bottles to each other, and generally made a din from all the arguing over the day's events."
 
@@ -368,10 +383,16 @@ label en_C2:
     
     window hide
     
+    scene black
+    with dissolve
+    
     return
     
 label en_C3:
-
+    
+    scene bg school_library
+    with dissolve
+    
     window show
     
     "If I had to choose which room embodied the feeling of this school the most, it'd have to be the library."
@@ -541,8 +562,12 @@ label en_C3:
     return
     
 label en_C4:
+    
+    scene bg school_cafeteria
+    with shorttimeskip
 
     window show
+    
     "I've always found the cafeteria to be a fun place to watch people."
 
     "Deftly manouvering through the rapidly filling room after being among the first to have their tray filled by the old ladies behind the counter, I can't help but glance around at the other students on my way to a free table."
@@ -653,7 +678,7 @@ label en_C4:
 
     mk "Oh yeah? How about you try having periods?"
 
-    yuk "Piss off, we have to-"
+    yuk "Piss off, we have to-{nw}"
 
     mk "Look at me, I'm a man, oh no I have to shave my face, I have dreams that give me orgasms, how terrible~!"
 
@@ -661,7 +686,7 @@ label en_C4:
 
     mk "Huh? What's that? I can't hear you over bleeding from my genitals and feeling like I've been sucker-punched in the gut once a month!"
 
-    yuk "You're making my point for me! If you didn't go on about your bloody periods while we're eating, we'd-!"
+    yuk "You're making my point for me! If you didn't go on about your bloody periods while we're eating, we'd-!{nw}"
 
     mk "Maybe I'd act more like a girl once I got free crap for being one!"
 
@@ -691,7 +716,7 @@ label en_C4:
 
     "Haru begins to come around each of our seats, setting down a slice before each of us before sitting beside Hisao. I quickly tuck into mine as soon as I can, the wonderful taste of cream and strawberries filling my mouth. Befriending this guy was one of the best decisions ever."
 
-    "mor" "It's true. He ended up quitting drama and switching to the track club just to lower his profile." # who? [str]
+    "Mor" "It's true. He ended up quitting drama and switching to the track club just to lower his profile." # who? [str]
 
     "Hisao suddenly clicks his fingers in a flash of insight."
 
@@ -755,7 +780,11 @@ label en_C4:
     
 label en_C5:
 
+    scene bg school_scienceroom
+    with shorttimeskip
+    
     window show
+    
     "Walking into class, my gaze immediately falls to Suzu's desk. Each and every morning she enters class long before I do, and though I might have hoped to catch her out, today is no different than any other."
 
     "It's one of life's small wonders; I never did understand how someone in a perpetual state of sleep deficiency manages to get here on time every day. Well, it's not that I don't understand how, so much as why."
@@ -800,8 +829,9 @@ label en_C5:
 
     "Damn it."
 
-    centered "~ Timeskip ~" with dissolve
-
+    scene bg school_gate
+    with shorttimeskip
+    
     "Jogging past the school gates, Suzu and Hisao can be seen patiently waiting for me. By now the main throng of leaving students has passed, reduced to to little more than the occasional person or two."
 
     suz "Have fun?"
@@ -819,6 +849,9 @@ label en_C5:
     hi "Sounds good."
 
     "The decision made, we set off down the hill for the local town."
+    
+    scene bg school_road
+    with locationchange
 
     "I like this time of year. The weather, hot with decent but not overbearing humidity, reminds me of home. It also means being able to wear summer outfits, which are far more comfortable than winter clothing."
 
@@ -873,11 +906,17 @@ label en_C5:
     hi "Very violent."
 
     "I'm beginning to think I've created a monster by bringing these two together."
-
+    
+    scene bg suburb_shanghaiext
+    with locationchange
+    
     "By the time we reach the Shanghai, I feel like I've run through a gauntlet with the of them pecking away. Suzu throws the odd snark while alone, but she and Hisao egg each other on."
 
     "I don't really hate it, though. It's maybe even a little cute."
-
+    
+    scene bg suburb_shanghaiint
+    with locationchange
+    
     "The bell above the door gives its trademark rattle as we file in, the waitress's hurried shuffling towards us no less familiar. Look like the place is mostly empty, save for a handful of other patrons."
 
     "Maybe it's a good thing; if such a place can stay open for this many years and not shut down from the lack of customers, at least the staff aren't going to be too stressed. They keep their jobs, and the town keeps its little odd cafe."
@@ -1066,8 +1105,10 @@ label en_C5:
 
     "He probably doesn't know it yet, but it looks like he'll be able to handle her just fine. Not many people can."
 
-    centered "~ Timeskip ~" with dissolve
-
+    
+    scene bg suburb_shanghaiint
+    with shorttimeskip
+    
     "As I chow down the last of my pie, I notice a subtle movement from the corner of my eye. Turning to where it came from, I see Suzu's head beginning to slowly nod, her eyelids also having trouble staying up. She might be working to hide it, but the harder she tries, the more obvious it is."
 
     "If she's already this bad, she's probably been fighting to stay lucid for a while. Silly girl."
@@ -1114,7 +1155,8 @@ label en_C5:
 
     "Acting fast before he can retract his offer, I smile and call Yuuko over. With the bill paid over Suzu's peacefully sleeping body, our little outing comes to an end."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_road_ss
+    with shorttimeskip
 
     "The trudge up the hill back up to Yamaku from town is a journey I've made countless times by now. I'm pretty sure I've lost count of the number of times I've made it while carrying a slumbering girl on my back, too."
 
@@ -1150,14 +1192,18 @@ label en_C5:
 
     "But even now, as I carry her still body up the hill like this, I still feel the slightest bit comforted by her warmth."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_girlsdormhall
+    with shorttimeskip
 
     "Having parted and gone our separate ways, Hisao to the male dormitory building - after telling me his room number, in case I decide to visit - and the two of us to the female one, I find myself shuffling up the hallway to Suzu's room. It's the floor below my own, unfortunately; if we were neighbors, it'd be a lot more convenient."
 
     "With my left arm holding up Suzu, I manage to retrieve the key to her room from my pocket after some fiddling. Her convincing the staff to let me get a copy of her dorm room key cut for situations like this was one of her better moves."
 
     "A quick flick of the hand, and the lock opens with a satisfying click. Manouvering around the door as I open it, the familiar smell of her room hits me before the view does."
-
+ 
+    scene black
+    with locationchange
+    
     "It's 'girly', for lack of a better word. I don't know exactly what makes up the scent, beyond probably nail polish remover and light perfume, but it's unmistakable and foreign nevertheless."
 
     "Closing the door behind us and turning to the room ahead, I slowly navigate the way to her bed, taking care to manouver around the multitude of papers, books, clothes, manga, magazines, and toys scattered around the floor. She has a desk, but that's largely dedicated to her big laptop, plus a few other toys around it."
@@ -1231,15 +1277,24 @@ label en_C5:
     suz "See you."
 
     "With that, I give her a parting wave before leaving the room and its girly smell."
-
+    
+    scene bg school_girlsdormhall
+    with locationchange
+    
     "Entering the hallway and carefully closing her door behind me, all I can do is rest my back against it as I close my eyes and sigh. Looks like the last few months of my time here won't be as simple as I expected."
     
     window hide
+    
+    scene black
+    with dissolve
     
     return
     
 label en_C6:
 
+    scene bg city_street2
+    with dissolve
+    
     window show
     
     "Leaning back against the railing as the multitude of people ahead move to and fro, I do my best to pass the time by watching those who walk by."
@@ -1308,6 +1363,9 @@ label en_C6:
 
     "Further protests don't make any difference to either of them, so the three of us end up heading off towards a stationery shop to pick up school supplies. I guess I could buy a pen... or something. Beats waiting outside for them."
 
+    scene bg city_street4
+    with locationchange
+    
     "As we walk on, the heat of the summer's day beating down, I find myself distracted by the sights alongside us. It's Hisao who eventually picks up on it."
 
     hi "What's up?"
@@ -1338,8 +1396,9 @@ label en_C6:
 
     "With a quick skip up to them, we continue on our way."
 
-    centered "~ Timeskip ~" with dissolve
-
+    scene black
+    with locationchange
+    
     "I just couldn't hack it. With the Suzu and Hisao dawdling around getting books, folders, and whatever else, I ended up bailing out and hitting the arcade next door."
 
     "Dancing games are rather pointless without friends, so the choice was largely already made as to what to play. Cheap plastic gun in hand, I plink away at the screen for minutes on end, sending zombies and other undead sprawling to the ground."
@@ -1391,7 +1450,10 @@ label en_C6:
     "Hisao just shrugs. He just looks at the screen for a while before turning to us with a cocky smile. I think it's the first time I've seen him genuinely proud of an accomplishment."
 
     hi "That's how you do it. We heading off?"
-
+    
+    scene bg city_street4
+    with locationchange
+    
     "Suzu nods and takes the lead, handing Hisao his bag before the three of us file out into the busy street outside. The difference between the air-conditioned arcade and sunbaked walkway is like night and day, with the afternoon's heat setting in."
 
     suz "You look pleased with yourself."
@@ -1432,8 +1494,11 @@ label en_C6:
 
     "Thankfully it isn't far to the place Hisao pointed out, with him going inside to order a couple of coffees while I deposit Suzu in a chair before taking a seat myself."
 
+    scene bg city_cafe
+    with locationchange
+    
     "It's been a long time since she passed out in public. Now that I think about it, it must look incredibly suspicious to the people around us for two teenagers to be dragging around an unconscious girl. Maybe it's a good thing I'm a girl too, as two guys dragging her around would look even worse."
-
+    
     "I idly rap my fingers on the table while occasionally glancing to her, arms and head arranged on the table in what's hopefully a comfortable position."
 
     "Thinking back to when she fell, I reach into the wallet in my back pocket and fish out some yen. I can't really ask Hisao to spot me the coffee after what he did for her; it's incidents like that which gave her that stupid knee brace in the first place."
@@ -1523,11 +1588,18 @@ label en_C6:
     "With the argument headed off and his phone returned, we content ourselves with drinking and talking for a good long time."
     window hide
     
+    scene black
+    with locationchange
+    
     return
     
 label en_C7:
 
+    scene bg school_track_running
+    with locationchange
+    
     window show
+    
     "Sprinting has never been my thing. I've never managed to hype myself up for the competitive nature of the track meets, either."
 
     "But the act of running, of putting one foot in front of the other, that's what I've found pleasure in. I couldn't care less if other people are on the track with me or not. That isn't really the point of it."
@@ -1540,6 +1612,9 @@ label en_C7:
 
     "Haru raises himself and gestures for me to join him, with Yukio nearby taking his feet also. No reason not to, so I break from the track and head over to the two."
 
+    scene bg school_track
+    with locationchange
+    
     mk "Yo."
 
     "He gives a wave as I slow down and walk towards them. With a long breath and a bit of a stretch, I feel the exhaustion from the run ebb away."
@@ -1582,16 +1657,23 @@ label en_C7:
 
     "I reluctantly slink off after a sympathetic pat on the shoulder, knowing full well that my goose is cooked. Guess I'll hit the library first; where better to find a nerd studying for exams, after all?"
 
-    centered "~ Timeskip ~" with dissolve
-
+    scene bg school_dormext_start
+    with shorttimeskip
+    
     "After failing to see him in the gardens leading back to the main building, poking my head into the largely empty classroom, and finding the library a bust, I make the trek back down the flights of stairs and across the school grounds to the dormitories."
 
+    scene bg school_dormhallground
+    with locationchange
+    
     "Strolling through what should be the hallway to Hisao's dorm room, I casually glance around at the near-empty corkboards on either side. All that're there are a couple of old and tatty joke pictures, threatening to fall onto the floor."
 
     "It's odd to contrast with the sections of the male dorms I've seen, full of official notices, jokes, and messages to other guys in the nearby rooms. Teachers might try their best to keep the more crude ones torn down, but a few occasionally manage to stay up for an evening or two."
 
     "Eventually I reach my goal, pressing the door handle and gingerly pushing in to see if it'll open. It obediently opens at my touch, giving me a wave of relief. I'd probably have just given up if he wasn't here, but at least now this wasn't all for nothing."
 
+    scene bg school_dormhisao
+    with locationchange
+    
     "Poking my head around the now half-open door, there doesn't seem to be any sign of life inside. Maybe he's in the toilet or something, though that doesn't explain why he retreated to his dorm room during club time. With no desire to wait around bored in the hallway, I decide to step in and indulge my curiosity about what his room is like."
 
     "Plain. There isn't any other word for it. He did transfer in recently, but it wouldn't kill him to put something on the walls, or some toy or whatever on his desk. All that's here are a bunch of books, his computer, and a few clothes strewn about. For a guy, he's very neat. Frustratingly so."
@@ -1623,7 +1705,10 @@ label en_C7:
     "I've made a mistake. I should never have seen this."
 
     "I step back to the center of the room and take a quick look towards the door, making sure I'm not being watched. My first thoughts are for my own self-preservation. Typical."
-
+ 
+    scene bg school_dormhallway
+    with locationchange
+    
     "Deciding that I've had quite enough my prying, I quickly retreat to the hallway outside the room, taking care to quietly close the door just as it had been. There's nothing to be gained by confessing; it's better for everyone if this just never happened."
 
     "The faint sound of voices catches my ear, though thankfully it sounds more like general chatter than anything directed at me. Sounds like it's coming from one of the nearby dorm rooms."
@@ -1648,6 +1733,9 @@ label en_C7:
 
     "I'm not quite sure how to interpret the awkward face he pulls. Not much point in leaving now anyway, so I wander into the room regardless."
 
+    scene bg school_dormkenji
+    with locationchange
+    
     "Unlike Hisao's, this is a room that feels lived in. Bits and bobs that Kenji's collected over the years and brought from home are littered around the room. It's what he has hanging on the walls that particularly catches my eye."
 
     "I nod to a poster of the local Pacific League baseball team, nestled in a corner next to some... professional bowling posters? I didn't even know they made posters for bowling teams."
@@ -1731,6 +1819,9 @@ label en_C7:
     ke "It's cool. We can we can cover the udentstay ouncilcay akeovertay sometime later. I have visual aids and everything."
 
     hi "Yeah... sometime later. I'll see you around."
+    
+    scene bg school_dormhallway
+    with locationchange
 
     "The two of us take our leave, Hisao closing the door behind us before we start down the hallway."
 
@@ -1744,7 +1835,11 @@ label en_C7:
     
 label en_C8:
 
+    scene bg suburb_konbiniext_ni
+    with shorttimeskip
+    
     window show
+    
     "With the sun well and truly having set, Haru, Hisao, and I pass the time lazing around in front of the convenience store. The light from the store illuminates the street around us as we sit on the ground, backs propped up against the window."
 
     "A couple of bags sit between us, holding a late dinner of onigiri, potato croquettes, and some canned drinks. Not exactly five-star cuisine, but it's edible and filling."
@@ -1971,11 +2066,18 @@ label en_C8:
     
     window hide
     
+    scene black
+    with dissolve
+    
     return
     
 label en_C9:
 
+    scene bg school_scienceroom
+    with locationchange
+    
     window show
+    
     "The ringing of the school bell heralds the end of yet another school day."
 
     "With the exams finally over and the wait until summer break down to days rather than weeks, the mood of the class has lifted immeasurably. Even for those that don't care particularly about their marks, the stress felt by everyone else is contagious."
@@ -2142,12 +2244,16 @@ label en_C9:
 
     "All I can do is stay beside her as I've always done. Given that she's stayed at my side all this time, she must think the same."
 
-    centered "~ Timeskip ~" with dissolve
-
+    scene bg school_girlsdormhall
+    with shorttimeskip
+    
     "I give a quick nod to a passing first-year girl as I make my way back to my dormitory room, my hand occupied by a soft drink can. She returns the greeting as we pass, her eyes momentarily lingering on the arms bared by my tank top before we pass each other. At least that's one thing I can be proud of."
 
     "Another girl stands not far from my room, leaning against the wall and tapping away frantically on her phone. I might as well have not existed for all the attention she gives me as I pass by her and enter my dorm room, closing the door with a push from my foot."
 
+    scene black
+    with locationchange
+    
     "The bed gives a soft thump as I fall onto it, sitting up and opening the can afterwards."
 
     "I try to focus on things I need to do, such as packing a bag for my outing to Suzu's, but I can't get my mind off what I was pondering earlier."

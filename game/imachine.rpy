@@ -23,10 +23,12 @@ label C1:
     jump_out C2
     
 label C2:
+    call iscene ("timeskip")
     call iscene ("C2")
     jump_out C3
     
 label C3:
+    call iscene ("timeskip")
     call iscene ("C3")
     jump_out C4
     
@@ -39,10 +41,12 @@ label C5:
     jump_out C6
 
 label C6:
+    call iscene ("timeskip")
     call iscene ("C6")
     jump_out C7
     
 label C7:
+    call iscene ("timeskip")
     call iscene ("C7")
     jump_out C8
     
@@ -51,6 +55,7 @@ label C8:
     jump_out C9
     
 label C9: 
+    call iscene ("timeskip")
     call iscene ("C9")
     call imenu ("choiceC9")
     if _return == m1:

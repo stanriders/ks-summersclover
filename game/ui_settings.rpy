@@ -110,7 +110,6 @@ init 1:
         ks_bg("city_graveyard")
         ks_bg("city_karaokeext")
         ks_bg("city_karaokeint")
-        ks_bg("city_othello")
         ks_bg("city_street1")
         ks_bg("city_street2")
         ks_bg("city_street2_ni")
@@ -135,6 +134,8 @@ init 1:
         ks_bg("city_houseint")
         ks_bg("city_busride")
         ks_bg("city_busride_ni")
+        
+        ks_bg("city_cafe")
 
     # MISC
         
@@ -155,7 +156,6 @@ init 1:
         ks_bg("school_courtyard")
         ks_bg("school_courtyard_ni")
         ks_bg("school_dormbathroom")
-        ks_bg("school_dormemi")
 
         ks_bg("school_dormext")
         ks_bg("school_dormext_start")
@@ -170,11 +170,6 @@ init 1:
         ks_bg("school_dormbathroom2")
 
         ks_bg("school_dormkenji")
-        ks_bg("school_dormlilly")
-        ks_bg("school_dormrin")
-        ks_bg("school_dormshizune")
-        ks_bg("school_dormhanako")
-        
     
         ks_bg("school_gate")
 
@@ -248,131 +243,14 @@ init 1:
 
 
     ########## SPRITES ##########
-
-    # EMI
-    python:
-        emi_list = ['basic_happy',
-                    'basic_confused',
-                    'basic_shock',
-                    'basic_annoyed',
-                    'basic_closed_grin',
-                    'basic_hes',
-                    'basic_grin',
-                    'basic_closedhappy',
-                    'basic_closedgrin',
-                    'basic_closedsweat',
-                    'basic_concentrate',
-                    'excited_laugh',
-                    'excited_amused',
-                    'excited_joy',
-                    'excited_smile',
-                    'excited_hesitant',
-                    'excited_happy',
-                    'excited_proud',
-                    'excited_circle',
-                    'excited_sad',
-                    'sad_angry',
-                    'sad_annoyed',
-                    'sad_shy',
-                    'sad_shyblush',
-                    'sad_depressed',
-                    'sad_grit',
-                    'sad_grin',
-                    'sad_pout',
-                    'invis',
-                    ]
-        make_sprites('emi',emi_list, ['gym','glass'])
-
-        emicas_list = ['angry', 
-                       'invis', 
-                       'awayfrown', 
-                       'blush', 
-                       'closedsmile', 
-                       'evil', 
-                       'frown', 
-                       'grin', 
-                       'grit', 
-                       'happy', 
-                       'neutral', 
-                       'pout', 
-                       'sad', 
-                       'smile', 
-                       'weaksmile', 
-                       'wink'
-                       ]
-        make_sprites('emicas', emicas_list, ['up'])
-
-    #sfx
-        def fourbounce(n):
-            import math
-            m = -math.fabs(math.sin(n*math.pi*4))
-            return (0.5,m*0.08,0.5,0.0)
-        
-        #Copied this from the final because glitches in Act 1 -md01    
-        def bounce_general(time, amplitude, num, d, st, at):
-            import math
-            n = scaled_runtime(time, st)
-            m = -(math.fabs(math.sin(((n) * (math.pi)) * (num))))
-            d.yanchor = 0.0
-            d.ypos = (m) * (amplitude)
-            return 0
-        
-        #This too -md01    
-        def tf_fourbounce60(d, st, at):
-            return bounce_general(2.1000000000000001, 0.10000000000000001, 4, d, st, at)
-            
-        def fourbouncegym(n):
-            import math
-            m = -math.fabs(math.sin(n*math.pi*4))
-            return (0.5,m*0.04,0.5,0.0)
-
-#        def fourbounceright(n):
-#            import math
-#            m = -math.fabs(math.sin(n*math.pi*4))
-#            return (1.0,m*0.1,1.0,0.0)
-        
-        
-        emigymbouncecomp = im.Composite ((295, 630),
-                                         (0, 0), "sprites/emi/emi_basic_grin_gym.png",
-                                         (0, 600), "vfx/emi_gym_30pxlegs.png")
-        
-#        emiannoyedbouncecomp = im.Composite ((295,660),
-#                                         (0,0),"sprites/emi/emi_basic_annoyed.png",
-#                                         (0,600),"vfx/emi_uni_60pxlegs.png")
-
-        emihappybouncecomp = im.Composite((295, 660),
-                                          (0, 0), 'sprites/emi/emi_basic_closedhappy.png',
-                                          (0, 600), 'vfx/emi_uni_60pxlegs.png')
-                                          
-        #And this -md01
-        emiannoyedbouncecomp = im.Composite((295, 660), (0, 0), 'sprites/emi/emi_basic_annoyed.png', (0, 600), 'vfx/emi_uni_60pxlegs.png')
-    
-    
-    image emi happybounce = At(emihappybouncecomp,Motion(fourbounce,1.8))
-    image emi gymbounce = At(emigymbouncecomp,Motion(fourbouncegym,1.8))
-    #image emi annoyedbounce = At(emiannoyedbouncecomp,Motion(fourbounceright,2.1))
-    image emi annoyedlegs = emiannoyedbouncecomp
-    
-    #And this -md01   
-    image emi annoyedbounce = At(emiannoyedbouncecomp, Transform(function=tf_fourbounce60))
-
-
     # Minor characters
     python:
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
         make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
-        make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh', 'basic_evil'])
-        make_sprites('hideaki',['angry','angry_up','bored','bored_up','closed_up','confused','darkside','disapproves','evil','happy','happy_up','kiss','normal','normal_up','ohshit','sad','surprise','surprise_up','thinking','serious','serious_up','triangle','invis'])
-        make_sprites('jigoro',['angry','laugh','neutral','smug'])
         make_sprites('kenji',['neutral','happy','tsun','rage','surprised','invis'], ['naked'])
-        make_sprites('nurse',['neutral','concern','fabulous','grin'])
         make_sprites('muto',['normal','smile','irritated','invis'])
         make_sprites('meiko',['giggle','grin','serious','wistful'], ['close'])
-        make_sprites('nomiya',['smile','talk','talktongue','veryhappy','dreamy', 'frown','serious','stern', 'invis'])
-        make_sprites('sae',['neutral','smile','scowl','doubt','scold','invis'], ['smoke'])
-        make_sprites('shopkeep', ['happy', 'neutral', 'surprised', 'thinking'])
-        #make_sprites('miki', ['angry', 'concerned', 'confused', 'grin', 'grinclosed', 'neutral', 'oops', 'serious', 'smile', 'surprised', 'whistle', 'wink'], ['gym'])
-        make_sprites('aoi', ['neutral', 'oops', 'smile', 'surprised'])
+
 
 
     ########## END SPRITES ##########
@@ -380,519 +258,13 @@ init 1:
 
     ########## EVENT CGS ##########
     # OTHER
-    image ev other_iwanako_start = At("event/other_iwanako_nosnow.jpg",Zoom((800,600), (40,59,720,540), (0,0,800,600), 20, time_warp=acdc_warp, xalign=0.5, yalign=0.5))
-    image ev other_iwanako = "event/other_iwanako_nosnow.jpg"
-
     image ev hisao_class_start = im.Crop("event/hisao_class.jpg", 0, 0, 800, 600)
     image ev hisao_class_move = At("event/hisao_class.jpg",Move((0.0, 0.0, 0.0, 0.0), (1.0, 0.0, 1.0, 0.0), 40.0, time_warp=acdc_warp, subpixel=True))
     image ev hisao_class_end = im.Crop("event/hisao_class.jpg", 800, 0, 800, 600)
-     
-    # EMI
-    image ev emi_knockeddown = "event/emi_knockeddown.jpg"
-    image ev emi_knockeddown_facepullout = At("event/emi_knockeddown_large.jpg", Zoom((800,600),(885, 131, 804, 603),(840, 115, 880, 660),10.0, time_warp=_ease_time_warp, xalign=0.5, yalign=0.5))
-    image ev emi_knockeddown_largepullout = At("event/emi_knockeddown.jpg", Zoom((800,600),(40, 30, 720, 540),(0, 0, 800, 600),10.0, time_warp=_ease_time_warp, xalign=0.5, yalign=0.5))
-    image ev emi_knockeddown_face = im.Crop("event/emi_knockeddown_large.jpg", 882, 130, 800, 600)
-    image ev emi_knockeddown_legs = At("event/emi_knockeddown_large.jpg", Move((1600,700,2400,1800),(1400,700,2400,1800), 10.0, time_warp=acdc_warp, subpixel=True))
-    image ev emi_bed_frown = "event/emi_bed_frown.jpg"
-
-    # RIN
-    image ev rin_eating = "event/rin_eating.jpg"
-    image ev rin_roof_boredom = "event/rin_roof_boredom.jpg"
     
     python:
         def roofcomposite(comppath):
             return im.Composite(None, (0, 0), 'event/rin_roof_boredom.jpg', (300, 200), comppath)
-    
-    #Start of added resources - Kelper
-    
-    image ev rin_roof_disgust = roofcomposite("event/rin_roof_disgust.jpg")
-    image ev rin_roof_doubt = roofcomposite("event/rin_roof_doubt.jpg")
-    image ev rin_roof_nonchalant = roofcomposite("event/rin_roof_nonchalant.jpg")
-    image ev rin_roof_surprise = roofcomposite("event/rin_roof_surprised.jpg")
-    image hisao_shadow = "event/hisao_shadow.png"
-    image emi_shadow = "event/emi_shadow.png"
-    image ev hisaobyrin = "event/hisaobyrin.png"
-    image ev rinbyhisao = "event/rinbyhisao.png"
-    image ev bird0 = "event/bird_0.jpg"
-    image ev bird2 = "event/bird_2.jpg"
-    image ev bird3 = "event/bird_3.jpg"
-    image ev bird4 = "event/bird_4.jpg"
-    image ev bird5 = "event/bird_5.jpg"
-    image ev bird6 = "event/bird_6.jpg"
-    image ev bird7 = "event/bird_7.jpg"
-    image ev bird8 = "event/bird_8.jpg"
-    image ev bird9 = "event/bird_9.jpg"
-    image ev emitrack_blocks = "event/emitrack_blocks.jpg"
-    image ev emitrack_blocks_close = "event/emitrack_blocks_close.jpg"
-    image ev emitrack_blocks_close_grin = "event/emitrack_blocks_close_grin.jpg"
-    image startpistol = "event/startpistol.png"
-    image ev emitrack_running = "event/emitrack_running.jpg"
-    image ev emitrack_finish = "event/emitrack_finish.jpg"
-    image ev emitrack_finishtop = "event/emitrack_finishtop.jpg"
-    image ev rin_painting_concerned = "event/rin_painting_concerned.png"
-    image ev rin_painting_reply = "event/rin_painting_reply.png"
-    image ev rin_painting_foot = "event/rin_painting_foot.jpg"
-    image ev rin_painting_base = "event/rin_painting_base.png"
-    image ev rin_painting_faceconcerned = "event/rin_painting_faceconcerned.png"
-    image pills = "vfx/pills.png"
-    image pills alpha = im.Alpha("vfx/pills.png", 0.0)
-    image ev rin_kiss = 'event/rin_kiss.jpg'
-    image ev rin_high_frown = 'event/rin_high_frown.jpg'
-    image ev rin_high_grin = 'event/rin_high_grin.jpg'
-    image ev rin_high_grinwide = 'event/rin_high_grinwide.jpg'
-    image ev rin_high_oneeye = 'event/rin_high_oneeye.jpg'
-    image ev rin_high_open = 'event/rin_high_open.jpg'
-    image ev rin_high_sleep = 'event/rin_high_sleep.jpg'
-    image ev rin_high_smile = 'event/rin_high_smile.jpg'
-    image ev dandelion = "vfx/dandelion.jpg"
-    image ev rin_nap_total = "event/rin_nap_total.jpg"
-    image ev rin_nap_close_nohand = "event/rin_nap_close_nohand.jpg"
-    image ev rin_nap_close_hand = "event/rin_nap_close_hand.jpg"
-    image ev rin_nap_total_wind = "event/rin_nap_total_wind.jpg"
-    image ev rin_nap_close_wind = "event/rin_nap_close_wind.jpg"
-    image ev rin_nap_close = "event/rin_nap_close.jpg" 
-    image prop rin_cigarette = "vfx/prop_rin_cigarette.png"
-    image prop rin_cigarette_close = "vfx/prop_rin_cigarette_close.png"
-    
-    image ev rin_wisp1 = "event/rin_wisp1.jpg" 
-    image ev rin_wisp2 = "event/rin_wisp2.jpg"
-    image ev rin_wisp3 = "event/rin_wisp3.jpg"
-    image ev rin_wisp4 = "event/rin_wisp4.jpg" 
-    image ev rin_wisp5 = "event/rin_wisp5.jpg" 
-    image ev rin_wisp_blurred = "event/rin_wisp_blurred.jpg" 
-    image smoke focused = "event/rin_wisp_smoke_focused.png"
-    image smoke blurred = "event/rin_wisp_smoke_blurred.png"
-    image ovl rin_galleryskylight = "event/rin_galleryskylight.jpg"
-    
-    python: 
-        def scaled_runtime(length, expired):
-            return min((float(expired)) / (float(length)), 1.0)
-        def generic_rotateloop(length, dir, has_zoom, trans, st, at):
-            trans.yalign = 0.5
-            trans.xalign = 0.5
-            n = 0.0
-            if has_zoom:
-                n = scaled_runtime(60.0, at)
-            trans.zoom = (0.83399999999999996) + ((((-(1.0)) * (acdc_warp(n))) + (1.0)) * (0.26600000000000001))
-            trans.rotate = ((360) / ((length) / ((at) + (0.10000000000000001)))) * (dir)
-            return 0
-        def wisp_func(trans, st, at):
-            return generic_rotateloop(180, 1, True, trans, st, at)
-        def smoke_func(trans, st, at):
-            return generic_rotateloop(180, -(1), False, trans, st, at)
-
-    image ev rin_masturbate_away = "event/rin_masturbate_away.jpg"
-    image ev rin_masturbate_surprise = "event/rin_masturbate_surprise.jpg"
-    image ev rin_masturbate_frown = "event/rin_masturbate_frown.jpg"
-    image ev rin_masturbate_doubt = "event/rin_masturbate_doubt.jpg"
-    image ev rin_masturbate_hug = "event/rin_masturbate_hug.jpg"
-    image evh rin_relief_up = "event/rin_relief_up.jpg"
-    image evh rin_relief_up_large = "event/rin_relief_up_large.jpg"
-    image evh rin_relief_down = "event/rin_relief_down.jpg"
-    image evh rin_relief_down_large = "event/rin_relief_down_large.jpg"
-    image ev rin_gallery = "event/rin_gallery.jpg" 
-    
-    image rin_exhibition_paintings = At('vfx/rin_exhibition_paintings.jpg', Fullpan(40.0, dir='right'))
-
-    image ev rin_doodle_all = ("vfx/rin_doodle.png")
-
-    image phone mobile = ("vfx/mobile-sprite.png")   
-    image phone mobile_alpha = im.Alpha("vfx/mobile-sprite.png", 0.0)     
-
-    image hisaowindow = "vfx/hisaowindow.png"
-
-    image rin_exhibition_sold = 'vfx/rin_exhibition_sold.jpg'
-    image rin_exhibition_c = 'vfx/rin_exhibition_c.jpg'
-
-    image ev rin_rain_away = 'event/rin_rain_away.jpg'
-    image ev rin_rain_away_close = 'event/rin_rain_away_close.jpg'
-    image ev rin_rain_towards_close = 'event/rin_rain_towards_close.jpg'
-    image ovl rin_rain_hisaotowards_close = im.Crop('event/rin_rain_towards_close.jpg', 400, 0, 400, 1200)
-    image ev rin_rain_towards = 'event/rin_rain_towards.jpg'
-    image ovl rin_rain_hisaotowards = im.Crop('event/rin_rain_towards.jpg', 400, 0, 400, 600)
-
-    python:
-        def rin_trueend_comp(list_in):
-            baselist = [None, (0, 0), 'event/rin_trueend/rin_trueend_gone.jpg']
-            for (offset, item) in list_in:
-                baselist.append(offset)
-                baselist.append((('event/rin_trueend/rin_trueend_') + (item)) + ('.jpg'))
-            return im.Composite(*baselist)
-
-    image ev rin_trueend_gone = 'event/rin_trueend/rin_trueend_gone.jpg'
-    image ev rin_trueend_gone_ni = night('event/rin_trueend/rin_trueend_gone.jpg')
-    image ev rin_trueend_normal = rin_trueend_comp([((113, 124), 'normal')])
-    image ev rin_trueend_normal_rot = rin_trueend_comp([((113, 124), 'normal')])
-    image ev rin_trueend_closed = rin_trueend_comp([((113, 124), 'normal'), ((177, 129), 'closed')])
-    image ev rin_trueend_sad = rin_trueend_comp([((113, 124), 'normal'), ((177, 129), 'sad')])
-    image ev rin_trueend_smile = rin_trueend_comp([((113, 124), 'normal'), ((177, 129), 'smile')])
-    image ev rin_trueend_weaksmile = rin_trueend_comp([((113, 124), 'normal'), ((177, 129), 'weaksmile')])
-    image ev rin_trueend_hug = rin_trueend_comp([((335, 51), 'hug')])
-    image ev rin_trueend_hugclosed = rin_trueend_comp([((335, 51), 'hug'), ((484, 154), 'hugclosed')])
-    
-    python:
-        def annoying_transform(t, st, at):
-
-        # The move takes 6 seconds.
-            import math
-            thingy = min(st / 6.0, 1.0)
-            t.rotate = -6 + (6*math.sin(math.pi*thingy/2))
-            t.zoom = 1.2 - ((math.sin(math.pi*thingy/2))/5)
-        
-            return 0
-
-    python:
-        def nomiya_transform(t, st, at):
-
-        # The move takes 1 second.
-            counterpos = min(st, 1.0)
-            import math
-            t.xanchor=0.5
-            t.xpos = 0.7 - (counterpos/5)
-            #I should make this linear in the future:
-            t.alpha = min(1.0, 1.051462*math.sin(counterpos*math.pi))
-                      
-            return 0
-    
-    image ev rin_wet_pan_down = 'event/rin_wet/rin_wet_pan_down.jpg'
-    image ev rin_wet_arms = 'event/rin_wet/rin_wet_arms.jpg'
-    image ev rin_wet_face_up = 'event/rin_wet/rin_wet_face_up.jpg'
-    image ev rin_wet_face_down = 'event/rin_wet/rin_wet_face_down.jpg'
-    image ev rin_wet_towel_up = 'event/rin_wet/rin_wet_towel_up.jpg'
-    image ev rin_wet_towel_down = 'event/rin_wet/rin_wet_towel_down.jpg'
-    image ev rin_wet_towel_touch = 'event/rin_wet/rin_wet_towel_touch.jpg'
-
-    $ d_rin_h2_pan_surprise = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_surprise.jpg', (0, 300), 'event/rin_h2/rin_h2_l_pan.jpg')
-    
-
-    image evh rin_h2_pan_surprise = d_rin_h2_pan_surprise
-    image unlock_evh rin_h2_pan_surprise = im.Crop(d_rin_h2_pan_surprise, 0, 0, 800, 600)
-
-    $ d_rin_h2_pan_away = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_away.jpg', (0, 300), 'event/rin_h2/rin_h2_l_pan.jpg')
-
-
-    image evh rin_h2_pan_away = d_rin_h2_pan_away
-    image unlock_evh rin_h2_pan_away = im.Crop(d_rin_h2_pan_away, 0, 0, 800, 600)
-
-    $ d_rin_h2_pan_closed = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_closed.jpg', (0, 300), 'event/rin_h2/rin_h2_l_pan.jpg')
-
-
-    image evh rin_h2_pan_closed = d_rin_h2_pan_closed
-    image unlock_evh rin_h2_pan_closed = im.Crop(d_rin_h2_pan_closed, 0, 0, 800, 600)
-
-    image evh rin_h2_nopan_closed = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_closed.jpg', (0, 300), 'event/rin_h2/rin_h2_l_nopan.jpg')
-
-
-
-    image evh rin_h2_hisao_surprise = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_surprise.jpg', (0, 300), 'event/rin_h2/rin_h2_l_hisao.jpg')
-
-
-
-    image evh rin_h2_hisao_away = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_away.jpg', (0, 300), 'event/rin_h2/rin_h2_l_hisao.jpg')
-
-
-
-    image evh rin_h2_hisao_closed = im.Composite((800, 900), (0, 0), 'event/rin_h2/rin_h2_u_closed.jpg', (0, 300), 'event/rin_h2/rin_h2_l_hisao.jpg')
-
-    
-    
-    image ev rin_pair_base = 'event/rin_pair/rin_pair_base.jpg'
-    image ev rin_pair_base_clothes = im.Composite(None, (0, 0), 'event/rin_pair/rin_pair_base.jpg', (0, 0), 'event/rin_pair/rin_pair_hisao_clothes.png')
-    image rp_hisao normal = Solid('#00000000')
-    image rp_hisao frown = 'event/rin_pair/rin_pair_hisao_frown.png'
-    image rp_hisao smile = 'event/rin_pair/rin_pair_hisao_smile.png'
-    image rp_rin normal = Solid('#00000000')
-    image rp_rin closed = 'event/rin_pair/rin_pair_rin_closed.png'
-    image rp_rin frown = 'event/rin_pair/rin_pair_rin_frown.png'
-    image rp_rin smile = 'event/rin_pair/rin_pair_rin_smile.png'
-    image rp_rin talk = 'event/rin_pair/rin_pair_rin_talk.png'
-
-    
-    python:
-        def rin_h_comp(im_in, is_close=False):
-            closer = ''
-            if is_close:
-                closer = '_close'
-            return im.Composite(None, (0, 0), (('event/rin_h/rin_h_closed') + (closer)) + ('.jpg'), (0, 0), ((('event/rin_h/rin_h_') + (im_in)) + (closer)) + ('.png'))
-
-
-    image evh rin_h_closed = 'event/rin_h/rin_h_closed.jpg'
-    image evh rin_h_left = rin_h_comp('left')
-    image evh rin_h_normal = rin_h_comp('normal')
-    image evh rin_h_right = rin_h_comp('right')
-    image evh rin_h_strain = rin_h_comp('strain')
-
-    image evh rin_h_closed_close = 'event/rin_h/rin_h_closed_close.jpg'
-    image evh rin_h_left_close = rin_h_comp('left', True)
-    image evh rin_h_normal_close = rin_h_comp('normal', True)
-    image evh rin_h_right_close = rin_h_comp('right', True)
-    image evh rin_h_strain_close = rin_h_comp('strain', True)
-    
-    image bg worrytree = 'vfx/worrytree.jpg'
-    
-    
-    image dandelionbg = 'vfx/dandelionbg.jpg'
-    image dandelion full = 'vfx/dandelion_full.png'
-    image dandelion gone = 'vfx/dandelion_gone.png'
-
-    python:
-        def dandelion_transform(t, st, at):
-
-        # The move takes 1 second.
-            counter = min(st, 1.0)
-            import math
-            t.xanchor=0.5
-            t.xpos = 0.5
-            t.yanchor = 1.0
-            t.ypos = 1.2 - ((math.sin(counter*math.pi/2))/5)
-            t.alpha = 0.0 + (math.sin(counter*math.pi/2))
-           
-            return 0
-    
-    python:
-        def dandelionout_transform(t, st, at):
-
-        # The move takes 1 second.
-            counter = min(st, 1.0)
-            import math
-            t.xanchor=0.5
-            t.xpos = 0.5
-            t.yanchor = 1.0
-            t.ypos = 1.0 + ((math.sin(counter*math.pi/2))/5)
-            t.alpha = 1.0 - (math.sin(counter*math.pi/2))
-           
-            return 0
-
-    image ev rin_goodend_1 = 'event/rin_goodend/rin_goodend_1.jpg'
-    image ev rin_goodend_1b = 'event/rin_goodend/rin_goodend_1b.jpg'
-    image ev rin_goodend_2 = 'event/rin_goodend/rin_goodend_2.jpg'
-
-    image evbg rin_goodend_base = 'event/rin_goodend/rin_goodend_base.jpg'
-    image rin goodend_1 = 'event/rin_goodend/rin_goodend_1.png'
-    image rin goodend_1b = 'event/rin_goodend/rin_goodend_1b.png'
-    image rin goodend_2 = 'event/rin_goodend/rin_goodend_2.png'
-    image rin goodend_2_hires = 'event/rin_goodend/rin_goodend_2_hires.png'
-    image evfg rin_goodend = 'event/rin_goodend/rin_goodend_fg.png'
-            
-    python:
-        def evbgringoodendbase_transform(t, st, at):
-        
-            counterevbg = min(st/20, 1.0)
-            import math
-            t.xanchor=0.0 + (math.sin(counterevbg*math.pi/2))
-            t.xpos = 0.0 + (math.sin(counterevbg*math.pi/2))
-            t.ypos = 0.5
-            t.yanchor = 0.5
-            return 0
-    
-    
-    python:
-        def ringoodend1_transform(t, st, at):
-        
-            counterringe = min(st/20, 1.0)
-            import math
-            t.xanchor= -0.5 + 1.5*(math.sin(counterringe*math.pi/2))
-            t.xpos = -0.5 + 1.5*(math.sin(counterringe*math.pi/2))
-          
-            return 0
-    
-            
-    python:
-        def evfgringoodend_transform(t, st, at):
-        
-            counterevfg = min(st/20, 1.0)
-            import math
-            t.xanchor= -1 + 2*(math.sin(counterevfg*math.pi/2))
-            t.xpos = -1 + 2*(math.sin(counterevfg*math.pi/2))
-          
-            return 0
-            
-    #Transforms for the last effect in the route:        
-    
-    python:
-        def evbgringoodendbase1_transform(t, st, at):
-        
-            counterbase = min(st/12, 1.0)
-            import math
-            t.xpos = 1.0
-            t.xanchor = 1.0
-            t.ypos = 0
-            t.yanchor = 0
-            t.zoom = 1 + 0.15*(acdc_warp(counterbase))
-            return 0
-    
-    python:
-        def rinhires_transform(t, st, at):
-        
-            counterhires = min(st/12, 1.0)
-            import math
-            t.xpos = 1.0
-            t.xanchor = 1.0
-            t.ypos = 0
-            t.yanchor = 0
-            t.zoom = 0.769 + 0.231*(acdc_warp(counterhires))
-            return 0
-    
-    python:
-        def evfgringe_transform(t, st, at):
-        
-            countergoodend = min(st/12, 1.0)
-            import math
-            t.xpos = 1.0
-            t.xanchor = 1.0
-            t.ypos = 0
-            t.yanchor = 0
-            t.zoom = 1.0 + 0.45*(acdc_warp(countergoodend))
-            return 0        
-   
-    
-    image prop rin_basearbuds = "vfx/prop_rin_basearbuds.png"
-    image prop rin_relearbuds = "vfx/prop_rin_relearbuds.png" 
-
-    #End of added resources - Kelper    
-            
-    # LILLY
-    image ev lilly_tearoom = "event/lilly_tearoom.jpg"
-    image ev lilly_tearoom_open = "event/lilly_tearoom_open.jpg"
-    
-    image ev lilly_bedroom = 'event/lilly_bedroom.jpg'
-    image ev lilly_bedroom_large = 'event/lilly_bedroom_large.jpg'
-    
-    image teaset = 'vfx/teaset.png'
-    image teaset alpha = im.Alpha("vfx/teaset.png", 0.0)
-    
-    image musicbox closed = "vfx/musicbox_closed.png"
-    image musicbox open = "vfx/musicbox_open.png"
-    
-    # okay, so making Lilly's back_cane as an actor sprite was a bad idea. Doing it final's way now [str]
-    image prop lilly_back_cane = "vfx/prop_lilly_back_cane.png"
-    image prop lilly_back_cane_close = "vfx/prop_lilly_back_cane_close.png"
-    
-    image ovl lilly_wheat_foreground = 'event/lilly_wheat_foreground.png'
-    image ev lilly_wheat_small = 'event/lilly_wheat_small.jpg'
-    image ev lilly_wheat_large = 'event/lilly_wheat_large.jpg'
-    
-    image evfg lilly_trainride = 'event/lilly_trainride.png'
-    image ev lilly_trainride_ni = 'event/lilly_trainride_ni.jpg'
-
-    image ev lilly_hospital = 'event/lilly_hospital.jpg'
-    image ev lilly_hospitalclosed = 'event/lilly_hospitalclosed.jpg'
-    
-    # HANAKO
-    image ev hana_library_read = sunset("event/hana_library_read.jpg")
-    image ev hana_library = sunset("event/hana_library.jpg")
-    image ev hana_library_gasp = sunset("event/hana_library_gasp.jpg")
-    image ev hana_library_smile = sunset("event/hana_library_smile.jpg")
-
-    image ev hana_library_read_std = "event/hana_library_read.jpg"
-    image ev hana_library_std = "event/hana_library.jpg"
-    image ev hana_library_gasp_std = "event/hana_library_gasp.jpg"
-    image ev hana_library_smile_std = "event/hana_library_smile.jpg"
-    
-    #Start of inserted resources
-    image hanako_door_base = 'vfx/hanako_door_base.jpg'
-    image hanako_door_door = 'vfx/hanako_door_door.jpg'
-    
-    image ev hanako_kiss = 'event/hanako_kiss.jpg'
-    #image ev hanako_kiss2 = 'event/hanako_kissnorm.jpg'
-    image ev hanako_kiss_easein = At("event/hanako_kiss.jpg", Zoom((800,600),(40, 30, 720, 540),(0, 0, 800, 600),12.0, time_warp=_ease_time_warp, xalign=0.5, yalign=0.5))
-    
-    image ev hanako_scars = 'event/hanako_scars_ni.jpg'
-    image ev hanako_scars_dark = 'event/hanako_scars_dark_ni.jpg'
-    image ev hanako_scars_med = 'event/hanako_scars_med_ni.jpg'
-    image ev hanako_scars_large_move = At("event/hanako_scars_large_ni.jpg",Move((0.0, 1.0, 0.0, 1.0), (1.0, 0.0, 1.0, 0.0), 30.0, time_warp=acdc_warp, subpixel=True))
-    
-    # unused [str]
-    #image evh hanako_bed_boobs_blush = 'event/Hanako_supercg/hanako_bed_boobs_blush.jpg'
-    #image evh hanako_bed_boobs_glance = 'event/Hanako_supercg/hanako_bed_boobs_glance.jpg'
-    #image evh hanako_bed_boobs_bsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileb.jpg'
-    #image evh hanako_bed_boobs_gsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileg.jpg'
-    #image evh hanako_bed_crotch_blush = 'event/Hanako_supercg/hanako_bed_crotch_blush.jpg'
-    #image evh hanako_bed_crotch_glance = 'event/Hanako_supercg/hanako_bed_crotch_glance.jpg'
-    #image evh hanako_bed_crotch_bsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
-    #image evh hanako_bed_crotch_gsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
-    
-    #image evh hanako_missionary_underwear = 'event/Hanako_supercg/hanako_missionary_underwear.jpg'
-    #image evh hanako_missionary_open = 'event/Hanako_supercg/hanako_missionary_open.jpg'
-    #image evh hanako_missionary_closed = 'event/Hanako_supercg/hanako_missionary_closed.jpg'
-    #image evh hanako_missionary_glance = 'event/Hanako_supercg/hanako_missionary_glance.jpg'
-    #image evh hanako_missionary_clench = 'event/Hanako_supercg/hanako_missionary_clench.jpg'
-    #image evh hanako_missionary_clenchs = 'event/Hanako_supercg/hanako_missionary_clenchs.jpg'
-    #image evh hanako_missionary_ending = 'event/Hanako_supercg/hanako_missionary_ending.jpg'
-
-    image ev hanako_after_worry = 'event/Hanako_supercg/hanako_after_worry.jpg'
-    image ev hanako_after_smile = 'event/Hanako_supercg/hanako_after_smile.jpg'
-    
-    image ev hanako_park_alone = 'event/hanako_park_alone.jpg'
-    image ev hanako_park_away = 'event/hanako_park_away.jpg'
-    image ev hanako_park_closed = 'event/hanako_park_closed.jpg'
-    image ev hanako_park_look = 'event/hanako_park_look.jpg'
-    
-    #Twoface's stuff starts here
-    #Kissing stuff
-    image ev hanako_kiss_outside = 'event/hanako_kiss/hanako_kiss.png'
-    image ev hanako_kiss_day = 'event/hanako_kiss/hanako_kiss_day.png'
-    image ev hanako_kiss_night = 'event/hanako_kiss/hanako_kiss_night.png'
-    image ev hanako_kiss_scroll = 'event/hanako_kiss/hanako_kiss_scroll.png'
-    
-    #Cowgirl stuff
-    image ev hanako_cowgirl_1 = 'event/hanako_cowgirl/cowgirl1.png'
-    image ev hanako_cowgirl_2 = 'event/hanako_cowgirl/cowgirl2.png'
-    image ev hanako_cowgirl_3 = 'event/hanako_cowgirl/cowgirl3.png'
-    image ev hanako_cowgirl_4 = 'event/hanako_cowgirl/cowgirl4.png'
-    image ev hanako_cowgirl_5 = 'event/hanako_cowgirl/cowgirl5.png'
-    image ev hanako_cowgirl_6 = 'event/hanako_cowgirl/cowgirl6.png'
-    image ev hanako_cowgirl_7 = 'event/hanako_cowgirl/cowgirl7.png'
-    image ev hanako_cowgirl_8 = 'event/hanako_cowgirl/cowgirl8.png'
-    image ev hanako_cowgirl_9 = 'event/hanako_cowgirl/cowgirl9.png'
-    image ev hanako_cowgirl_10 = 'event/hanako_cowgirl/cowgirl10.png'
-    image ev hanako_cowgirl_11 = 'event/hanako_cowgirl/cowgirl11.png'
-    image ev hanako_cowgirl_12 = 'event/hanako_cowgirl/cowgirl12.png'
-    image ev hanako_cowgirl_13 = 'event/hanako_cowgirl/cowgirl13.png'
-    image ev hanako_cowgirl_14 = 'event/hanako_cowgirl/cowgirl14.png'
-    image ev hanako_cowgirl_15 = 'event/hanako_cowgirl/cowgirl15.png'
-    image ev hanako_cowgirl_16 = 'event/hanako_cowgirl/cowgirl16.png'
-    image ev hanako_cowgirl_17 = 'event/hanako_cowgirl/cowgirl17.png'
-    image ev hanako_cowgirl_18 = 'event/hanako_cowgirl/cowgirl18.png'
-    
-    #Missionary
-    image ev hanako_miss1 = 'event/hanako_missionary/miss1.jpg'
-    image ev hanako_miss2 = 'event/hanako_missionary/miss2.jpg'
-    image ev hanako_miss3 = 'event/hanako_missionary/miss3.jpg'
-    image ev hanako_miss4 = 'event/hanako_missionary/miss4.jpg'
-    image ev hanako_miss5 = 'event/hanako_missionary/miss5.jpg'
-    image ev hanako_miss6 = 'event/hanako_missionary/miss6.jpg'
-    image ev hanako_miss7 = 'event/hanako_missionary/miss7.jpg'
-    image ev hanako_miss8 = 'event/hanako_missionary/miss8.jpg'
-    image ev hanako_miss9 = 'event/hanako_missionary/miss9.jpg'
-    image ev hanako_miss10 = 'event/hanako_missionary/miss10.jpg'
-    image ev hanako_miss11 = 'event/hanako_missionary/miss11.jpg'
-    
-    #Fingering
-    image ev hanako_finger_1 = 'event/hanako_finger/hanako_finger_1.png'
-    image ev hanako_finger_2 = 'event/hanako_finger/hanako_finger_2.png'
-    image ev hanako_finger_3 = 'event/hanako_finger/hanako_finger_3.png'
-    image ev hanako_finger_close = 'event/hanako_finger/hanako_finger_close.png'
-    image ev hanako_finger_close_scroll = 'event/hanako_finger/hanako_finger_close_scroll.png'
-    
-    #a5-true ending CG
-    image ev hanako_resolute = 'event/hanako_resolute.png'
-    
-    #End Twoface's stuff -md01
-    
-    # # # additional shopped stuff [str]
-    image ev hanako_missionary_hate_d = 'event/Hanako_supercg/hanako_missionary_hateface_d.jpg'
-    image ev hanako_missionary_neutral_d = 'event/Hanako_supercg/hanako_missionary_neutralface_d.jpg'
-    image ev hanako_missionary_underwear_neutral_d = 'event/Hanako_supercg/hanako_missionary_underwear_neutralface_d.jpg'
-    image ev hanako_bed_boobs_neutral_d = 'event/Hanako_supercg/hanako_bed_boobs_neutralface_d.jpg'
-    
-    image hanako_oiwadoor = 'vfx/oiwadoor.png'
-    # # # [str]
-    
-    image ev hanako_shanghaiwindow = "event/hanako_fw.jpg"
-
-    image ev hanako_crayon1 = At('event/hanako_crayon1.jpg', Zoom((800,600),(0, 0, 800, 600),(40, 30, 720, 540),20.0, xalign=0.5, yalign=0.5, subpixel=True))
-    image hanako_crayon2 = At('event/hanako_crayon2.jpg', Zoom((800,600),(0, 0, 800, 600),(40, 30, 720, 540),20.0, xalign=0.5, yalign=0.5, subpixel=True))
     
     #(((math.sin((((at) / (2.0)) % (2.0)) * (math.pi))) + (1.0)) / (2))
 
@@ -901,25 +273,7 @@ init 1:
             import math
             return (0.0, (((math.cos(math.pi * at))/60) +0.5), 0.0, 0.5)
             
-    image train_scenery = At("event/hisao_train/train_scenery.jpg",Move((0.0, 0.0), (2.0, 0.0), 2.0, xalign=0.66666666666666667, repeat=True))
-    image train_scenery_slow = At("event/hisao_train/train_scenery.jpg",Move((0.0, 0.0), (2.0, 0.0), 3.0, xalign=0.5, repeat=True))
-    image train_scenery_fg = At("event/hisao_train/train_scenery_fg.png",Move((0.0, 0.0), (14.3, 0.0), 4.3, xanchor=0.0, repeat=True))
-    
-    # hanako a4 stuff [str]
-    image evfg hisao_trainride_subway = "event/hisao_train/hisao_trainride_subway.png"
-    image train_scenery_subway = At("event/hisao_train/train_scenery_subway.jpg",Move((0.0, 0.0), (2.0, 0.0), 0.7, xalign=0.66666666666666667, repeat=True)) 
-    
-    #original image source- http://img.photobucket.com/albums/v646/cityq/Urban/LANYC10x1.jpg
-    image train_scenery2 = At("event/hisao_train/train_scenery2.jpg",Move((0.0, 0.0), (2.0, 0.0), 2.0, xalign=0.66666666666666667, repeat=True))
-    
-    image evfg hisao_trainride = "event/hisao_train/hisao_trainride.png"
-    image evfg hisao_trainride_smiles = im.Composite(None, (0, 0), 'event/hisao_train/hisao_trainride.png', (338, 301), 'event/hisao_train/hisao_trainride_smile.png', (573, 331), 'event/hisao_train/hisao_trainride_hanasmile.png')
 
-    image evfg hisao_trainride2 = "event/hisao_train/hisao_trainride2.png"
-    
-    image ev hisao_trainride = 'event/hisao_train/hisao_trainride.jpg'
-    image ev hisao_trainride_smiles = 'event/hisao_train/hisao_trainride_smiles.jpg'
-    
     image city_tokyostation = 'bgs/city_tokyostation.jpg'
     image city_houseext = 'bgs/city_houseext.jpg'
     
@@ -927,63 +281,12 @@ init 1:
         def traincomposite(comppath):
             return im.Composite(None, (0, 0), 'event/hisao_train/hisao_trainride_ni_norm.png', (321, 200), comppath)
 
-    #End of inserted resources
 
-    # SHIZUNE
-    image ev shizu_shanghai = "event/shizu_shanghai.jpg"
-    image ev shizu_shanghai_boredlaugh = "event/shizu_shanghai_boredlaugh.jpg"
-    image ev shizu_shanghai_borednormal = "event/shizu_shanghai_borednormal.jpg"
-    image ev shizu_shanghai_normallaugh = "event/shizu_shanghai_normallaugh.jpg"
-    image ev shizu_shanghai_smirklaugh = "event/shizu_shanghai_smirklaugh.jpg"
-    image ev shizu_shanghai_smirknormal = "event/shizu_shanghai_smirknormal.jpg"
+    image ev other_summersclover = im.Crop("vfx/other_summersclover.jpg", 800, 0, 800, 600)
     
-    image kenjibox = "vfx/kenjibox.png"
-    
-
-    # SHOWDOWN
-    image ev showdown = "event/lilly_shizu_showdown.jpg"
-    image ev showdown_large = "event/lilly_shizu_showdown_large.jpg"
-    image ev showdown_lilly = im.Crop("event/lilly_shizu_showdown_large.jpg", 280,100,800,600)
-    image ev showdown_shizu = im.Crop("event/lilly_shizu_showdown_large.jpg", 1400,160,800,600)
-
-    image showdown_lilly_slice = im.Crop("event/lilly_shizu_showdown_large.jpg", 440,260,800,299)
-    image showdown_shizu_slice = im.Crop("event/lilly_shizu_showdown_large.jpg", 1360,320,800,299)
-
-    image test = At("event/lilly_shizu_showdown_large.jpg", Zoom((800,600),(0, 0, 1333, 1000),(0, 0, 800, 600),.5, xalign=0.5, yalign=0.5))
-
-    # KENJI
-    image ev kenji_rooftop = "event/kenji_rooftop.jpg"
-    image ev kenji_rooftop_large = "event/kenji_rooftop_large.jpg"
-    image ev kenji_rooftop_kenji = im.Crop("event/kenji_rooftop_large.jpg", 288,376,800,600)
-
-
     # Images available in the extras -> CG gallery menu. May contain internal images names (including the prefix) or tuples of same.
     # The latter will share a thumbnail (the first unlocked one) and will be shown in sequence.
-    # All images in here must be loadable, with one exception:
-    # If an empty string is given, space will be allocated for the thumbnail but it won't show. Useful for padding pages in the gallery,
-    # i.e. to start new pages when the current one isn't full. Note that said space ALWAYS appears at the end of the page.
-    # Note that this will accept most mage manipulators and filters, but will not take Positions or Movements for the first one of a set (the thumbnail)
-    $ ex_g_images = ("ev other_iwanako",
-                     ("ev hisao_class_start","ev hisao_class_move","ev hisao_class_end"),
-                     "ev emi_knockeddown",
-                     "ev rin_eating",
-                     ("ev lilly_tearoom", "ev lilly_tearoom_open"),
-                     ("ev hana_library","ev hana_library_read","ev hana_library_gasp"),
-                     ("ev shizu_shanghai", "ev shizu_shanghai_borednormal", "ev shizu_shanghai_smirknormal", "ev shizu_shanghai_smirklaugh"),
-                     "ev kenji_rooftop",
-                     "ev showdown",
-                     "ev hanako_kiss",
-                     "ev hanako_scars",
-                     ("evh hanako_bed_boobs_blush","evh hanako_bed_boobs_gsmile","evh hanako_bed_crotch_glance","evh hanako_bed_crotch_bsmile"),
-                     ("evh hanako_missionary_underwear","evh hanako_missionary_open","evh hanako_missionary_closed","evh hanako_missionary_glance","evh hanako_missionary_clenchs","evh hanako_missionary_ending"),
-                     ("ev hanako_after_smile","ev hanako_after_worry"),
-                     "ev hisao_trainride",
-                     ("ev hanako_park_alone","ev hanako_park_away","ev hanako_park_closed","hanako_park_look"),
-                     ("ev hanako_kiss_outside", "ev hanako_kiss_day", "ev hanako_kiss_night"),
-                     ("ev hanako_miss1", "ev hanako_miss2", "ev hanako_miss3", "ev hanako_miss4", "ev hanako_miss5", "ev hanako_miss6", "ev hanako_miss7", "ev hanako_miss8", "ev hanako_miss9", "ev hanako_miss10", "ev hanako_miss11"),
-                     ("ev hanako_finger_1", "ev hanako_finger_2", "ev hanako_finger_3"),
-                     ("ev hanako_cowgirl_1", "ev hanako_cowgirl_2", "ev hanako_cowgirl_3", "ev hanako_cowgirl_4", "ev hanako_cowgirl_5", "ev hanako_cowgirl_6", "ev hanako_cowgirl_7", "ev hanako_cowgirl_8", "ev hanako_cowgirl_9", "ev hanako_cowgirl_10", "ev hanako_cowgirl_11", "ev hanako_cowgirl_12", "ev hanako_cowgirl_13", "ev hanako_cowgirl_14", "ev hanako_cowgirl_15", "ev hanako_cowgirl_16", "ev hanako_cowgirl_17", "ev hanako_cowgirl_18"),
-                     "ev hanako_resolute"
+    $ ex_g_images = ("ev other_summersclover"
                      )
     
                      
@@ -991,57 +294,6 @@ init 1:
     ########## END EVENT CGS ##########
 
     ########## SUPER CGS ##########
-
-    # LILLY
-    image bg tearoom_lillyhisao_noon = "event/Lilly_supercg/tearoom_lillyhisao_noon.jpg"
-    image bg tearoom_lillyhisao_sunset = "event/Lilly_supercg/tearoom_lillyhisao_sunset.jpg"
-
-    image tearoom_hisao calm = "event/Lilly_supercg/tearoom_hisao_calm.png"
-    image tearoom_hisao oops = "event/Lilly_supercg/tearoom_hisao_oops.png"
-    image tearoom_hisao outside = "event/Lilly_supercg/tearoom_hisao_outside.png"
-    image tearoom_hisao relief = "event/Lilly_supercg/tearoom_hisao_relief.png"
-    image tearoom_hisao sigh = "event/Lilly_supercg/tearoom_hisao_sigh.png"
-    image tearoom_hisao smile = "event/Lilly_supercg/tearoom_hisao_smile.png"
-    image tearoom_hisao think = "event/Lilly_supercg/tearoom_hisao_think.png"
-    image tearoom_hisao thinkclosed = "event/Lilly_supercg/tearoom_hisao_thinkclosed.png"
-    image tearoom_hisao unsure = "event/Lilly_supercg/tearoom_hisao_unsure.png"
-
-    image tearoom_lilly ara = "event/Lilly_supercg/tearoom_lilly_ara.png"
-    image tearoom_lilly giggle = "event/Lilly_supercg/tearoom_lilly_giggle.png"
-    image tearoom_lilly smileclosed = "event/Lilly_supercg/tearoom_lilly_smileclosed.png"
-    image tearoom_lilly thinking = "event/Lilly_supercg/tearoom_lilly_thinking.png"
-    image tearoom_lilly weaksmile = "event/Lilly_supercg/tearoom_lilly_weaksmile.png"
-
-    image bg tearoom_everyone_noon = "event/Lilly_supercg/tearoom_everyone_noon.jpg"
-
-    image tearoom_hanae happy = "event/Lilly_supercg/tearoom_hanae_happy.png"
-    image tearoom_hanae open = "event/Lilly_supercg/tearoom_hanae_open.png"
-    image tearoom_hanae sad = "event/Lilly_supercg/tearoom_hanae_sad.png"
-    image tearoom_hanae shy = "event/Lilly_supercg/tearoom_hanae_shy.png"
-
-    image tearoom_lillye ara = "event/Lilly_supercg/tearoom_lillye_ara.png"
-    image tearoom_lillye giggle = "event/Lilly_supercg/tearoom_lillye_giggle.png"
-    image tearoom_lillye smileclosed = "event/Lilly_supercg/tearoom_lillye_smileclosed.png"
-    image tearoom_lillye thinking = "event/Lilly_supercg/tearoom_lillye_thinking.png"
-    image tearoom_lillye weaksmile = "event/Lilly_supercg/tearoom_lillye_weaksmile.png"
-
-    image tearoom_hisaoe calm = "event/Lilly_supercg/tearoom_hisaoe_calm.png"
-    image tearoom_hisaoe outside = "event/Lilly_supercg/tearoom_hisaoe_outside.png"
-    image tearoom_hisaoe sigh = "event/Lilly_supercg/tearoom_hisaoe_sigh.png"
-    image tearoom_hisaoe thinkclosed = "event/Lilly_supercg/tearoom_hisaoe_thinkclosed.png"
-    image tearoom_hisaoe hoops = "event/Lilly_supercg/tearoom_hisaoe_hoops.png"
-    image tearoom_hisaoe hrelief = "event/Lilly_supercg/tearoom_hisaoe_hrelief.png"
-    image tearoom_hisaoe hsmile = "event/Lilly_supercg/tearoom_hisaoe_hsmile.png"
-    image tearoom_hisaoe hthink = "event/Lilly_supercg/tearoom_hisaoe_hthink.png"
-    image tearoom_hisaoe hunsure = "event/Lilly_supercg/tearoom_hisaoe_hunsure.png"
-    image tearoom_hisaoe loops = "event/Lilly_supercg/tearoom_hisaoe_loops.png"
-    image tearoom_hisaoe lrelief = "event/Lilly_supercg/tearoom_hisaoe_relief.png"
-    image tearoom_hisaoe lsmile = "event/Lilly_supercg/tearoom_hisaoe_lsmile.png"
-    image tearoom_hisaoe lthink = "event/Lilly_supercg/tearoom_hisaoe_lthink.png"
-    image tearoom_hisaoe lunsure = "event/Lilly_supercg/tearoom_hisaoe_lunsure.png"
-    #next added by SemisoftCheese for whatever reason:
-    image tearoom_chess = "event/Lilly_supercg/tearoom_chess.png"
-
     ########## END SUPER CGS ##########
 
     # experimental stuff
@@ -1050,25 +302,6 @@ init 1:
             return im.Map(disp, rmap=im.ramp(color, color), gmap=im.ramp(color, color), bmap=im.ramp(color, color))
 
     image kenji silhouette = silhouette("sprites/kenji/kenji_neutral.png")
-    image kenji silhouette_naked = silhouette("sprites/kenji/kenji_neutral_naked.png",10)
-    image hanako silhouette = silhouette("sprites/hanako/hanako_basic_bashful.png")
-    image rin silhouette = silhouette("sprites/rin/rin_relaxed_surprised.png")
-
-    python:
-        shizuepiccomp = im.Composite ((874,836),
-                                  (0,0),night("sprites/shizu/close/shizu_out_serious_close.png"),
-                                  (2.5,600),night("vfx/shizu_out_serious_legs.png"))
-
-        shizuepiccomp_sil = im.Composite ((874,836),
-                                  (0,0),silhouette("sprites/shizu/close/shizu_out_serious_close.png"),
-                                  (2.5,600),silhouette("vfx/shizu_out_serious_legs.png"))
-
-
-    image shizu epictransition = At(anim.TransitionAnimation(shizuepiccomp, 0.2, None,
-                                                             shizuepiccomp, 0.0, Dissolve(1.8, alpha=True),
-                                                             shizuepiccomp_sil,
-                                                             anim_timebase=False),
-                                    FactorZoom(1.0, 0.1, 2.0, yalign=0.5, xalign=0.5, time_warp=_ease_time_warp, opaque=False), Move((0.5, 0.695, 0.5, 0.5), (0.5, 0.735, 0.5, 0.5), 2.0, time_warp=_ease_time_warp))
 
     image bloodred = Solid("#d00")
     image white = Solid("#fff")
@@ -1109,17 +342,6 @@ init 1:
     #moved white version:
     image walivetext = renpy.ParameterizedText(yalign=0.5, xanchor=0.5, xpos = 0.5, style="alive_text", drop_shadow=None, color="#ffffff")
     
-    
-    image bg mural_start = "vfx/mural_start.jpg"
-    image bg mural_unfinished = "vfx/mural_unfinished.jpg"
-    image bg mural_part = At("vfx/mural.jpg", Position(xalign=0.0))
-    image mural all = "vfx/mural_wide.jpg"
-    image bg mural = "vfx/mural.jpg"
-    image bg mural_ss = sunset("vfx/mural.jpg")
-    image mural pan = At("vfx/mural.jpg",Fullpan(60.0, dir="left"))
-  
-    image rin_shadow basic = At(silhouette("sprites/rin/close/rin_basic_deadpan_close.png"), Alpha(.7,.7,0.0))
-    image rin_shadow negative = At(silhouette("sprites/rin/close/rin_negative_spaciness_close.png"), Alpha(.7,.7,0.0))
 
     image nightsky rotation = At("bgs/misc_sky_ni.jpg", Position(xalign=0.5, yalign=0.5), RotoZoom(0, 360, 40, 3, 1.5, 10, rot_repeat=True, zoom_repeat=False, xalign=0.5, yalign=0.5))
     image nightsky normal = At("bgs/misc_sky_ni.jpg", Position(xpos=0.5, ypos=1.0, xanchor=0.5, yanchor=0.9))
@@ -1132,20 +354,10 @@ init 1:
     image movie = Movie(fps=40, size=(800, 600), xalign=0.5, yalign=0.5)
 
     image centeredmovie = Movie(fps=25, xalign=0.5, yalign=0.5)
-    image nightmare_mask = "vfx/nightmare_mask.png"
-
-    image nightmaremovie = LiveComposite((800,600),
-                                         (208,160), Movie(fps=25, xalign=0.5, yalign=0.5),
-                                         (-413,-513), At("vfx/nightmare_mask.png", RotoZoom(0, 360, 120.0, 1.0, 1.0, 1.00, rot_repeat=True, opaque=False)))
-    
 init python:
 
     
     ########## IMAGE FILTERS ###########
-    
-    
-    
-
     def rain(img_in):
         return im.MatrixColor(img_in, ((im.matrix.saturation(0.40000000000000002)) * (im.matrix.tint(0.94999999999999996, 0.94999999999999996, 1.0))) * (im.matrix.brightness(-(0.10000000000000001))))
     def sp_rain(img_in):
@@ -1222,38 +434,6 @@ init python:
     
     
     whiteout = Fade(0.5, 0.2, 2.0, color="#FFFFFF")
-
-    #cherry blossoms
-    sakura = SnowBlossom(anim.Filmstrip("vfx/sakura.png", (10, 10), (2, 1), .25), xspeed=(150, 100), yspeed=(75, 150), count=80, fast=True)
-    renpy.image("sakura", sakura)
-    renpy.image("hospitalmask", "vfx/hospitalroommask_new.png")
-
-    # dandelions
-    dandeliontfg = SnowBlossom("vfx/dandelion.png", count=10, border=25, xspeed=(-200, -100), yspeed=(-40, -15), start=14.0, fast=False, horizontal=True)
-    dandeliontbg = SnowBlossom(im.Scale("vfx/dandelion.png",10,13), count=20, border=25, xspeed=(-100, -50), yspeed=(-30, -10), start=14.0, fast=False, horizontal=True)
-    renpy.image("dandelionsf thin",LiveComposite((800,600),
-                                    (0,0),dandeliontfg))
-
-    renpy.image("dandelionsb thin",LiveComposite((800,600),
-                                    (0,0),dandeliontbg))
-
-    dandeliondfg = SnowBlossom("vfx/dandelion.png", count=20, border=25, xspeed=(-200, -100), yspeed=(-40, -15), start=8.0, fast=False, horizontal=True)
-    dandeliondbg = SnowBlossom(im.Scale("vfx/dandelion.png",10,13), count=40, border=25, xspeed=(-100, -50), yspeed=(-30, -10), start=8.0, fast=False, horizontal=True)
-    renpy.image("dandelionsf dense",LiveComposite((800,600),
-                                    (0,0),dandeliondfg))
-    
-    renpy.image("dandelionsb dense",LiveComposite((800,600),
-                                    (0,0),dandeliondbg))
-    
-    dandeliondfgb = SnowBlossom("vfx/dandelion_blur.png", count=20, border=25, xspeed=(-200, -100), yspeed=(-40, -15), start=8.0, fast=False, horizontal=True)
-    dandeliondbgb = SnowBlossom(im.Scale("vfx/dandelion_blur.png",10,13), count=40, border=25, xspeed=(-100, -50), yspeed=(-30, -10), start=8.0, fast=False, horizontal=True)
-    renpy.image("dandelionsb denseblur",LiveComposite((800,600),
-                                    (0,0),dandeliondbgb))
-    
-    renpy.image("dandelionsf denseblur",LiveComposite((800,600),
-                                    (0,0),dandeliondfgb))
-
-    trans_dandelion = CropMove(5.0, "wipeleft")
 
     #crowd
     crowd = anim.TransitionAnimation("vfx/crowd1.png", 1.0, Dissolve(0.2, alpha=True),
@@ -1346,46 +526,6 @@ init python:
 
     # OTHER
     # display tools
-
-#    twoleft = Position(xanchor=0.5, xpos=0.3)
-#    tworight = Position(xanchor=0.5, xpos=0.7)
-#    
-#    twoleftsit = Position(xanchor=0.5, yanchor=1.0, xpos=0.3, ypos=1.15)
-#    tworightsit = Position(xanchor=0.5, yanchor=1.0, xpos=0.7, ypos=1.15)
-#    leftsit = Position(xanchor=0.5, yanchor=1.0, xpos=0.15, ypos=1.15)
-#    rightsit = Position(xanchor=0.5, yanchor=1.0, xpos=0.85, ypos=1.15)
-#    centersit = Position(xanchor=0.5, yanchor=1.0, xpos=0.5, ypos=1.15)
-#    centersit2 = Position(xanchor=0.5, yanchor=1.0, xpos=0.5, ypos=1.07)
-#    centersitlow = Position(xanchor=0.5, yanchor=1.0, xpos=0.5, ypos=1.25)   
-#    
-#    closeleft = Position(xanchor=0.5, xpos=0.25)
-#    closeright = Position(xanchor=0.5, xpos=0.75)
-#    closeleft2 = Position(xanchor=0.5, xpos=0.20)
-
-#    rightedge = Position(xanchor=0.5, xpos=0.92)
-#    leftoff = Position(xanchor=0.5, xpos=0.13)
-#    centeroff = Position(xanchor=0.5, xpos=0.52)
-#    
-#    twoleftoff = Position(xanchor=0.5, xpos=0.32)
-#    tworightoff = Position(xanchor=0.5, xpos=0.68)
-#    centeroff = Position(xanchor=0.5, xpos=0.52)
-#    twocenteroff = Position(xanchor=0.5, xpos=0.39)
-#    twocenteroff2 = Position(xanchor=0.5, xpos=0.41)
-#    twocenteroff3 = Position(xanchor=0.5, xpos=0.59)
-
-#    tworightstagger = Position(xanchor=0.5, xpos=0.6)
-#        
-#    leftdoor = Position(xanchor=0.5, xpos=0.10)
-#    leftdooropen = Position(xanchor=0.5, xpos=-0.1)
-#    rightwallopen = Position(xanchor=0.5, xpos=0.85)
-#    roomopen = Position(xanchor=0.5, xpos=0.45)
-
-#    bgleft = Position(xanchor=0.5, xpos=0.4)
-#    bgright = Position(xanchor=0.5, xpos=0.6)
-
-    #Above are the original screen positions. I changed them because the way renpy works, if you changed the sprite from one that specified a certain axis and one that did not, the sprite would only move on the axis that was specified by both.
-    #EX: If you had shizu basic_normal at twoleftsit and changed to shizu basic_normal at twoleft, the sprite would still look like it was "sitting" because renpy kept the yaxis the same between those two transitions -md01
-
     twoleft = Position(xanchor=0.5, xpos=0.3, yanchor=0.5, ypos=0.5)
     tworight = Position(xanchor=0.5, xpos=0.7, yanchor=0.5, ypos=0.5)
     
@@ -1697,55 +837,6 @@ init python:
     ks_music('The_Student_Council', 'shizune')
     ks_music('To_Become_One', 'one')
     ks_music('Wiosna', 'menus')
-    
-    
-#This is the old music mapping. It was not compatible with the get_music_name() function, so it's been replaced with the music mapping from the final. -md01
-#    # music mapping
-#    music_emi = "bgm/Standing_Tall.ogg"
-#    music_hanako = "bgm/Painful_History.ogg"
-#    music_lilly = "bgm/Concord.ogg"
-#    music_rin = "bgm/Parity.ogg"
-#    music_shizune = "bgm/The_Student_Council.ogg"
-#    music_kenji = "bgm/Out_of_the_Loop.ogg"
-#    music_jazz = "bgm/Red_Velvet.ogg"
-#    music_cellosolo = "bgm/BVW1010_Sarabande.ogg"
-#    music_timeskip = "bgm/Passing_of_Time.ogg"
-#    music_menus = "bgm/Wiosna.ogg"
-#    music_twinkle = "bgm/Aria.ogg"
-#    music_tension = "bgm/High_Tension.ogg"
-#    music_serene = "bgm/Lullaby_of_Open_Eyes.ogg"
-#    music_tranquil = "bgm/Afternoon.ogg"
-#    music_soothing = "bgm/Air_original.ogg"
-#    music_tragic = "bgm/Cold_Iron.ogg"
-#    music_comedy = "bgm/Generic_Happy.ogg"
-#    music_drama = "bgm/Moment_of_Decision.ogg"
-#    music_dreamy = "bgm/Raindrops_and_Puddles.ogg"
-#    music_romance = "bgm/Romance_in_Andante_II.ogg"
-#    music_normal = "bgm/School_Days.ogg"
-#    music_sadness = "bgm/Shadow_of_the_Truth.ogg"
-#    music_pearly = "bgm/Stride.ogg"
-#    music_crappy = "bgm/The_Japanese_Rock.ogg"
-#    music_daily = "bgm/Daylight.ogg"
-#    music_running = "bgm/Hokabi.ogg"
-#    music_night = "bgm/Nocturne.ogg"
-#    music_nurse = "bgm/Ah_Eh_I_Oh_You.ogg"
-#    music_credits = "bgm/Romance_in_Andante.ogg"
-#    music_another = "bgm/Another_Day.ogg"
-#    music_rain = "bgm/Rain.ogg"
-#    music_sketch = "bgm/Sketchy.ogg"
-#    music_moon = "bgm/Moonlight.ogg"
-#    music_static = "bgm/flashback.ogg"
-#    music_happiness = "bgm/Happiness.ogg"
-#    music_moonlight = "bgm/Breathlessly.ogg"
-#    music_heart = "bgm/Letting_My_Heart_Speak.ogg"
-#    music_one = "bgm/To_Become_One.ogg"
-#    music_comfort = "bgm/Comfort.ogg"
-#    music_friendship = "bgm/Friendship.ogg"
-#    music_hanakofire = "bgm/Painful_History_Mus.ogg"
-#    music_hanakofinal = "bgm/Painful_History_Final.ogg"
-#    music_hanakohscene = "bgm/Painful_History_FinalPiano.ogg"
-#    music_innocence = "bgm/Innocence.ogg"
-#    music_ease = "bgm/Ease.ogg"
     
     #config.main_menu_music = music_menus # this screws with scene_select
     config.main_menu_music = None

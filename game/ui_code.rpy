@@ -174,18 +174,10 @@ init 2 python:
 
     ## benchmark/dev stuff that would only clutter up ui_settings but has to be present
     # in any case for the game to run properly
-    if not persistent.emi:
-        persistent.emi = 0
-    if not persistent.hanako:
-        persistent.hanako = 0
-    if not persistent.lilly:
-        persistent.lilly = 0
-    if not persistent.shizune:
-        persistent.shizune = 0
-    if not persistent.rin:
-        persistent.rin = 0
-    if not persistent.bad:
-        persistent.bad = 0
+    if not persistent.hisao:
+        persistent.hisao = 0
+    if not persistent.suzu:
+        persistent.suzu = 0
 
     automode = False
     notextmode = False

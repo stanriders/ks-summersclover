@@ -19,7 +19,7 @@
     displayDict["ru"].allLanguages["ru"] = displayDict["ru"].activeLanguage
     
     displayDict['ru'].act_term = ruw(u"Акт")
-    displayDict["en"].window_name = u"Katawa Shoujo"
+    displayDict["en"].window_name = u"Katawa Shoujo: Summer's Clover"
     
     displayDict['ru'].main_menu_start = ruw(u"Начать игру")
     displayDict['ru'].main_menu_load = ruw(u"Загрузить")
@@ -37,8 +37,6 @@
     displayDict['ru'].game_menu_load = ruw(u"Загрузить")
     displayDict['ru'].game_menu_main = ruw(u"Главное меню")
     displayDict['ru'].game_menu_quit = ruw(u"Выйти")
-    
-    displayDict["ru"].game_menu_jumper = ruw(u"Выбрать Акт")
         
     displayDict['ru'].game_menu_current_scene = ruw(u"Текущая сцена")
     displayDict['ru'].game_menu_current_music = ruw(u"Текущая композиция")
@@ -180,43 +178,7 @@
     # by setting the third value in the tuple to False. Suppression doesn't work in DQN mode.
     # Note that Ren'Py doesn't like non-ASCII characters in scene titles if the titles are not unicode strings
     displayDict['ru'].s_scenes = (
-                                    ("Prologue", "C0", True, "Common"),
-                                    ("The Runner", "C1", True, "Common"),
-                                    ("Singalong", "C2", True, "Common"),
-                                    ("A Girl Named Suzu", "C3", True, "Common"),
-                                    ("Shared Table", "C4", True, "Common"),
-                                    ("Evening Stroll", "C5", True, "Common"),
-                                    ("To Town, To Town", "C6", True, "Common"),
-                                    ("Troubled Correspondence", "C7", True, "Common"),
-                                    ("One Night in July", "C8", True, "Common"),
-                                    ("Echoes of the Past", "C9", True, "Common"),
-                                    
-                                    ("Study and Such", "H1", True, "Hisao"),
-                                    ("Homecoming", "H2", True, "Hisao"),
-                                    ("Country Jaunt", "H3", True, "Hisao"),
-                                    ("Blood and Sweat", "H4", True, "Hisao"),
-                                    ("Past Zenith", "H5", True, "Hisao"),
-                                    ("Over the Hills", "H6", True, "Hisao"),
-                                    ("Hello, Yamaku", "H7", True, "Hisao"),
-                                    ("Into the Deep", "H8", True, "Hisao"),
-                                    ("Noon Run", "H9", True, "Hisao"),
-                                    ("Disconnection", "H10", True, "Hisao"),
-                                    ("Goodbye, Hello", "H11", True, "Hisao"),
-                                    
-                                    ("Serendipity", "S1", True, "Suzuki"),
-                                    ("Reverie", "S2", True, "Suzuki"),
-                                    ("Fireworks", "S3", True, "Suzuki"),
-                                    ("The New World", "S4", True, "Suzuki"),
-                                    ("Hand in Hand", "S5", True, "Suzuki"),
-                                    ("Morning Stroll", "S6", True, "Suzuki"),
-                                    ("Sands of Time", "S7", True, "Suzuki"),
-                                    ("Night on the Town", "S8", True, "Suzuki"),
-                                    ("Frayed Knot", "S9", True, "Suzuki"),
-                                    ("Amends", "S10", True, "Suzuki"),
-                                    ("Small Hope", "S11", True, "Suzuki"),
-                                    ("Loss", "S12", True, "Suzuki"),
-                                    ("Reminiscence", "S13", True, "Suzuki"),
-                                    ("Redemption", "S14", True, "Suzuki"),
+                                    ("Пролог", "C0", True, "Act 1"),
                                     )
 
 # TITLE CARDS
@@ -235,17 +197,9 @@ Suriko
 Nicol Armarfi
 
 {b}Artists{/b}
-Ambi07
-gebyy-terar
-Kamifish
-moekki
-Raide
 raemz
+Katawa Shoujo artists
 
-{b}Additional Artists{/b}
-climatic
-Doomfest
-yujovi
 
 {b}Engineering{/b}
 StanR
@@ -257,29 +211,12 @@ Suriko
                                      
 
 {b}Thanks{/b}
-Celiest
-chendo
-climatic
-Dark_Mercury
-DeuceTrick
-frumplstlskn
-Ismuth
-Kagami
-konflikti
-Magaran
-Moogy
-OverCoat
-Peorth
-Petaru
-skim
-Solaris
-silentkyon
-stirfriedweasel
-Syureria
+Four Leaf Studios
 
 
 
 {b}Special Thanks{/b}
 PyTom
 KSG Threads on /vg/
-RAITA"""
+RAITA
+Prealpha Repair Team"""
