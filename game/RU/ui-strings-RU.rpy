@@ -178,7 +178,7 @@
     # by setting the third value in the tuple to False. Suppression doesn't work in DQN mode.
     # Note that Ren'Py doesn't like non-ASCII characters in scene titles if the titles are not unicode strings
     displayDict['ru'].s_scenes = (
-                                    ("Пролог", "C0", True, "Act 1"),
+                                    (ruw(u"Пролог"), "C0", True, "Act 1"),
                                     )
 
 # TITLE CARDS
