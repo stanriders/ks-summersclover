@@ -1,7 +1,7 @@
 Katawa Shoujo: Summer's Clover
 ==============
 
-**Latest stable build**: https://github.com/stanriders/ks-summersclover/releases/tag/v1.1
+**Latest stable build**: https://github.com/stanriders/ks-summersclover/releases/latest
 
 Summer's Clover on KS-Engine (renPy 6.10.2)
 

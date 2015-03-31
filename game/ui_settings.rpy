@@ -249,7 +249,6 @@ init 1:
         make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
         make_sprites('kenji',['neutral','happy','tsun','rage','surprised','invis'], ['naked'])
         make_sprites('muto',['normal','smile','irritated','invis'])
-        make_sprites('meiko',['giggle','grin','serious','wistful'], ['close'])
 
 
 
@@ -281,12 +280,12 @@ init 1:
         def traincomposite(comppath):
             return im.Composite(None, (0, 0), 'event/hisao_train/hisao_trainride_ni_norm.png', (321, 200), comppath)
 
-
-    image ev other_summersclover = im.Crop("vfx/other_summersclover.jpg", 800, 0, 800, 600)
+    image ev other_summersclover = "vfx/other_summersclover.jpg"
+    #image ev other_summersclover = im.Crop("vfx/other_summersclover.jpg", 800, 0, 800, 600)
     
     # Images available in the extras -> CG gallery menu. May contain internal images names (including the prefix) or tuples of same.
     # The latter will share a thumbnail (the first unlocked one) and will be shown in sequence.
-    $ ex_g_images = ("ev other_summersclover"
+    $ ex_g_images = ("ev other_summersclover",
                      )
     
                      
