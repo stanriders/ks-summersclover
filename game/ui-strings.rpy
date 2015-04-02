@@ -238,6 +238,7 @@ Katawa Shoujo artists
 
 {b}Engineering{/b}
 StanR
+Kickaha
 
 {b}Producer{/b}
 Suriko

@@ -23,6 +23,8 @@ label en_C1:
     with dissolve
     
     window show
+
+    play sound sfx_can_clatter
     
     "The rattle of a can hitting the vending machine rings out across the empty school grounds. With the orange of sunset settling over the campus, everyone's retreated to their dormitories and homes for an early start to their studying and various hobbies."
 
@@ -125,9 +127,11 @@ label en_C1:
     
     "The Shanghai's location within the nearby town has always been convenient. I had thought even this might be too much for Hisao given his exhaustion, but he managed to drag himself here just fine."
     
+    play sound sfx_storebell
+
     scene bg suburb_shanghaiint
     with locationchange
-    
+
     "I like the uniforms they have here, even if they do strike me as a little unconventional. Our meals placed before us, the waitress takes her leave to attend to a handful of other customers at the opposite end of the cafe."
 
     "Not being especially hungry, my meal's just a slice of pie and a drink. Hisao's pack of sandwhiches don't look like it'll last for long, one of them already having disappeared into his mouth."
@@ -914,6 +918,8 @@ label en_C5:
 
     "I don't really hate it, though. It's maybe even a little cute."
     
+    play sound sfx_storebell
+
     scene bg suburb_shanghaiint
     with locationchange
     
@@ -1064,6 +1070,8 @@ label en_C5:
     "Looking around the cafe proves about as boring as expected. A few old people who came to this town to live out a quiet retirement sit at a few of the tables, and a handful students from Yamaku populate the others. I think I recognise the back of the class rep's head over the other side of the cafe, but I can't be sure."
 
     "After what feels like forever, Yuuko emerges with three drinks and two pie slices on a platter. Suzu may live in her own world sometimes, but at least she's polite, putting down her phone as they're set down on the table in order to thank her."
+
+    play sound sfx_storebell
 
     "The bell above the door rings out, with Yuuko giving the briefest of nods before quickly scooting off to the entering customers."
 
@@ -1664,6 +1672,9 @@ label en_C7:
 
     scene bg school_dormhallground
     with locationchange
+
+    scene bg school_dormhallway
+    with locationchange
     
     "Strolling through what should be the hallway to Hisao's dorm room, I casually glance around at the near-empty corkboards on either side. All that're there are a couple of old and tatty joke pictures, threatening to fall onto the floor."
 
@@ -2077,6 +2088,8 @@ label en_C9:
     with locationchange
     
     window show
+
+    play sound sfx_normalbell
     
     "The ringing of the school bell heralds the end of yet another school day."
 

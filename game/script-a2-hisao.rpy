@@ -2,6 +2,8 @@ label en_H1:
 
     scene black
     with dissolve
+
+    window show
     
     "With the last class of the semester having ended a few hours ago, I find myself straddling a chair backwards to watch the two interlopers in my room. Aside from the occasional rustle of paper and the squeaking of my hand gripper as I exercise the hand I still have, there's litle to be heard."
 
@@ -303,6 +305,8 @@ label en_H1:
 
     "Tiring of being gentle, I break from our embrace and step back towards the bed, drawing him along with me as I hold his wrist. He's starting to recharge by now, so it shouldn't take much more stimulation to get him going."
 
+    play sound sfx_pillow
+
     "He steps ahead of me and slides onto the bed, with me crawling on after him. He takes the hint as I push on his shoulders a little, flopping down on his back as I shuffle about on all fours over him."
 
     "Throwing a leg over his head, I position myself with my head over his crotch and his head beneath mine."
@@ -420,11 +424,18 @@ label en_H1:
     mk "You'll see. I reckon you'll like it."
 
     window hide
+
     return
     
 label en_H2:
 
+    play ambient sfx_traffic
+
+    window show
+
     "With the last of our luggage off the bus and piled onto the chair of the shelter, the old thing slowly pulls away with a friendly wave from the driver. It's a small wonder that it's still around after all these years."
+
+    stop ambient fadeout 3.5
 
     "As the rumble of the tired old engine fades away, it's replaced by nothing but silence. A comfortable, nostalgic silence."
 
@@ -627,13 +638,18 @@ label en_H2:
     "But somehow... I think it's going to be good. The three of us together, enjoying summer in the country."
 
     window hide
+
     return
     
 label en_H3:
 
+    window show
+
     "A mighty yawn heralds the beginning of a new day."
 
     "The sun beaming through the rice paper screen gives the room a pleasant level of light as I prop myself up, rubbing my tired eyes as I look beside me. Looks like Suzu's already awake, going by her empty but impeccably tidy futon."
+
+    play sound sfx_rustling
 
     "With my mind still half-asleep, I simply sit for a while and hazily look around the room. The walls look kinda bare without the collection of baseball posters and flags I had up when I was a kid, now that I think of it. All that's left is a single tatty poster for the local team."
 
@@ -650,6 +666,8 @@ label en_H3:
     "He says, sitting next to a narcoleptic."
 
     "My breakfast waits untouched next to Hisao, who gulps down his miso soup without a care in the world. Suzu and dad sit on the other side of the table, the former grazing on some rice as dad gets back to wolfing down pieces of mackerel."
+
+    play sound sfx_sitting
 
     "Huffing in displeasure, I walk over and take my place, setting myself down with a thud. Neither of the others pay me much heed, beyond glacing over to the loud distraction stomping about the room."
 
@@ -1003,6 +1021,8 @@ label en_H3:
 
     "Sliding the door open offers little surprise. Hisao sits on the edge of the porch looking uo at the night sky, thinking to himself silently."
 
+    play sound sfx_sitting
+
     "Turns out he's thinking so hard that he hasn't noticed me at all. It's not until I've plopped myself down beside him that he turns to see me."
 
     hi "Oh. Hey."
@@ -1026,6 +1046,9 @@ label en_H3:
     hi "It's just that you don't get a good view of the stars in the city. All the lights make them hard to see."
 
     hi "It's crazy how clear they are out here..."
+
+    scene bg misc_sky_ni
+    with dissolve
 
     "The stars, huh? I look up at them as he does, trying to get what about them interests him. All I see are the same stars I've always seen. Pinpricks of light in the night sky. They're pretty, I suppose, but I don't think that's what draws Hisao."
 
@@ -1068,6 +1091,9 @@ label en_H3:
     hi "And you've shown me a lot of that new stuff, as well. Roping me into the track club, dragging me out here, and yeah, I guess what sex is like as well."
 
     hi "Even this night sky is totally new to me, and it's thanks to you that I can be here to see it."
+
+    scene black
+    with dissolve
 
     "He turns to me with a really sweet smile. It's nice when he lets himself do that."
 
@@ -1265,6 +1291,9 @@ label en_H3:
 
     "I raises his hand, probably to try and make an obscene gesture at me or something, but lets it flop back to the ground as he finds himself unable to muster the energy."
 
+    scene bg misc_sky_ni
+    with dissolve
+
     "With my senses returning to me, I let my head roll to the side. The stars that Hisao had been so wrapt in sit above us, twinkling away."
 
     "Realising that I've stopped panting, Hisao looks to me, and then to the same stars that I watch."
@@ -1279,10 +1308,16 @@ label en_H3:
 
     hi "I know."
 
+    scene black
+    with dissolve
+
     window hide
+
     return
     
 label en_H4:
+
+    window show
 
     "Wiping the sweat from my brow, I look down at my handiwork for the morning. A long line of freshly-planted rice seedlings, their bright green stalks poking just above the muddy brown of the water. A muddy brown that's also covered my hand, and the well-worn overalls I'm wearing."
 
@@ -1296,7 +1331,11 @@ label en_H4:
 
     mk "Just grabbin' a drink."
 
+    play sound sfx_can
+
     "He dutifully reaches back into the cooler beside him, pulling out one of the several soft drink cans inside and opening it before handing it to me. I have to admit, I wouldn't have hated him accidentally handing me one of the beer cans."
+
+    play sound sfx_sitting
 
     "I sit on the side of the porch and start on my nice cool drink, but a sip reveals it to be lukewarm already. Beggars can't be choosers, I suppose."
 
@@ -1378,6 +1417,11 @@ label en_H4:
 
     "Whether there's a problem or if he's just tired out is answered as he staggers forwards a couple of steps, both dad and I standing up to get a better view of what's going on. My heart stops as a leg falls out from under him, his body collapsing sideways into the paddy."
 
+    play sound sfx_running
+    with Pause(0.0)
+
+    stop sound fadeout 4.0
+
     "Dad quickly takes off towards him, little care given to suiting up in overalls as he tramples the planted rice along the way. He can move damn fast when he wants to, my role in the affair being reduced to a mere spectator as Suzu also tries to lumber through the thick mud to the fallen boy."
 
     "Helped up by dad, Hisao brings an arm over his shoulder for support. The two slowly struggle back towards the house, a deeply concerned Suzu in tow."
@@ -1427,6 +1471,8 @@ label en_H4:
     "I guess it's at least a reality check for them. Life on a farm isn't all frolicking about in the wilderness."
 
     "After some time, dad eventually arrives with a large plate in his hands. Hisao and Suzu couldn't look less excised to eat, with the thought of one of them hurling at the sight of chicke passing my mind."
+
+    play sound sfx_tray_rattling
 
     "As he lowers the plate onto the table, the relief that washes over all of us is palpable. Rice bowls, assorted vegetables, and some fish. Practically a repeat of breakfast, but he's likely scrounged it up in a hurry."
 
@@ -1549,9 +1595,12 @@ label en_H4:
     "Well, I guess staying in for a few more minutes wouldn't hurt."
 
     window hide
+
     return
     
 label en_H5:
+
+    window show
 
     "A gentle breeze flows through my hair as I stand where I'd spent so much of my childhood."
 
@@ -1574,6 +1623,11 @@ label en_H5:
     "Far from satisfied, I walk over to the pitching machine and give it a strong kick. the old thing falls to the ground with a loud clatter, but I'm sure it still works just fine. It's managed to survive so damn long that I probably couldn't kill it no matter how much I abused the thing."
 
     "The destruction at least lets me vent off a bit of steam, leaving me standing around frustrated and empty-handed. For lack of anything else to do, I give up and let myself fall back onto the ground with a thud. It hurts a bit to land on the gravel, but I don't care."
+
+    play sound sfx_impact
+
+    scene bg misc_sky
+    with dissolve
 
     "This is why being left to myself is always trouble; my mind wanders into troublesome places. Looking at the impossibly vast blue sky above, I'm left to wonder what I really expected from coming out here."
 
@@ -1610,6 +1664,9 @@ label en_H5:
     hi "I'm fine, don't worry about it."
 
     "Hisao steps back, the tone of his voice telling me that I've hit a landmine. He really doesn't like talking about his heart condition."
+
+    scene black
+    with dissolve
 
     "I pull myself to my feet in response, dusting off my hair and the back of my shirt afterwards."
 
@@ -1799,6 +1856,8 @@ label en_H5:
 
     hi "You're up late."
 
+    play sound sfx_sitting
+
     "He takes a seat beside me, plopping himself down with a grunt. My first instinct is to hide the photo, but the question of where I possibly could puts a stop to that."
 
     mk "Become a bit of a nightly rendevous, huh?"
@@ -1885,12 +1944,23 @@ label en_H5:
 
     mk "Thanks. That means a lot."
 
+    scene bg misc_sky_ni
+    with dissolve
+
     "He just smiles, the two of us looking up into the night sky."
 
+    scene black
+    with dissolve
+
     window hide
+
     return
     
 label en_H6:
+
+    window show
+
+    play sound sfx_snap
 
     "A stick loudly snaps as I move through the undergrowth, roots and fallen branches beneath my feet, and the forest's green summertime leaves hanging overhead."
 
@@ -2140,6 +2210,8 @@ label en_H6:
 
     mk "This is me."
 
+    play sound sfx_impact
+
     "Hisao just looks wordlessly at my smiling face, before letting himself fall to the ground with a thud. Completely exhausted, he just sits with his hands on the ground behind him, looking into my eyes as he pants and sweats heavily."
 
     "Now that I think of it, I must look a total mess right now, too. Sweat's all over me, and I can feel a couple of hairs stuck to my face. That fact quickly becomes unimportant as I look into Hisao's eyes, suddenly noticing something different inside of them."
@@ -2185,13 +2257,25 @@ label en_H6:
     mk "That doesn't sound so bad when you say it."
 
     window hide
+
     return
     
 label en_H7:
 
+    scene bg school_gate_ni
+    with dissolve
+
+    $ renpy.music.set_volume(0.6, 0.0, channel="ambient")
+    play ambient sfx_running fadein 2.0
+
+    window show
+
     "Nothing gets me going like a good sprint. One foot htting the ground quickly after the other, the buildings and plants around me seem to fly past. My breaths short but measured as I throw myself forwards with glee."
 
     "Guard" "Stop! I'm telling you, stop right there!"
+
+    scene bg school_courtyard_ni
+    with locationskip
 
     mk "Ah ha ha ha ha!"
 
@@ -2209,7 +2293,20 @@ label en_H7:
 
     "Hello again, Yamaku."
 
-    centered "~ Timeskip ~" with dissolve
+    hide window
+
+    scene black
+    with dissolve
+
+    stop ambient fadeout 1.7
+    with Pause(2.0)
+
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_hallway3
+    with locationskip
+
+    #Instead maybe adding timeskip in imachine here?
 
     har "Yo, Miki."
 
@@ -2246,6 +2343,9 @@ label en_H7:
     har "Sure did. You didn't kill Hisao and Suzu, did you?"
 
     mk "Haha, nah. They're still kicking around."
+
+    scene bg school_scienceroom
+    with locationchange
 
     "As we walk into the classroom, my point is made for me. Suzu sits at her desk while Hisao talks to her while standing in front of it. Everything really is back to normal."
 
@@ -2299,7 +2399,10 @@ label en_H7:
 
     mk "Shit..."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_hallway2
+    with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     mk "Shit damn bloody shit."
 
@@ -2327,17 +2430,22 @@ label en_H7:
 
     "I bump him with my hip, earning a sigh. He might have roped me into a relationship, but I'm not gonna make it easy for him."
 
+    scene bg school_library
+    with locationchange
+
     "Walking into the library, it looks just as it always has. Students quietly read away, with the odd sign that this is unmistkably Yamaku lying around, like the cane propped against a desk, or braille book being scanned over by the fingers of a pretty blonde."
 
     "Hanako, as always is just visible in her little corner, burying her face in some novel or another while she sits on that big beanbag of hers. It's too bad the couple of times I tried to get closer to her failed so utterly."
 
     "Hisao quietly calls out that we've come with the textbooks, given that nobody's behind the counter to take them. Before I suggest we just dump them for the staff to sort out, a loud thump from under the counter gives us both a jump."
 
+    play sound sfx_impact
+
     "Yuuko slowly emerges from the ground, rubbing her sore head as she stands. The poor girl never seems to have very much luck."
 
     hi "That sounded bad."
 
-    yuk "That's the second time today..."
+    yu "That's the second time today..."
 
     mk "Maybe you should start wearing a helmet."
 
@@ -2345,7 +2453,7 @@ label en_H7:
 
     "Having had enough of standing around with this weight in my arm, I sit the pile on the counter. Hisao quickly does the same, putting his stack beside mine."
 
-    yuk "Ah, these are the ones Mutou borrowed for class?"
+    yu "Ah, these are the ones Mutou borrowed for class?"
 
     hi "Yeah. They should all be accounted for."
 
@@ -2369,13 +2477,19 @@ label en_H7:
 
     "I feel the tips of Hisao's fingers brush against my arm, but I slip from his grasp and slide out the door. I'm finally free."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_gardens3
+    with shorttimeskip
 
     "Wandering past the trees to the track, all the usual suspects are hanging around. Emi and the track captain pelt around at high speed, as if they had any other speed they go at, while most of the others are stretching and chatting between themselves."
 
     "As much as I'd like to call this familiar scene home, it's only going to last a few more months. When that time comes, this will all be gone, just like my life at the farm."
 
     "Not wanting to get caught up in my angst, I give a big stretch to try and ward off my tiredness before walking across the track and up to the assorted club members."
+
+    scene bg school_track
+    with locationchange
 
     mk "Yo."
 
@@ -2492,9 +2606,21 @@ label en_H7:
     mk "Cool."
 
     window hide
+
+    scene black
+    with dissolve
+
     return
     
 label en_H8:
+
+    scene black
+    with dissolve
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="ambient")
+    play ambient sfx_crowd_indoors
+
+    window show
 
     "I have to admit, Hisao sure knows how to win me over."
 
@@ -2563,6 +2689,8 @@ label en_H8:
     mk "Eat up, Hisao. We've got places to be."
 
     "He looks to me with concerned eyes, having no idea of what's to come."
+
+    stop ambient fadeout 0.5
 
     centered "~ Timeskip ~" with dissolve
 
@@ -2652,7 +2780,10 @@ label en_H8:
 
     hi "Sure. See you there."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_gardens_ss
+    with shorttimeskip
 
     "Hisao and I slowly walk across the school grounds together, the oversized plastic bag at Hisao's side crunches away with each step. With the sun finally setting, it looks like our day together's finally over."
 
@@ -2668,7 +2799,15 @@ label en_H8:
 
     "With that, the two of us make our way to the male dormitory building."
 
+    scene bg school_dormext_full_ss
+    with locationchange
+    scene bg school_dormhallground
+    with locationchange
+
     "A couple of dudes lounge around in the bottom floor common area, sipping at cans of soft drink as they watch television. A nice lazy way to spend an evening, really."
+
+    scene bg school_dormhallway
+    with locationchange
 
     "We finally reach the floor of Hisao's room, the familiar poorly pinned sheets of paper still hanging onto the corkboard on the walls, albeit only barely. It's a pretty empty part of the dorms, but Hisao seems to like the quiet, so I'm not one to complain."
 
@@ -2679,6 +2818,9 @@ label en_H8:
     mk "I haven't thought that far ahead yet."
 
     "He clips me over the back of the head as we continue down the hall."
+
+    scene bg school_dormhisao_ss
+    with locationchange
 
     "Entering his room, it looks the same as it always has. Spartan. A couple more bits and bobs have ended up on shelves and his desk, but nothing of much interest."
 
@@ -2704,10 +2846,19 @@ label en_H8:
 
     "This dork really can be something."
 
+    scene black
+    with dissolve
+
     window hide
+
     return
     
 label en_H9:
+
+    scene bg school_scienceroom #This time it's not Mutou's science class
+    with dissolve
+
+    window show
 
     "Sitting on my desk as we wait for the teacher to show up, I find myself chatting away with Haru. Try as I might, I can't stop my fingers tapping on the desk beside me."
 
@@ -2781,7 +2932,14 @@ label en_H9:
 
     "As the teacher finally shows up and begins to stride in, she gives me more than a passing glance. I have feeling this is going to be a very long lesson."
 
-    centered "~ Timeskip ~" with dissolve
+    #scene black
+    #with dissolve
+    with Pause(0.3)
+
+    scene bg school_track_on
+    with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     "A good jog around the track is probably one of the more productive ways to deal with stress. God knows I'd be in a world of hurt if I told that woman what I really thought of her."
 
@@ -2807,9 +2965,15 @@ label en_H9:
 
     mk "Yup!"
 
+    scene bg school_track_running
+    with dissolve
+
     "With that, I speed up and drag him along behind me, the two of us breaking off the track and away from the school building."
 
     "The storage shed still gives me bad memories as we pass by, Hisao nearly getting dragged off his feet as I speed up to get past it. As we enter the greenery ahead, the both of us disappear from the sight of the others."
+
+    scene bg school_forestclearing  #Or maybe plain black scene
+    with locationskip
 
     "I start slowing down as we get deeper in, eventually letting go of his hand as the two of us start to walk the rest of the distance. There isn't really any singular spot I'm looking for, so we end up almost strolling in the undergrowth for while."
 
@@ -2991,10 +3155,19 @@ label en_H9:
 
     "I playfully bat him on the face with what little force I can muster. For all I chide him about thinking too much, he really chooses the worst times."
 
+    scene black
+    with dissolve
+
     window hide
+
     return
     
 label en_H10:
+
+    scene bg school_track
+    with dissolve
+
+    window show
 
     "I idly watch the scene before me from afar, an impenetrable wall standing between they and I."
 
@@ -3030,6 +3203,9 @@ label en_H10:
 
     "He turns on his heel and gestures for me to follow. Without anything else to do, I shrug and obediently do so."
 
+    scene bg school_dormhisao
+    with shorttimeskip
+
     "As we arrive in Hisao's room, it's his desk that immediately catches my attention. On it sits a couple of textbooks, one open to a bookmarked page, and a notebook before the chair. As Hisao steps back to allow a better view of them, it's hard not to be suspicious."
 
     hi "Take a seat. Your afterschool study lessons begin today."
@@ -3059,6 +3235,8 @@ label en_H10:
     hi "I've heard that before. You'll care an awful lot in a few months, I can tell you that now."
 
     mk "I already know I'll get some crappy job. Boo hoo."
+
+    play music music_drama fadein 5
 
     hi "So that's what you think about first..."
 
@@ -3112,6 +3290,11 @@ label en_H10:
 
     "It's only by clenching my fist until my knuckles whiten that I stave off the adrenaline coursing through me, but as he continues looking at me with eyes of pure contempt, I feel my body preparing to lash out."
 
+    play sound sfx_doorslam
+
+    scene bg school_dormhallway
+    with locationchange
+
     "Left with no other outlet, I quickly turn around and punch his door on the way out of his dormitory room. Arguing with the asshole any longer isn't going to change his mind."
 
     hi "Miki, come back!"
@@ -3120,14 +3303,26 @@ label en_H10:
 
     mk "Like Hell I will. Have a nice life at university, asshole!"
 
+    scene black
+    with dissolve
+
     "I misjudged him. I took his changing personality to mean he was like me, relearning how to enjoy life after such radical change, but it looks like he's more interested in lording himself over others."
 
     "I don't need someone like that."
 
     window hide
+
+    stop music fadeout 2.5
+    with Pause(4.0)
+
     return
     
 label en_H11:
+
+    scene black
+    with dissolve
+
+    window show
 
     "I idly hit the back of my head repeatedly against a dresser in my room, sitting on the floor as Yukio leans against my desk and Haru sits on the side of my bed. It's been a while since we had an impromptue meeting like this, but they soon agreed after I recounted what happened."
 
@@ -3207,6 +3402,8 @@ label en_H11:
 
     yuk "I don't know, and neither would Haru. Work out whatever will leave you with no regrets, that's all I can tell you."
 
+    play sound sfx_dooropen
+
     "With that, he leaves. Haru just stays where he is, doing his best to not look too serious about all this."
 
     mk "Why do I feel like I just got scolded."
@@ -3239,6 +3436,8 @@ label en_H11:
 
     har "That's more like it. Good luck, Miki."
 
+    play sound sfx_dooropen
+
     "We give our goodbyes to each other as he leaves, my room becoming empty once again."
 
     "I might not know what I want, but I do know what I don't want. The silence of an empty room. The loneliness of being without friends. In other words, the life I'd lived before in Yamaku."
@@ -3251,7 +3450,12 @@ label en_H11:
 
     "It's been a damn long time since I've punished my body like this before. I don't even know precisely where this is, my legs carrying me a good distance beyond the small town below Yamaku. I barely even managed to get off the road before collapsing beside it, utterly drained of every ounce of energy I had."
 
+    play sound sfx_pillow
+
     "Try as I might, my arms and legs simply refuse to move. All I can do is lay helplessly on my back, chest heaving as my body grabs at any oxygen it can."
+
+    scene bg misc_sky
+    with dissolve
 
     "My eyes have trouble focusing, but it's like there's much to look at. Just a blue, cloudless sky looming above, impossibly vast compared to the insignificance of me and my collapsed body."
 
@@ -3306,6 +3510,11 @@ label en_H11:
     "The silence afterwards makes me wonder if I said the right thing. I'm still confused why he's even wanting to talk to me, or why I'm not questining him about it. I've totally let myself get caught in his pace."
 
     "Unless he's just dancing around what he really wants to say. Now that I think about it... that really is something he'd do."
+
+    play sound sfx_sitting
+
+    scene black
+    with dissolve
 
     "Still sore from my running, I manage to sit myself up with some difficulty."
 
@@ -3372,4 +3581,7 @@ label en_H11:
     "Like this, the two of us will walk towards that unknown future ahead of us. Together."
 
     window hide
+
+    play music music_credits fadein 2.0
+
     return

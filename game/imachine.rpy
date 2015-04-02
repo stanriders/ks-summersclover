@@ -75,38 +75,47 @@ label H1:
     jump_out H2
 
 label H2:
+    call iscene ("timeskip")
     call iscene ("H2")
     jump_out H3
 
 label H3:
+    call iscene ("timeskip")
     call iscene ("H3")
     jump_out H4
 
 label H4:
+    call iscene ("timeskip")
     call iscene ("H4")
     jump_out H5
 
 label H5:
+    call iscene ("timeskip")
     call iscene ("H5")
     jump_out H6
     
 label H6:
+    call iscene ("timeskip")
     call iscene ("H6")
     jump_out H7
     
 label H7:
+    call iscene ("timeskip")
     call iscene ("H7")
     jump_out H8
     
 label H8:
+    call iscene ("timeskip")
     call iscene ("H8")
     jump_out H9
     
 label H9:
+    call iscene ("timeskip")
     call iscene ("H9")
     jump_out H10
     
 label H10:
+    call iscene ("timeskip")
     call iscene ("H10")
     jump_out H11
     
