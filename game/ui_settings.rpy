@@ -797,6 +797,7 @@ init python:
     ks_music("Aria_de_l'Etoile", 'twinkle')
     ks_music('Breathlessly', 'moonlight')
     ks_music('BVW1010_Sarabande', 'cellosolo')
+    ks_music('Carefree_Days', 'miki')
     ks_music('Cold_Iron', 'tragic')
     ks_music('Comfort', 'comfort')
     ks_music('Concord', 'lilly')
