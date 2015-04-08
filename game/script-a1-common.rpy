@@ -405,16 +405,25 @@ label en_C3:
 
     "There's also the old-fashioned stuffiness, too. Doesn't help that the literature club students are all quiet as mice, but it's something more than that. The furniture, staff, and general mustiness of the older books are all stifling."
 
+    show suzu basic_concerned at centersit
+    with charaenter
+    
     "My eyes eventually fall on the girl across the table from me. 'Unremarkable' would perhaps be the best description of how she appears, save for the bags under her eyes and brace on her knee. For Yamaku, though, that's doing pretty well."
 
     "If I had to choose which pose embodied the personality of Suzu the most, it'd have to be her chin resting on her hand as her eyes lazily scan the manga magazine in front of her."
 
     "The girl looks up, her eyes meeting my own. Her reaction, or lack thereof, is about what I'd expect."
 
+    show suzu basic_speak at centersit
+    with charachange
+    
     suz "Staring is rude."
 
     mk "I dunno how you put up with this place. Don't you have anything more exciting to do with yourself?"
 
+    show suzu basic_concerned at centersit
+    with charachange
+    
     "She sighs as I start to rock back and forth on my chair to occupy myself. With nobody else willing to brave the heat, the track club's been largely abandoned for the day. I can think of better things to do than throw myself around an empty track."
 
     "Then again, the literature club sure makes a dull sight. The closest thing I can see to an actual club activity is half a dozen students sitting around a table quiet discussing some book or another."
@@ -422,11 +431,17 @@ label en_C3:
     mk "Why don't you join them?"
 
     "Following my nod, she glances to her side and back with a minimum of effort, not even bothering to lift her head from her hand."
-
+    
+    show suzu basic_suprised at centersit
+    with charachange
+    
     suz "Because I'm busy reading this."
 
     mk "Isn't literature club for discussing literature?"
-
+    
+    show suzu basic_concerned at centersit
+    with charachange
+    
     suz "Most of us just read whatever. As long as we're quiet and in the library, nobody really cares."
 
     mk "So that's all you're gonna do? Read manga?"
@@ -442,7 +457,10 @@ label en_C3:
     "I can't quite pick out their conversation, but the fact that they're having one at all is pretty impressive."
 
     "Suzu turns back around as I stop my gawking, her own interest apparently having been piqued."
-
+    
+    show suzu basic_suprised at centersit
+    with charachange
+    
     suz "She seems to like him."
 
     mk "Yeah, they get on well."
@@ -453,6 +471,12 @@ label en_C3:
 
     "Hisao comes to his feet as their conversation apparently ends, returning from their sanctuary at the end of the library. As he walks by us, a couple of thick novels held to his side, I give a short whistle and motion for him to come over."
 
+    show suzu basic_concerned at twoleftsit
+    with charachange
+    
+    #show hisao basic_suprised at tworight
+    #with charachange
+    
     hi "Odd to see you here."
 
     mk "Well aren't you quick on the uptake?"
@@ -561,7 +585,7 @@ label en_C3:
 
     "At least they're useful for something. If studying's going to be how she expands her social circle, then all the better. Given how hard she works for her rather average marks, maybe he can help turn things around."
     
-    window hide
+    #window hide
     
     return
     

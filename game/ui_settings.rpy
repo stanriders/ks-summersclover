@@ -243,6 +243,23 @@ init 1:
 
 
     ########## SPRITES ##########
+    # SUZU
+    python:
+        suzu_list = ['basic_angry',
+                    'basic_concerned',
+                    'basic_embarrassed',
+                    'basic_grin',
+                    'basic_happy',
+                    'basic_normal',
+                    'basic_smile',
+                    'basic_speak',
+                    'basic_suprised',
+                    'basic_veryembarrassed',
+                    'note_normal',
+                    'invis',
+                    ]
+        make_sprites('suzu',suzu_list)
+        
     # Minor characters
     python:
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
