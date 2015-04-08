@@ -1,19 +1,24 @@
 label en_C0:
 
     scene black
-    with None
-    
-    "I've always believed that there are many kinds of people."
-
-    "Those who calmly stroll through their uneventful lives, the ones who meander from this interest to another, they who walk in the shadow of others more notable than themselves, and so on."
-
-    "As for me... I was the type who ran. The people I wanted to be with, what I wanted to do with my life, where I wanted to be, I knew the answers to all those questions."
-
-    "I had my worries and concerns, of course, but those meant nothing when living with such purpose. My ambition was what set me free. For those fleeting years of my childhood, I was unstoppable."
-
-    "Three years ago, that world ended."
-    
     window hide
+    with None 
+    
+    nvl show dissolve # MAYBE [str]
+    
+    n "I've always believed that there are many kinds of people."
+
+    n "Those who calmly stroll through their uneventful lives, the ones who meander from this interest to another, they who walk in the shadow of others more notable than themselves, and so on."
+
+    n "As for me... I was the type who ran. The people I wanted to be with, what I wanted to do with my life, where I wanted to be, I knew the answers to all those questions."
+
+    n "I had my worries and concerns, of course, but those meant nothing when living with such purpose. My ambition was what set me free. For those fleeting years of my childhood, I was unstoppable."
+
+    n "Three years ago, that world ended."
+    
+    nvl hide dissolve
+
+    nvl clear
     
     return
     
@@ -21,6 +26,8 @@ label en_C1:
 
     scene bg school_gardens_ss #black
     with dissolve
+    
+    play music music_miki fadein 4.0 # start with Miki's theme
     
     window show
 
@@ -43,6 +50,9 @@ label en_C1:
     scene bg school_track_ss
     with locationchange
     
+    play ambient sfx_park fadein 1.5
+    $ renpy.music.set_volume(0.5, 1.5, channel="music")
+    
     "Emerging through the line of trees separating the track from the main grounds, the movement of a lone person immediately catches my eye."
 
     "His figure casts a long shadow in the evening's light as he slowly runs along the far side of the track. Looks like it's hard going, with his arms swaying to and fro as he valiantly pushes himself onwards."
@@ -64,7 +74,11 @@ label en_C1:
     "It reminds me of how I used to throw myself at the track, running however many laps I could before I broke from exhaustion."
 
     "I move to take another swig from my can as he comes back around, only to find it lacking. With my attention briefly diverted from Hisao to my sadly empty drink, I'm take mildly off guard as he stumbles off the track and comes to a haphazard stop just ahead of me."
-
+ 
+    stop music fadeout 4.0
+    
+    $ renpy.music.set_volume(1.0, 4.0, channel="music") # restoring music volume
+    
     hi "Can I... help you...?"
 
     "Not knowing if he'd even be able to hear me past his panting, I let him collect himself for a few seconds before answering."
@@ -120,7 +134,9 @@ label en_C1:
     "May as well wait things out as he continues with his deliberation, as I'm pretty confident I know what the reply will be. Sure enough, he finally comes up with an answer."
 
     hi "Fine, I'll go along with you."
-
+    
+    stop ambient fadeout 2.0
+    
     #centered "~ Timeskip ~" with dissolve
     scene bg suburb_shanghaiext_ss
     with shorttimeskip#locationchange
@@ -131,7 +147,12 @@ label en_C1:
 
     scene bg suburb_shanghaiint
     with locationchange
-
+    
+    play music music_daily fadein 1.0 
+    
+    $ renpy.music.set_volume(0.5, .5, channel="ambient")
+    play ambient sfx_crowd_indoors fadein 1.0
+    
     "I like the uniforms they have here, even if they do strike me as a little unconventional. Our meals placed before us, the waitress takes her leave to attend to a handful of other customers at the opposite end of the cafe."
 
     "Not being especially hungry, my meal's just a slice of pie and a drink. Hisao's pack of sandwhiches don't look like it'll last for long, one of them already having disappeared into his mouth."
@@ -222,6 +243,11 @@ label en_C1:
 
     "The weather really is nice today."
     
+    stop music fadeout 2.5
+    
+    stop ambient fadeout 2.5
+    $ renpy.music.set_volume(1.0, .5, channel="ambient")
+    
     window hide
     
     scene black
@@ -233,6 +259,8 @@ label en_C2:
 
     scene bg school_gardens3
     with dissolve
+    
+    play music music_soothing fadein 0.25 # [str]
     
     window show
     
@@ -297,6 +325,8 @@ label en_C2:
     "He wavers a little, but eventually throws his arms up in surrender."
 
     hi "Alright, you got me. I'll come."
+    
+    stop music fadeout 1.5
 
     scene bg city_karaokeint
     with shorttimeskip
