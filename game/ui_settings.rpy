@@ -260,6 +260,11 @@ init 1:
                     ]
         make_sprites('suzu',suzu_list)
         
+    # HISAO
+        hisao_list = ['invis',
+                    ]
+        make_sprites('hisao',hisao_list)
+        
     # Minor characters
     python:
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])

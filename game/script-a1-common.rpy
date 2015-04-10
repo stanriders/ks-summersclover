@@ -499,13 +499,16 @@ label en_C3:
 
     "It might be rather hypocritical, but I don't have much want to get involved. With the way I am, it could only go badly."
 
+    #show hisao invis at rightedge
+    #with None
+    
     "Hisao comes to his feet as their conversation apparently ends, returning from their sanctuary at the end of the library. As he walks by us, a couple of thick novels held to his side, I give a short whistle and motion for him to come over."
 
     show suzu basic_concerned at twoleftsit
-    with charachange
+    with charamove
     
     #show hisao basic_suprised at tworight
-    #with charachange
+    #with dissolvecharamove
     
     hi "Odd to see you here."
 
@@ -855,8 +858,16 @@ label en_C5:
 
     mk "Yo."
 
+    #show hisao basic_suprised at twoleft
+    show suzu basic_suprised at tworight
+    with charaenter
+    
     "The two of them react in unison to the sound of my voice, Hisao turning his body towards me as Suzu moves little more than her eyes. Their normal morning greetings come to a halt almost as soon as they begin."
-
+    
+    #show hisao basic_smile at twoleft
+    show suzu basic_concerned at tworight # i should probably make more neutral and bored face for her [str]
+    with charachange
+    
     "Suzu just sighs as Hisao's face, as it so often does, turns to mild concern."
 
     hi "Are you... okay?"
@@ -866,13 +877,22 @@ label en_C5:
     "He motions to his left cheek, my own fingers mirroring his out of reflex. It takes me a second to realise what he's referring to. I haven't looked in the mirror, but there'd no doubt be a nice big bruise there right about now."
 
     mk "Haha, this? I kinda got a bit rough with another club guy. We're cool, don't worry."
-
+    
+    show suzu basic_suprised at tworight 
+    with charachange
+    
     suz "Again?"
 
     hi "...This happens often?"
-
+    
+    #show suzu basic_speak at tworight 
+    #with charachange
+    
     suz "You have no idea."
-
+    
+    show suzu basic_concerned at tworight # i should probably make more neutral and bored face for her [str]
+    with charachange
+    
     "I disarm him with a stupid grin as I scratch the back on my neck."
 
     hi "Both of you seem rather accident-prone."
@@ -881,8 +901,15 @@ label en_C5:
 
     "The loud clapping of hands behind me would make me jump if it were less obvious who said hands belonged to. As Mutou clears his throat and tries to shepherd the gossiping class into their seats, Hisao obediently takes his leave of us and I turn to take my seat."
 
+    #hide hisao
+    hide suzu
+    with charaexit
+    
     "The fact he's addressing the class rather than me is cause for a mental sigh of relief. He wouldn't take kindly to casual talk of a scrap between students, and his classroom lectures are boring enough without being subjected to another on the subject."
 
+    show muto irritated
+    with charaenter
+    
     mu "Oh, and Miura? I'll see you after class."
 
     "Damn it."
