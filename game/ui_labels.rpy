@@ -636,14 +636,14 @@ label scene_select_loop:
         ui.vbox(xpos=180, ypos=120, background=None)
         ui.text(displayStrings.scene_page_caption, style="page_caption")
         ui.hbox()
-        shown_buttons = ("Act 1", "Hisao", "Suzuki")
+        shown_buttons = ("Act 1", "Hisao", "Suzu")
         
         for button in shown_buttons:
             if button == "Act 1":
                 label = displayStrings.act_term + " 1"
             elif button == "Hisao":
                 label = displayStrings.name_hi
-            else: # button == "Suzuki":
+            else: # button == "Suzu":
                 label = displayStrings.name_suz
             
             path = button

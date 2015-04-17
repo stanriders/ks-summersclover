@@ -164,14 +164,14 @@
     
     # new characters! [str]
     displayDict["ru"].name_har = u"Хару"
-    displayDict["ru"].name_suz = ruw(u"Сузуки")
+    displayDict["ru"].name_suz = ruw(u"Сузу")
     displayDict["ru"].name_yuk = u"Юкио"
     displayDict["ru"].name_jun = u"Отец"
     displayDict["ru"].name_tsu = u"Цубаса"
     displayDict['ru'].name_yam = u"Ямада"
     
-    displayDict["ru"].name_dad = u"Отец Сузуки"
-    displayDict["ru"].name_mot = u"Мать Сузуки"
+    displayDict["ru"].name_dad = u"Отец Сузу"
+    displayDict["ru"].name_mot = u"Мать Сузу"
     
     # Scenes available in the extras -> scene select menu. Name, label, description, path (path may also be a tuple).
     # Now also doubles as a lookup list for the actual scene names. Display in the extras can be suppressed
@@ -185,7 +185,7 @@
     # Definition. This maps an id tuple to a tuple of displayed text, filename modifier, and the position of said text.
     # the display function is tcard() in ui_code.rpy
     displayDict["en"].act_names = {(1, "all"): ("The Runner", "act1", 100, 70), 
-                                 (2, "suzu"): ("Suzuki", "act2suzu", 100, 250), 
+                                 (2, "suzu"): ("Suzu", "act2suzu", 100, 250), 
                                  (2, "hisao"): ("Hisao", "act2hisao", 200, 120), 
                                 }
     # credits

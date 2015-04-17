@@ -72,6 +72,8 @@ label C9:
 label H1:
     $ tcard(2, "hisao")
     call iscene ("H1")
+    call hscene ("H1h")
+    call iscene ("H1x")
     jump_out H2
 
 label H2:
@@ -124,9 +126,9 @@ label H11:
     call credits
     jump_out restart
     
-#######################
-#    Suzuki path     #
-#######################
+####################
+#    Suzu path     #
+####################
 
 label S1:
     $ tcard(2, "suzu")
@@ -134,50 +136,62 @@ label S1:
     jump_out S2
     
 label S2:
+    call iscene ("timeskip")
     call iscene ("S2")
     jump_out S3
     
 label S3:
+    call iscene ("timeskip")
     call iscene ("S3")
     jump_out S4
     
 label S4:
+    call iscene ("timeskip")
     call iscene ("S4")
     jump_out S5
     
 label S5:
+    call iscene ("timeskip")
     call iscene ("S5")
     jump_out S6
     
 label S6:
+    call iscene ("timeskip")
     call iscene ("S6")
     jump_out S7
     
 label S7:
+    call iscene ("timeskip")
     call iscene ("S7")
     jump_out S8
     
 label S8:
+    call iscene ("timeskip")
     call iscene ("S8")
     jump_out S9
     
 label S9:
+    call iscene ("timeskip")
     call iscene ("S9")
     jump_out S10
     
 label S10:
+    call iscene ("timeskip")
     call iscene ("S10")
     jump_out S11
     
 label S11:
+    call iscene ("timeskip")
     call iscene ("S11")
     jump_out S12
     
 label S12:
+    call iscene ("timeskip")
     call iscene ("S12")
     jump_out S13
     
 label S13:
+    call iscene ("timeskip")
     call iscene ("S13")
     jump_out S14
     

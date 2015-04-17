@@ -739,7 +739,7 @@ label en_C4:
 
     mk "Oh yeah? How about you try having periods?"
 
-    yuk "Piss off, we have to-{nw}"
+    yuk "Piss off, we have to-{w=.5}{nw}"
 
     mk "Look at me, I'm a man, oh no I have to shave my face, I have dreams that give me orgasms, how terrible~!"
 
@@ -747,7 +747,7 @@ label en_C4:
 
     mk "Huh? What's that? I can't hear you over bleeding from my genitals and feeling like I've been sucker-punched in the gut once a month!"
 
-    yuk "You're making my point for me! If you didn't go on about your bloody periods while we're eating, we'd-!{nw}"
+    yuk "You're making my point for me! If you didn't go on about your bloody periods while we're eating, we'd-!{w=.5}{nw}"
 
     mk "Maybe I'd act more like a girl once I got free crap for being one!"
 

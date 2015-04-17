@@ -202,6 +202,11 @@ label en_H1:
     hi "Arrhythmia. I'll be okay, I just have to take it easy."
 
     "As I continue running my hand over him, I notice Hisao's eyes peering down into my top. He takes my smile as permission, his hand gingerly reaching forwards."
+    
+    return
+    
+# H-scene separator for those who disabled adult scenes in main menu. [str]
+label en_H1h:
 
     "He seems mildly surprised at how my breast feels as he begins to gently grope my left one, feeling out its shape and seeing how it reacts when lightly kneaded."
 
@@ -217,7 +222,7 @@ label en_H1:
 
     "Looks like my assassment of him having a nice body was spot on, his legs also being suitably toned with a light covering of hair. Then there's his crotch, entirely exposed with its rod standing proudly erect in anticipation. I kind of want to jump his bones right now, though think better of it."
 
-    hi "You look pleasd with yourself."
+    hi "You look pleased with yourself."
 
     mk "Shouldn't you take pride in turning a girl on?"
 
@@ -406,14 +411,22 @@ label en_H1:
     "I'm glad Hisao didn't roll off me after we finished; it's nice to feel his body as the warmth lingers. There's little point in asking him if it was good, as the answer to that is painfully obvious."
 
     "All I can do as we recover ourselves, is tiredly pet his dishevelled hair."
+    
+    return
+    
+# H-scene end. [str]
+label en_H1x:
 
-    centered "~ Timeskip ~" with dissolve
+    scene black
+    with shorttimeskip
+    
+    #centered "~ Timeskip ~" with dissolve
 
     "With the both of us cleaned up and clothed once more, we lie beneath the sheets next to each other as we try to go to sleep. Not that we try very hard, admittedly."
 
     hi "Thanks for tonight, Miki."
 
-    mk "Hey, it was nice for me too. Aside from you-"
+    mk "Hey, it was nice for me too. Aside from you-{w=.5}{nw}"
 
     hi "Alright, you don't need to go on about that. It just kinda snuck up on me."
 
@@ -2265,7 +2278,7 @@ label en_H7:
     scene bg school_gate_ni
     with dissolve
 
-    $ renpy.music.set_volume(0.6, 0.0, channel="ambient")
+    $ renpy.music.set_volume(0.8, 0.0, channel="ambient")
     play ambient sfx_running fadein 2.0
 
     window show
@@ -2293,7 +2306,7 @@ label en_H7:
 
     "Hello again, Yamaku."
 
-    hide window
+    window hide
 
     scene black
     with dissolve
@@ -2303,10 +2316,11 @@ label en_H7:
 
     #centered "~ Timeskip ~" with dissolve
 
-    scene bg school_hallway3
-    with locationskip
+    #Maybe adding a timeskip in imachine instead of a locationskip would be better here? [AHA]
 
-    #Instead maybe adding timeskip in imachine here?
+    scene bg school_hallway3 with shorttimeskip#locationskip
+
+    window show
 
     har "Yo, Miki."
 
@@ -2440,6 +2454,7 @@ label en_H7:
     "Hisao quietly calls out that we've come with the textbooks, given that nobody's behind the counter to take them. Before I suggest we just dump them for the staff to sort out, a loud thump from under the counter gives us both a jump."
 
     play sound sfx_impact
+    with vpunch
 
     "Yuuko slowly emerges from the ground, rubbing her sore head as she stands. The poor girl never seems to have very much luck."
 
@@ -2690,7 +2705,7 @@ label en_H8:
 
     "He looks to me with concerned eyes, having no idea of what's to come."
 
-    stop ambient fadeout 0.5
+    stop ambient fadeout 1.0
 
     centered "~ Timeskip ~" with dissolve
 
@@ -2910,7 +2925,7 @@ label en_H9:
 
     "I turn my head back to Hisao, still standing next to his desk while busily looking over the very worksheet I need so badly."
 
-    mk "Hey, Hisao? Let me copy your-"
+    mk "Hey, Hisao? Let me copy your-{w=.5}{nw}"
 
     hi "Do it yourself."
 
@@ -3236,7 +3251,7 @@ label en_H10:
 
     mk "I already know I'll get some crappy job. Boo hoo."
 
-    play music music_drama fadein 5
+    play music music_drama fadein 1.0
 
     hi "So that's what you think about first..."
 
@@ -3312,8 +3327,8 @@ label en_H10:
 
     window hide
 
-    stop music fadeout 2.5
-    with Pause(4.0)
+    stop music fadeout 2.0
+    with Pause(3.0)
 
     return
     
@@ -3322,11 +3337,17 @@ label en_H11:
     scene black
     with dissolve
 
+    $ renpy.music.set_volume(0.6, 0.0, channel="ambient")
+
+    queue ambient [ sfx_impact, sfx_void, sfx_void ]
+
     window show
 
     "I idly hit the back of my head repeatedly against a dresser in my room, sitting on the floor as Yukio leans against my desk and Haru sits on the side of my bed. It's been a while since we had an impromptue meeting like this, but they soon agreed after I recounted what happened."
 
     har "That ain't gonna help."
+
+    stop ambient fadeout 0.3
 
     mk "It doesn't hurt, either."
 
@@ -3402,7 +3423,7 @@ label en_H11:
 
     yuk "I don't know, and neither would Haru. Work out whatever will leave you with no regrets, that's all I can tell you."
 
-    play sound sfx_dooropen
+    queue sound [ sfx_dooropen, sfx_void, sfx_doorclose ]
 
     "With that, he leaves. Haru just stays where he is, doing his best to not look too serious about all this."
 
@@ -3436,7 +3457,7 @@ label en_H11:
 
     har "That's more like it. Good luck, Miki."
 
-    play sound sfx_dooropen
+    queue sound [ sfx_dooropen, sfx_void, sfx_doorclose ]
 
     "We give our goodbyes to each other as he leaves, my room becoming empty once again."
 
@@ -3582,6 +3603,6 @@ label en_H11:
 
     window hide
 
-    play music music_credits fadein 2.0
+    play music music_credits fadein 0.2
 
     return

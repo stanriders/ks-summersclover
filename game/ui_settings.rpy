@@ -944,6 +944,8 @@ init python:
     sfx_cellphone = "sfx/cellphone.ogg"
     sfx_running = "sfx/running.ogg"
     sfx_sitting = "sfx/sitting.ogg"
+
+    sfx_void = "sfx/void.mp3" #0.5 seconds of nothingness, can be used in queues [AHA]
     
     
     #video mapping

@@ -167,14 +167,14 @@
     displayDict["en"].name_emm_ = "Emi's mother"
     
     displayDict["en"].name_har = "Haru"
-    displayDict["en"].name_suz = "Suzuki"
+    displayDict["en"].name_suz = "Suzu"
     displayDict["en"].name_yuk = "Yukio"
     displayDict["en"].name_jun = "Dad"
     displayDict["en"].name_tsu = "Tsubasa"
     displayDict["en"].name_yam = "Yamada"
     
-    displayDict["en"].name_dad = "Suzuki's father"
-    displayDict["en"].name_mot = "Suzuki's mother"
+    displayDict["en"].name_dad = "Suzu's father"
+    displayDict["en"].name_mot = "Suzu's mother"
     
     # Scenes available in the extras -> scene select menu. Name, label, description, path (path may also be a tuple).
     displayDict["en"].s_scenes = (("Prologue", "C0", True, "Act 1"),
@@ -200,27 +200,27 @@
                                     ("Disconnection", "H10", True, "Hisao"),
                                     ("Goodbye, Hello", "H11", True, "Hisao"),
                                     
-                                    ("Serendipity", "S1", True, "Suzuki"),
-                                    ("Reverie", "S2", True, "Suzuki"),
-                                    ("Fireworks", "S3", True, "Suzuki"),
-                                    ("The New World", "S4", True, "Suzuki"),
-                                    ("Hand in Hand", "S5", True, "Suzuki"),
-                                    ("Morning Stroll", "S6", True, "Suzuki"),
-                                    ("Sands of Time", "S7", True, "Suzuki"),
-                                    ("Night on the Town", "S8", True, "Suzuki"),
-                                    ("Frayed Knot", "S9", True, "Suzuki"),
-                                    ("Amends", "S10", True, "Suzuki"),
-                                    ("Small Hope", "S11", True, "Suzuki"),
-                                    ("Loss", "S12", True, "Suzuki"),
-                                    ("Reminiscence", "S13", True, "Suzuki"),
-                                    ("Redemption", "S14", True, "Suzuki"),
+                                    ("Serendipity", "S1", True, "Suzu"),
+                                    ("Reverie", "S2", True, "Suzu"),
+                                    ("Fireworks", "S3", True, "Suzu"),
+                                    ("The New World", "S4", True, "Suzu"),
+                                    ("Hand in Hand", "S5", True, "Suzu"),
+                                    ("Morning Stroll", "S6", True, "Suzu"),
+                                    ("Sands of Time", "S7", True, "Suzu"),
+                                    ("Night on the Town", "S8", True, "Suzu"),
+                                    ("Frayed Knot", "S9", True, "Suzu"),
+                                    ("Amends", "S10", True, "Suzu"),
+                                    ("Small Hope", "S11", True, "Suzu"),
+                                    ("Loss", "S12", True, "Suzu"),
+                                    ("Reminiscence", "S13", True, "Suzu"),
+                                    ("Redemption", "S14", True, "Suzu"),
                                     )
 
 # TITLE CARDS
     # Definition. This maps an id tuple to a tuple of displayed text, filename modifier, and the position of said text.
     # the display function is tcard() in ui_code.rpy
     displayDict["en"].act_names = {(1, "all"): ("The Runner", "act1", 100, 70), 
-                                 (2, "suzu"): ("Suzuki", "act2suzu", 100, 250), 
+                                 (2, "suzu"): ("Suzu", "act2suzu", 100, 250), 
                                  (2, "hisao"): ("Hisao", "act2hisao", 200, 120), 
                                 }
     # credits

@@ -1,7 +1,6 @@
 label en_S1:
 
-    scene black
-    with dissolve
+    scene bg school_track with dissolve
     
     window show
     
@@ -83,7 +82,7 @@ label en_S1:
 
     hi "Fine, I'm going. Miki?"
 
-    mk "Yeah, I-"
+    mk "Yeah, I-{w=.5}{nw}"
 
     suz "I have business with her."
 
@@ -91,7 +90,9 @@ label en_S1:
 
     "Shrugging in deference to her instructions, I pass the bundle of running blocks to Hisao before leaving with her. Neither of the two seem to mind as they get back to work with the others."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_road with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     "A mighty yawn rings out as we descend down the hill into town, a good stretch loosening up my muscles a bit."
 
@@ -123,7 +124,9 @@ label en_S1:
 
     "That said, I'm not willing to retreat from the point, either. After we graduate, she isn't going to be able to rely on my company. Hisao was a first good step out of her comfort zone, but that isn't enough."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg suburb_shanghaiint with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     "With a deep bow, Yuuko takes her leave after setting down our drinks. A coffee for me, and tea for Suzu."
 
@@ -191,6 +194,8 @@ label en_S1:
 
     "She's starting to look flustered. Given what she's telling me to do, shouldn't I be the one feeling put off?"
 
+    scene black with shuteye
+
     "Regardless, I give a sigh and close my eyelids. She's not the type to pull magic tricks, nor the type to do a dumb prank, so all I can do is wait for whatever's coming in darkness."
 
     "Seconds pass. The Shanghai's pretty quiet today, now that I think of it."
@@ -199,11 +204,15 @@ label en_S1:
 
     suz "...Don't make me regret this."
 
-    "Regret what? What's she planning to-"
+    "Regret what? What's she planning to-{w=.5}{nw}"
+
+    scene bg suburb_shanghaiint with openeye_shock
 
     "My eyes flash open in shock as realisation dawns on me, but it's far too late."
 
     "A set of lips press to mine, soft and trembling. Suzu's body cranes over the table to reach me, her own eyes closed as she presses her mouth to mine."
+
+    scene black with shuteye
 
     "All I can do is close my eyes in response."
 
@@ -212,10 +221,15 @@ label en_S1:
     "I don't know what I'm supposed to say, or what to do. All I know, is that the life I, no, we, had led until just a few minutes ago... has disappeared forever."
     
     window hide
+
     return
+
 label en_S2:
+
+    scene bg school_scienceroom with dissolve
     
     window show
+
     "I wonder how long it's been since Suzu missed a class. At least a good few months, I think."
 
     "Carefully scheduled naps, along with her meds, allow her to drag her feet to class every morning. Even if she sometimes doesn't quite last out the whole day, she makes damned sure she's at least present and accounted for."
@@ -226,7 +240,12 @@ label en_S2:
 
     "Why she's missing is hardly a mystery. I get a knot in my stomach just thinking about how it happened, and it must no doubt be much worse for her. Suzu might be stubborn as a mule, but even she has her breaking point."
 
+    $ renpy.music.set_volume(0.4, 0.0, channel="sound")
+    play sound sfx_normalbell
+
     "I barely even register the bell signalling the start of lunch, only beginning to shuffle out of the classroom as I see the other students moving past me."
+
+    scene bg school_hallway3 with locationchange
 
     "Filing into the hallway with those who'd rather escape the stuffy room rather than chat and eat at their desks, the thought of what I should eat floats vaguely into my mind. Bread, I suppose. Cheap, and I could easily force it down."
 
@@ -248,7 +267,9 @@ label en_S2:
 
     hi "...Come with me."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_cafeteria with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     "The cafeteria is humming with activity already, but the two of us thankfully managed to score a free table by getting in before the rush."
 
@@ -312,7 +333,7 @@ label en_S2:
 
     mk "I was confused, alright!?"
 
-    mk "I had no idea that was coming! I didn't even know she-!"
+    mk "I had no idea that was coming! I didn't even know she-!{w=.5}{nw}"
 
     "Hisao quickly waves his hand downwards to make me lower my volume. I quickly do so."
 
@@ -380,13 +401,30 @@ label en_S2:
 
     hi "I understand."
 
-    "So that's my deadline. Whatever I decide, I need to be careful about how I proceed - Suzu is a fragile person, and moreover, I don't want to lose the only female friend I've ever had."
+    "So that's my deadline. Whatever I decide, I need to be careful about how I proceed{w} - Suzu is a fragile person, and moreover, I don't want to lose the only female friend I've ever had."
 
     "She really is a troublesome girl."
+
+    scene black with dissolve
     
     window hide
+
     return
+
 label en_S3:
+
+    #Custom fadein and fadeout animations. Fades for 4 seconds WHILE text is displayed, can also be used in other places. [AHA]
+    transform crowdgather:
+        on show:
+            alpha 0.0
+            easein 4.0 alpha 1.0
+
+    transform crowddisperse:
+        on hide:
+            easeout 4.0 alpha 0.0
+
+
+    scene bg suburb_roadcenter_ni with dissolve
 
     "The air is pleasantly cool tonight, with a gentle breeze and cloudless sky. You couldn't ask for better weather, given the occasion."
 
@@ -397,6 +435,11 @@ label en_S3:
     "After putting Shizune and Misha through the trouble of doing my makeup for me and helping me put on the kimono, plus paying actual money to get my hair done, Suzu had better appreciate this."
 
     "I run my hand through my hair, partly to take in the feeling of how smooth and silky it is thanks to the barber's careful work, and partly to distract myself. I've taken care not to move around suddenly or work up a sweat, so everything should still look about right. Hopefully."
+
+    show crowd at crowdgather
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="ambient")
+    play ambient sfx_crowd_outdoors fadein 4
 
     "Walking down the path towards the park where we'd agreed to meet, the crowds get bigger as bigger as I near the main festivities. The scent of grilled food wafts in the air, as does the faint perfume of passing women."
 
@@ -428,7 +471,7 @@ label en_S3:
 
     "The movement of Hisao draws me back into the real world, the sounds, smells, and bright lights around us suddenly reentering my conciousness. We both look on as he quietly turns and begins to walk away."
 
-    suz "Where are you-?"
+    suz "Where are you-?{w=.5}{nw}"
 
     hi "I'm going to run on ahead and have a poke around the festival. Enjoy yourselves."
 
@@ -439,6 +482,12 @@ label en_S3:
     "I quickly begin to walk forward, or at least, as quickly as the kimono's tight wrapping around my legs allows. Suzu's mouth practically quivers as she tries to work out what to say or do, but I know she's not going to come up with anything."
 
     "Moving past her, I take her hand in mine as I go, not looking at her nor saying a word. Shes not the only one stuck for how to act in this situation. All I know, is that right now I'm the one who has to take the lead."
+
+    scene bg suburb_tanabata_ni
+    show crowd 
+    with locationchange
+
+    $ renpy.music.set_volume(0.9, 3.0, channel="ambient")
 
     "Hand in hand, the two of us walk side by side into the heart of the festivities. The noise and laughter levels off as we enter, with people busying themselves eating food, playing games at the stalls, and chatting with their friends and partners."
 
@@ -456,6 +505,10 @@ label en_S3:
 
     "This is where she should be giving me some probably deserved snark about how much I ask her for money. Instead, all she can manage is a subdued nod."
 
+    hide crowd with dissolve
+
+    $ renpy.music.set_volume(0.66, 1.0, channel="ambient")
+
     "I give a sigh as I lead us to the counter, taking my hand from hers to remove my purse. You pick up a few tricks after being one-handed for so long, with the stallowner raising an eyebrow at how efficiently I flick a few notes from my wallet using the same hand that's holding it."
 
     "I can't say I share Suzu's taste for sweet things, so after buying one and handing to to her, I thank the stall owner and take my leave."
@@ -465,6 +518,10 @@ label en_S3:
     mk "It's fine."
 
     "She begins to lick at her sweet, but only after reaching out her hand. I take it without question, and the two of us continue onward."
+
+    show crowd with dissolve
+
+    $ renpy.music.set_volume(0.9, 1.0, channel="ambient")
 
     "Suzu's grip is looser than before, which I count as a small victory. While I appreciate her reaction to me being all dolled up, the last thing I want is for her cataplexy to play up. Besides, the calmer she is, the easier things will be."
 
@@ -486,6 +543,10 @@ label en_S3:
 
     mk "Yup. You can keep the prize."
 
+    hide crowd with dissolve
+
+    $ renpy.music.set_volume(0.66, 1.0, channel="ambient")
+
     "I drag her over to the stall, and ask the owner what the prices are. A handful of yen for three shots is reasonable enough, so I fork over a few coins to the frail old man sitting on his tatty fold-up chair."
 
     "Suzu patiently stands back as I take the gun from the counter, testing its heft and loading the cork before shaking my left arm upwards to draw the sleeve away from my stump. The owner looks more amused than shocked as I take up position, pressing the stock to my shoulder and resting the barrel on my uncovered forearm."
@@ -493,6 +554,8 @@ label en_S3:
     "The stance works well at stabilising my aim, even if I can feel the glances of a few passing people on me. A tall, tanned girl in a bright red kimono taking aim with a bare stump where her left hand should be would look pretty weird."
 
     "I silently will myself to hit the center cup of the pyramid that's been carefully arranged. This is my chance to look super slick in front of Suzu, and although she's trying to hide it, she really wants that panda. I just need to concentrate, and..."
+
+    play sound sfx_blop
 
     "The trigger gives little resistance as I pull it, the cork leaving the gun with a soft pop. With that, I lower the gun a little to see the result."
 
@@ -512,9 +575,20 @@ label en_S3:
 
     "I look to him and nod to the bear as the prize I want, Suzu gently breaking off as he comes over with the stuffed item. She gives her earnest thanks to the man, the gun replaced on the counter as he passes it into her eager hands."
 
+    show crowd at crowddisperse with dissolve
+
+    $ renpy.music.set_volume(0.9, 1.0, channel="ambient")
+
     "We take our leave of the stall hand in hand, my own in her left, and the bear in her right. I can't help but smile at her as she inspects her new friend, glad to see a childish side of her she so rarely allows to be seen."
 
     "I'm pretty comfortable in calling tonight a success already. It's difficult to get past Suzu's mental reflex of avoiding emotions, but she's finally letting herself go. There's still a chance of cataplexy, or a sudden bout of sleepiness, but we'll take that as it comes."
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound") #setting volume back to default
+
+    play sound sfx_fireworks
+    with Pause(0.0)
+
+    stop sound fadeout 2.5
 
     "A trademark whistle echoes across the air, everyone's eyes suddenly turning to the bright green streak of light slowly chasing upwards into the night."
 
@@ -524,17 +598,33 @@ label en_S3:
 
     suz "We're going to miss the fireworks if we stay here!"
 
+    play sound sfx_running loop
+
     "Her hand breaks from mine as she runs ahead as fast as her getup allows, clutching her new panda to her chest."
 
     "After a moment's thought I quickly take chase, outpacing her with little effort."
+
+    stop sound fadeout 0.3
 
     "The moment I reach Suzu, I push my arms forward and bring them over her shoulders to take hold of her. She comes to a dead stop the moment she feels my body pressing to her's, her arms dropping to her sides."
 
     "She way she stopped so suddenly, without a single word being spoken, shows her lie. She never truly pushed the thought of her confession out of her mind, instead trying to distract herself the entire time. It's the sort of thing she'd do."
 
+    stop ambient fadeout 4.0
+
+    hide crowd at crowddisperse
+
     "The two of us stand still for seconds, maybe minutes. I lose track of the time as we stay there, the area around us slowly draining of people as everyone leaves the stalls to get the best view of the coming fireworks show."
 
     "And then, it starts."
+
+    scene bg misc_sky_ni with dissolve #maybe dotwipe_down as transition?
+
+    show fireworks
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="ambient") #setting volume back to default
+
+    play ambient sfx_fireworks
 
     "One by one, the little rockets shoot up into the sky, exploding above into all different colors of the rainbow. The view from here isn't so bad, the glow of the paper lanterns and the haphazardly run strings overhead doing little to block the lightshow above."
 
@@ -558,7 +648,11 @@ label en_S3:
 
     "I always thought confessions were supposed to make your heart race... but mine feels completely at peace. Things will change, but I know that this is what I want. Suzu deserves happiness, and if I can give that to her, then I can be truly happy as well."
 
+    hide fireworks
+
     "Her body shudders a little, making me step back."
+
+    scene bg suburb_tanabata_ni with dissolve
 
     "As she turns to face me, her face is a delicate mix of disbelief and hope. All I can do in response to that delicate face, its owner looking more fragile than she ever has, is give a reassuring smile."
 
@@ -566,15 +660,33 @@ label en_S3:
 
     "With one hand on her left shoulder and my forearm resting on her right, I close my eyes and gently lower myself towards her."
 
+    scene black with shuteye
+
     "And so, I press my lips to those of my precious Sleeping Beauty."
+
+    stop ambient fadeout 0.5
+    with Pause(1.0)
     
     window hide
+
     return
+
 label en_S4:
+
+    scene bg city_trainstation with dissolve
+    with Pause(0.2)
+
+    scene bg city_street4 with locationskip
+
+    window show
 
     "Suzu, Hisao and I make our way along the city street after leaving the train station, the bright summer sun beating down on our heads and the sea's salty smell wafting in the air."
 
     "It's a nice atmosphere here. When I first learned she lived in the city, images of Tokyo and Osaka flashed to my mind, but instead it ended up being a fairly relaxed place bordering the ocean. It isn't a surprise why Suzu's family decided to make their home here, rather than living in the middle of the big smoke."
+
+    $ renpy.music.set_volume(0.8, 0.0, channel="sound")
+
+    play sound sfx_birdstakeoff fadein 0.2
 
     "A couple of distracted seagulls resting on a guardrail take flight as we stroll past, squawking in protest."
 
@@ -594,9 +706,15 @@ label en_S4:
 
     mk "Yes, mother."
 
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound") #setting volume back to default
+
+    play ambient sfx_traffic fadein 3
+
     "The shimmering of heated air above the road ahead is broken up by a car whizzing past, with a pretty bright red sportscar following soon after. While the attention of Hisao and I is drawn by the latter, Suzu's mind is elsewhere."
 
     "I put my hand on her head and give it a little rub, partly to reassure her, but mostly because I just wanted to. Given that she doesn't protest, I assume she likes it."
+
+    stop ambient fadeout 4
 
     "It is good to see her in higher spirits, though. The last few days must've taken their toll on her emotionally, but she seems to be largely back to normal. Well, Suzu's normal."
 
@@ -613,6 +731,8 @@ label en_S4:
     mk "We'll see."
 
     "Suzu grimaces, but I manage to hide my reaction. I can't miss a chance to screw with him like this, after all."
+
+    scene black with locationskip
 
     "The three of us finally come within sight of the Suzuki household; a modern and fairly spacious two-storey house, nestled in the kind of suburb that aspires to look wealthy, but isn't quite there. Suzu's sister must be home, as her little white car is parked neatly in the gravel driveway."
 
@@ -705,6 +825,8 @@ label en_S4:
     mk "...You stud."
 
     "Tsubasa just smiles as she leads him into the hallway, the sound of her pointing out the directions to this and that to be heard after they leave. Miyu's interest seems to be piqued by the new arrival as she trots out after them."
+
+    play sound sfx_pillow
 
     "I just let my bag drop on the floor, content to drag it up to Suzu's room some time later."
 
@@ -900,13 +1022,15 @@ label en_S4:
 
     "A movement out of the corner of my eye grabs my attention, Suzu's plate suddenly being pushed towards me."
 
+    play sound sfx_impact
+
     "Hisao quickly withdraws his arm as Suzu's upper body falls forward, her face landing flat on the table where her plate has been. I feel even worse for having completely failed to account for her condition, Hisao's reflexes having just saved the day."
 
     "Everything about this feels absurd. It may be a sleep attack or cataplexy from the stress, or one leading to the other. In any case, this seems a reasonable excuse to extract her from the room and get things back under control."
 
     "Her mother puts her elbow on the table and buries her face in her hand out of frustration, her husband's hand reaching out and rubbing her back in concern."
 
-    mk "Should I-"
+    mk "Should I-{w=.5}{nw}"
 
     mot "Just take her."
 
@@ -1026,6 +1150,8 @@ label en_S4:
 
     "A spoiled little princess, quietly slumbering away surrounded by her little luxuries. It's nice to see her sleeping so peacefully, her mind not worried by the day's events."
 
+    play sound sfx_sitting
+
     "Walking over to her bed, I carefully take a seat on the side where she's sleeping. Without thinking, I reach down and brush away a stray hair on her face, disturbing her just enough to make her eyelids flutter."
 
     "I try to keep my voice as low and gentle as possible, not wanting to bother her any more than I already have."
@@ -1042,7 +1168,7 @@ label en_S4:
 
     mk "Hmm... not much, really. Just a few bits of smalltalk before everyone went off to do their own thing."
 
-    suz "They hate m-"
+    suz "They hate m-{w=.5}{nw}"
 
     mk "Don't be like that. They were just taken off guard, that's all."
 
@@ -1068,11 +1194,20 @@ label en_S4:
 
     "Maybe that's why everything feels like it'll be alright. Because Suzu's there, and even after all I've done, she loves me. She accepts me."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S5:
 
+    scene black with dissolve
+
+    window show
+
     "A tired Suzu follows my lead as we head down the stairs and into the hallway, a great yawn escaping as I make my way to the living room."
+
+    play sound sfx_dooropen
 
     "Opening the door reveals that we're not the first to arrive. With her body hidden by the recliner's back, all that's to be seen are two grey-clad arms lazily hanging over the sides."
 
@@ -1130,7 +1265,7 @@ label en_S5:
 
     mot "Make the most of your time here. This is the last time you'll set foot in this house, after all."
 
-    mk "But-!"
+    mk "But-!{w=.5}{nw}"
 
     mot "I'd suggest you don't talk back to me. You should be glad you're still here at all."
 
@@ -1488,7 +1623,7 @@ label en_S5:
 
     "As the seconds tick by, I begin to notice the cracks in her facade. The way she fiddles with her fingers, her uneven breathing, the way her cheeks become ever more flushed. In spite of all that, she still forces herself to keep eye contact."
 
-    mk "If you're not ready, I don't want to-"
+    mk "If you're not ready, I don't want to-{w=.5}{nw}"
 
     suz "I am ready. I want to do this with you, Miki."
 
@@ -1662,7 +1797,10 @@ label en_S5:
 
     "Well, whatever. Words were overrated anyway."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S6:
 
@@ -1836,7 +1974,10 @@ label en_S6:
 
     "I really could get used to these quiet days."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S7:
 
@@ -2088,6 +2229,8 @@ label en_S7:
 
     "The two of us turn and orient ourselves towards the objective. I think I have an okay chance at this, given how she lazes around at school."
 
+    play music music_running fadein 0.3
+
     hi "And... go!"
 
     "We spring forwards simultaneously, each of us off to a good start as the water washes over my body."
@@ -2136,6 +2279,8 @@ label en_S7:
 
     "Satisfied that I can still hear her moving about in the water rather than silently drowning, I kick onwards to the shallower waters."
 
+    stop music fadeout 2.0
+
     "With that, the ordeal is over. With a heave I bring myself to my feet and begin to wade out, dragging my sore legs out and on to the dry land where I belong. Water pours off my back, hair, and shoulders as I lurch forwards like some shambling swamp monster."
 
     mk "I... win..."
@@ -2180,7 +2325,7 @@ label en_S7:
 
     tsu "Don't worry about mom and dad. I'll sort them out."
 
-    suz "But they-"
+    suz "But they-{w=.5}{nw}"
 
     tsu "I'll sort it out."
 
@@ -2262,9 +2407,16 @@ label en_S7:
 
     "With the two of us basking in each other's joy in the setting sun, I know that I'll ever forget this holiday with Suzu."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S8:
+
+    scene bg school_scienceroom with dissolve
+
+    window show
 
     "With the holidays finally over, the mundane routine of school begins all over again."
 
@@ -2326,7 +2478,9 @@ label en_S8:
 
     har "Just a quiet little traditional place. Nothin' fancy, just real solid food."
 
-    centered "~ Timeskip ~" with dissolve
+    scene black with shorttimeskip
+
+    #centered "~ Timeskip ~" with dissolve
 
     "Looking around the numerous low tables and cushions at their sides, Haru's definition of 'little' might be questionable. That might be for the best, though, given the number of track club members that showed up."
 
@@ -2468,7 +2622,7 @@ label en_S8:
 
     "She answers my questioning look by throwing her head back to where Junko's sitting."
 
-    mk "It's not like she's wrong. I did some pretty bad things back-"
+    mk "It's not like she's wrong. I did some pretty bad things back-{w=.5}{nw}"
 
     suz "That's exactly why. You did bad things, but that's different to being a bad person."
 
@@ -2534,7 +2688,9 @@ label en_S8:
 
     "For a brief moment as the camera flash blinds us, it feels like everything really will work out."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg city_street3_ni with shorttimeskip
 
     "With the event over and time marching on, I idly stand around on the dark street outside the restaurant, a slumbering girl held to my back. Only Haru and the teacher are still around, the rest of the students having left by bus."
 
@@ -2574,7 +2730,9 @@ label en_S8:
 
     "He gives a grin and a salute as the teacher calls out for us to get in. Knowing him, we'd better get a move on."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_dormext_full_ni with shorttimeskip
 
     "After giving thanks to the teacher for the lift back to Yamaku, and letting Haru go on ahead to the male dorms, I slowly continue the journey to the female dormitories."
 
@@ -2618,7 +2776,11 @@ label en_S8:
 
     "Maybe I was coming on too strong, the girl falling silent as we come to the front of the dormitory building and make our way inside."
 
+    scene bg school_dormhallground with locationchange
+
     "Both of us squint as we enter the brightly-lit first floor. The common room lies empty as we pass, everyone most likely sleeping by now in preparation for the day ahead."
+
+    scene bg school_girlsdormhall with locationchange
 
     "Coming up the stairs and down the hall to the door of my room, I move to take my hand from Suzu's in order to grab my keys. It proves futile, with her hand refusing to let go of my own."
 
@@ -2634,7 +2796,15 @@ label en_S8:
 
     "With no offense or refusal forthcoming, she gingerly leads on down the hallway."
 
-    centered "~ Timeskip ~" with dissolve
+    scene bg school_girlsdormhall with shorttimeskip
+
+    play sound sfx_dooropen
+
+    scene black with locationchange
+
+    queue sound [ sfx_void, sfx_void, sfx_doorclose ]
+
+    #centered "~ Timeskip ~" with dissolve
 
     "I open the door with my copy of her key, and the moment Suzu closes the door behind us, I pull her into a tight embrace and press my mouth to hers with all the force I dare use."
 
@@ -2704,11 +2874,22 @@ label en_S8:
 
     mk "Aaaaaah!"
 
-    centered "~ Timeskip ~" with dissolve
+    #scene black with dissolve
+
+    centered "~ Timeskip ~" with dissolve #Here's probably a timeskip in imachine needed if we ever get bgs for Suzu's room [AHA]
+
+    scene black with dissolve
+
+    scene bg misc_ceiling_ni
+    with openeye
 
     "The cool night air sticks to my skin, the first sensation to return as my eyes blearily flicker open. The plain white ceiling hangs over me, a faint light from the front of the room just barely illuminating it."
 
     "I reach out with my hand to feel out Suzu, but I only end up patting at the bed. A brief glance confirms the fact."
+
+    scene black with dissolve
+
+    play sound sfx_sitting
 
     "Diappointed that I couldn't wake next to her, I sit up and rub my eyes in an attempt to see where she is. Despite still being out of focus, the silhouetted figure staring at her laptop's screen is unmistakable."
 
@@ -2758,15 +2939,22 @@ label en_S8:
 
     mk "Just come back to bed, Suzu. A fresh set of eyes'll help."
 
-    suz "But I-"
+    suz "But I-{w=.5}{nw}"
 
     "I clamp my hand over her mouth, having expected her to protest. I feel terrible as her face goes from frustration, to displeasure, and finally, to defeat."
 
     "My hand is removed from her mouth. She closes the laptop with a solemn click. Hope for working tonight leaves her."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S9:
+
+    scene bg school_scienceroom with dissolve
+
+    window show
 
     "I always feel antsy when Suzu doesn't show up to class, and today is no different."
 
@@ -2776,7 +2964,11 @@ label en_S9:
 
     "Having caught my rather overt gawking, Misha gives a smile. I quickly turn my head back to the front, lest she become curious about what's going on."
 
+    play sound sfx_normalbell
+
     "Eventually, thankfully, the school bell heralds the beginning of lunch. The relaxation of everyone in class is plainly obvious, even if it isn't spoken. It's no surprise that Mutou gives up on any prospect of keeping the lesson going, bidding us to have a good lunch as he collects up his teaching material."
+
+    scene bg school_hallway3 with locationchange
 
     "As the class begins to file out into the hallway, Hisao does the same. Curious if he knows aything, I follow him out."
 
@@ -2838,9 +3030,13 @@ label en_S9:
 
     hi "Wait, Miki...!"
 
+    scene bg school_track with shorttimeskip
+
     #Timeskip
 
     "Striding past the line of trees separating the track from the school gardens, it doesn't take long to pick out Yukio given the few people milling about."
+
+    scene bg school_track_on with locationchange
 
     "He looks downcast as stands around, venting at someone with his arms crossed. So occupied is he, that he doesn't notice me walking up until I'm on the track and facing him."
 
@@ -2858,7 +3054,12 @@ label en_S9:
 
     mk "You know what you did."
 
-    yuk "Me? I only told Suzu what I thought of her getting hitched to-"
+    yuk "Me? I only told Suzu what I thought of her getting hitched to-{w=.5}{nw}"
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="sound")
+
+    play sound sfx_impact
+    with vpunch
 
     "His annoying nasally voice is cut short as my fist meets the front of his face square-on. It's little more than a quick jab to make him shut his mouth, but it's enough to send him staggering backwards."
 
@@ -2870,47 +3071,105 @@ label en_S9:
 
     "He suddenly moves forward with surprising speed, letting fly as he raises his fist."
 
-    "Caught unawares by the speed he's apparently capable of, his swing at my face lands with a fair emount of force, sending my head jerking to the right."
+    "Caught unawares by the speed he's apparently capable of,{w=.5}{nw}"
 
-    "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much, the forearm absorbing his next punch."
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound")
+
+    play sound sfx_impact
+    with vpunch
+    with vpunch
+
+    "Caught unawares by the speed he's apparently capable of,{fast} his swing at my face lands with a fair emount of force, sending my head jerking to the right."
+
+    "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much,{w=.5}{nw}"
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="sound")
+
+    play sound sfx_impact
+    with vpunch
+
+    "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much,{fast} the forearm absorbing his next punch."
 
     "It's obvious from his face that he has no idea what he's doing, simply flailing about in a violent rage. With my senses returned and Yukio on the back foot as he shakes his sore hand, now's the time to counterattack."
 
     "I drop my right knee as he starts another wild swing, his balled fist sailing over my shoulder as I drive my own into his undefended stomach."
 
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound")
+
+    play sound sfx_impact
+    with vpunch
+    with vpunch
+
     "He hadn't braced at all as it drives deep into his torso, forcefully pushing the air from his lungs. Spit and a pathetic groan escape from his mouth, his stunned face frozen as his body tries to comprehend what's just happened to it."
 
     "There's no doubt he can't possibly fight back, confused and disoriented as he stumbles, arms tightly crossed around his pained stomach as he reflexively doubles over."
 
-    "The boy lurches towards me for whatever reason as he begins to right himself, earning a powerful swing at his head in hopes of dropping him. It has the intended effect, his body sent sprawling to the ground as my knuckles smash into his cheek."
+    "The boy lurches towards me for whatever reason as he begins to right himself,{w=.5}{nw}"
+
+    $ renpy.music.set_volume(0.85, 0.0, channel="sound")
+
+    play sound sfx_impact
+    with vpunch
+
+    "The boy lurches towards me for whatever reason as he begins to right himself,{fast} earning a powerful swing at his head in hopes of dropping him. It has the intended effect, his body sent{w=.5}{nw}"
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound")
+
+    play sound sfx_sitting
+
+    "The boy lurches towards me for whatever reason as he begins to right himself, earning a powerful swing at his head in hopes of dropping him. It has the intended effect, his body sent{fast} sprawling to the ground as my knuckles smash into his cheek."
 
     "This isn't enough. He won't learn from this. I have to make this final and irrefutable in his idiotic head."
+
+    scene bg school_track_running with locationchange
+
+    play sound sfx_sitting
 
     "I drop to my knees, following him to the ground and straddling his chest. The look of absolute fear in his eyes as he realises the situation only drives me on. This is what I want. This is the emotion I want him to feel, to remember long after this ends."
 
     "He raises an arm over his bloodied head, but it's in vain. I twist my entire upper body as I ready the blow, my fist flying downward at him with all the force I can muster."
 
+    $ renpy.music.set_volume(0.8, 0.0, channel="sound")
+    play sound sfx_impact
+    with vpunch
+
     "The feeling of impact ripples up my arm and floods my entire body. All prospect of defense deserting him as the strength leaves his arm, but it isn't enough. He deserves this. This repugnant being deserves this. Why shouldn't I enjoy teaching bad people like him a lesson?"
 
-    "I pull back my arm, slamming it into him once more. I can feel my face distorted by the wild grin my mouth has twisted into. This is fun. He'll remember me for this. He always will. He'll never forget how it was his fault this happened."
+    "I pull back my arm,{w=.5}{nw}"
+
+    play sound sfx_impact
+    with vpunch
+
+    "I pull back my arm,{fast} slamming it into him once more. I can feel my face distorted by the wild grin my mouth has twisted into. This is fun. He'll remember me for this. He always will. He'll never forget how it was his fault this happened."
 
     "He'll never forget how powerful I am compared to him. That's what truly matters. He's a bug. That's all he is, an ugly little bug under my foot. And now, he'll never forget it"
 
     "I pull my fist back, my knuckles covered in a mix of his blood and dirt from the ground. This bug can't even defend itself now. It's at my mercy. I can stomp on it as much as I want!"
 
+    play sound sfx_impact
+    with vpunch
+
     "Again my knuckles slam into the broken face below me, eyes rolling about with each catastrophic blow. The blood running into its throat giving a slight gurgle with each ragged breath taken. So what if I'm stupid? So what if I lost everything? I'm stronger than this bug. Nothing could be better than this feeling."
 
     "But as my arm flies down at the bug beneath me for another hit, it suddenly stops."
+
+    with vpunch
 
     "I try to pull back and punch once more simply due to the adrenaline coursing through me, but only afterwards do I realise that someone's firmly grabbed my arm."
 
     mk "Let go-!"
 
-    "Rage begins to fill my mind as another hand comes around my right armpit, followed by another set of hands taking a firm grasp of my left arm. I jerk my body with all my might, but the groaning body beneath me slowly becomes smaller and smaller as I'm dragged off it."
+    "Rage begins to fill my mind as another hand comes around my right armpit, followed by another set of hands taking a firm grasp of my left arm. I jerk my body{w=.5}{nw}"
+
+    with vpunch
+
+    "Rage begins to fill my mind as another hand comes around my right armpit, followed by another set of hands taking a firm grasp of my left arm. I jerk my body{fast} with all my might, but the groaning body beneath me slowly becomes smaller and smaller as I'm dragged off it."
 
     mk "Let go! Let go of me!"
 
     "Try as I might, I can't escape their grasp. Flicking my head around as I desperately try to work myself free reveals my captors to be Haru and Hisao, likely the only two track club members who'd ever dare approaching me in a fight."
+
+    scene bg school_track_on with locationchange
 
     "They manage to pull me a few yards away with some difficulty, holding me fast as help finally comes to Yukio. It pisses me off to see him still awake, dribbling blood as slowly staggers to his feet with the help of another guy who was hanging around."
 
@@ -2960,13 +3219,25 @@ label en_S9:
 
     "Someone like me really doesn't deserve happiness."
 
-    "With that, my world goes black."
+    "With that,{w=.5}{nw}"
+
+    with vpunch
+
+    scene black with dissolve
+
+    "With that,{fast} my world goes black."
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound") #restoring volume to default
 
     centered "~ Timeskip ~" with dissolve
 
     "I've always hated the nurse's office. The smell of bleach and strong cleaning agents, the pure white light flooding the room, the way everything is so immaculately clean and perfect... it's unnatural."
 
+    scene bg misc_ceiling_ss with openeye
+
     "A familiar metallic taste plays on my tongue as I wake from my rest. Tapping at the small gauze patch placed over where it's split shows that it isn't doing a great job of stemming the bleeding. Passing my hand over my aching cheek, it seems that's started swelling up, too. Never would've expected that asshole to throw a decent punch."
+
+    scene bg school_nurseoffice_ss with locationchange
 
     "While I might be content to stew in my discontent, it seems some people have other ideas. As my head lazily lulls over to the side to see the office, I find pair of legs in front of my vision, one knee smartly brought over the other as two hands sit atop them."
 
@@ -2978,7 +3249,11 @@ label en_S9:
 
     "Ah, I see. By giving me these without telling me what to write, she wants to see how I'll explain myself."
 
-    "Given that I can't see any way of talking my way out this, I sit up with a pained grunt and set the pad in my lap. Knowing my voice to be useless here, I silently scrawl away in my usual horrid handwriting, giving the items back to her afterwards."
+    "Given that I can't see any way of talking my way out this,{w=.5}{nw}"
+
+    play sound sfx_sitting
+
+    "Given that I can't see any way of talking my way out this,{fast} I sit up with a pained grunt and set the pad in my lap. Knowing my voice to be useless here, I silently scrawl away in my usual horrid handwriting, giving the items back to her afterwards."
 
     mk "[I fucked up.]"
 
@@ -3036,7 +3311,13 @@ label en_S9:
 
     "I know it's the easy way out, but I swallow my pride and give her a nod. I can't even think of what I'd tell her, after all."
 
-    "As Shizune closes the door behind her, I let myself fall back into my bed."
+    "As Shizune closes the door behind her,{w=.5}{nw}"
+
+    play sound sfx_pillow
+
+    scene bg misc_ceiling_ss with dissolve
+
+    "As Shizune closes the door behind her,{fast} I let myself fall back into my bed."
 
     "I guess this means Suzu's seen with her own eyes how wrong she was."
 
@@ -3046,9 +3327,16 @@ label en_S9:
 
     "In the end, I was right. I really am a horrible person."
 
+    scene black with dissolve
+
     window hide
+
     return
 label en_S10:
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="ambient")
+
+    play ambient sfx_rain fadein 2.0
 
     "Today, the weather turned bad."
 
@@ -3090,9 +3378,13 @@ label en_S10:
 
     "If I hadn't fought him, if he hadn't goaded me onward, if he hadn't confessed, if I'd mentioned our relationship, the amount of 'if's that came before where we are now is endless."
 
+    play sound sfx_doorknock
+
     "The sound of a hand rapping on my door breaks me from my thoughts. I'm almost thankful."
 
     mk "It's unlocked!"
+
+    play sound sfx_dooropen
 
     "Two pairs of feet shuffle into the room, their owners revealed to be Haru and Hisao. The former waves, while the latter holds up the pack of cards he's carrying."
 
@@ -3216,6 +3508,8 @@ label en_S10:
 
     "The two take their leave, Hisao giving a friendly wave goodbye as he does. If they did come to check on how we were doing, I wonder if they were happy with what they found."
 
+    play sound sfx_pillow
+
     "Suzu lets herself fall back and closes her eyes, chest heaving from her tired sigh. Being around people sure takes a lot out of her."
 
     mk "You awake?"
@@ -3250,7 +3544,17 @@ label en_S10:
 
     "I guess that's that, then."
 
-    centered "~ Timeskip ~" with dissolve
+    stop ambient fadeout 1.0
+
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_dormbathroom with shorttimeskip
+
+    $ renpy.music.set_volume(0.85, 0.0, channel="ambient") #restoring volume to default
+
+    play ambient sfx_shower fadein 0.3
+
+    show steam with dissolve
 
     "The warm water of the shower brings to mind the hot baths I used to enjoy back home. It's exactly the kind of relaxation I needed."
 
@@ -3261,6 +3565,8 @@ label en_S10:
     "But have I managed that? It seems that things are worse than ever since Suzu and I became an item. We may still not see eye to eye on when we should've come out, not that it matters now, but aside from that's it's hard to find fault with her."
 
     "Shizune may have told me not to think so much about myself, but it's hard not to when it feels like I'm the root of so many people's problems."
+
+    queue sound [ sfx_dooropen, sfx_void, sfx_void, sfx_void, sfx_doorclose ]
 
     "Past the sound of the running shower, the sound of someone opening the door and closing it behind them can be heard. Unusual for anyone to be taking a shower this late, so much so that I open the stall door and poke my head out to see if it's who I think it is."
 
@@ -3344,6 +3650,8 @@ label en_S10:
 
     "I lift her just enough to allow myself to walk forwards, stepping forward as best I can."
 
+    $ renpy.music.set_volume(0.65, 3.0, channel="ambient")
+
     suz "Miki... what are you...?"
 
     "Reaching the counter ahead, I let Suzu drop and thrust her forward. She has no opportunity stop herself before her legs hit the side, sending her top half sprawling forwards."
@@ -3374,6 +3682,9 @@ label en_S10:
 
     "Caught completely by surprise, I barely manage to catch her wet body. Her slipperiness makes it impossible to stop her falling, the only thing I can do being to hold her to me and letting myself drop with her."
 
+    play sound sfx_impact
+    with vpunch
+
     "The two of us end up sprawled on the floor, Suzu's limp figure awkwardly perched in my arms as I sit on the tiled floor. My butt hurts, but that's the least of my worries."
 
     "She doesn't seem to be hurt, thank goodness. Bringing my arm around her back and slowly lifting her up into a more sensible position, I hold her limp body against me as delicately as I can manage. If it's a cataplexy attack as I imagine it is, she'd still be well aware of what's going on."
@@ -3384,19 +3695,50 @@ label en_S10:
 
     "She manages to mumble the words despite her muscles still being weak, barely even able to lift her eyelids. It only makes me hold her all the tighter."
 
-    window hide
+    stop ambient fadeout 0.3
+
+    hide steam with dissolve
+
+    scene black with dissolve
+
     return
 label en_S11:
 
-    "Tapping at the clock a couple of times before I find the button to stop the alarm, I blearily sit myself up in bed and rub my tired eyes."
+    $ renpy.music.set_volume(1.0, 0.0, channel="ambient") #restoring volume to default
+
+    play ambient sfx_alarmclock
+
+    "Tapping at the clock a couple of times before I find the button to stop the alarm,{w=.5}{nw}"
+
+    play sound sfx_switch
+
+    stop ambient fadeout 0.05
+
+    "Tapping at the clock a couple of times before I find the button to stop the alarm,{fast} I blearily{w=.5}{nw}"
+
+    play sound sfx_sitting
+
+    "Tapping at the clock a couple of times before I find the button to stop the alarm, I blearily{fast} sit myself up in bed and rub my tired eyes."
 
     "Bright summer sunshine already pours through the thin blinds, casting a dull light over the already warming room. Giving up on the prospect of going back to sleep, I pull off the sheets and swing my legs over the side of the bed."
 
     "My school clothes are... somewhere. All I can do is scratch my head and yawn as I glance around, the most complex matter my brain can handle at the moment being whether to get dressed or go to the toilet first."
 
-    "The normal morning routine finds itself interrupted by a noise at the door. The question of whether it's someone knocking for me or just someone bumping against it is answered as another set of knocks comes soon after."
+    $ renpy.music.set_volume(0.6, 0.0, channel="sound")
+
+    play sound sfx_hammer
+
+    "The normal morning routine finds itself interrupted by a noise at the door. The question of whether it's someone knocking for me or just someone bumping against it is{w=.5}{nw}"
+
+    play sound sfx_hammer
+
+    "The normal morning routine finds itself interrupted by a noise at the door. The question of whether it's someone knocking for me or just someone bumping against it is{fast} answered as another set of knocks comes soon after."
 
     "Staggering over while asking whoever it is to wait, I feel something soft underfoot. At least I know where my uniform shirt is, now."
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="sound")
+
+    play sound sfx_dooropen
 
     "Opening the door reveals a most unexpected sight. Suzu stands silently before me, dressed in her usual light summer dress."
 
@@ -3426,7 +3768,9 @@ label en_S11:
 
     mk "I'll get dressed now. Wait outside the gate so the teachers don't see you."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg city_street1 with shorttimeskip
 
     "Walking through the shopping centre hand in hand with Suzu, I can't help but notice how few people are milling about. Aside from a few housewives and old people, the place isn't exactly doing a brisk trade. Maybe I shouldn't be surprised, given that most adults are going to be at their workplaces around this time, and teenagers would be in school."
 
@@ -3458,7 +3802,9 @@ label en_S11:
 
     suz "So, do you want to check out the movie?"
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene black with shorttimeskip
 
     "This is awesome. Nothing beats a good samurai movie."
 
@@ -3480,7 +3826,9 @@ label en_S11:
 
     "I lunge over and take a large handful while she's distracted, stuffing the lot into my mouth at once. My chipmunk-like cheeks don't win any favours."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg city_street1 with shorttimeskip
 
     "Both of us end up squinting a little as we emerge back into the bright late-morning light of the shopping centre."
 
@@ -3518,7 +3866,9 @@ label en_S11:
 
     "A nod is all the response I need, the two of us setting off."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg city_street2 with shorttimeskip
 
     "With lunch eaten and a nap had, we end up aimlesly wandering around for something to do."
 
@@ -3548,7 +3898,15 @@ label en_S11:
 
     "I smile a little in spite of myself. Maybe this won't last, maybe it will. What I do know, is that this girl cares for me. That's enough. At least right now, that's all I need to keep going on."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene black with shorttimeskip
+
+    $ renpy.music.set_volume(0.4, 0.0, channel="ambient")
+
+    play ambient sfx_crowd_indoors fadein 2.0
+
+    play music music_jazz fadein 2.0
 
     "After hitting up about half the stores, mostly just breezing in and out, the two of us settle in for dinner."
 
@@ -3700,9 +4058,15 @@ label en_S11:
 
     "Suzu's probably been pushing herself to stay awake as long as she probably could, and now she's paying the price. I doubt she'll be happy with me cutting things short for her sake, but for all I know, she could be out for hours."
 
+    stop music fadeout 3.0
+
+    stop ambient fadeout 3.0
+
     "Accepting my fate and considering the day's fun over, I motion to a passing waiter and ask for the bill."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_road_ni with shorttimeskip
 
     "I wonder how many times I've made my way up this hill with a slumbering girl on my back."
 
@@ -3748,9 +4112,14 @@ label en_S11:
 
     mk "You're welcome."
 
-    window hide
+    scene black with dissolve
+
+    $ renpy.music.set_volume(1.0, 0.0, channel="ambient") #restoring volume to default
+
     return
 label en_S12:
+
+    scene bg school_scienceroom with locationchange
 
     "Walking into class, it seems like it'll be another ordinary day."
 
@@ -3802,7 +4171,9 @@ label en_S12:
 
     "With Haru skipping into the room moments before the first teacher of the day walks in, the both of them very nearly late, I hop off my desk and take a seat. Suzu really does seem out of sorts today, but that wall between her and I is strong as ever."
 
-    centered "~ Timeskip ~" with dissolve
+    #centered "~ Timeskip ~" with dissolve
+
+    scene bg school_scienceroom with shorttimeskip
 
     "With the class having returned from lunch, Mutou begins his lecturing on what today's test will cover. Little more than a retread of what we've been taught on the current topic, with a few harder questions thrown in to check what we've retained over the holidays."
 
@@ -3832,6 +4203,8 @@ label en_S12:
 
     "Shizune walks over and motions for me to follow her out, Mutou wasting no time in getting back to his pre-test briefing."
 
+    scene bg school_hallway3 with locationchange
+
     "The two of us quietly walk down the abandoned hallway, the sound of one teacher following another as we walk past the filled classrooms. My body feels unbearably tense, which I'd hoped would stop once I gained my freedom from class."
 
     "I notice that Shizune's pulled her her notepad as she walks in front of me, scrawling something down. At least nobody can accuse us of making a noise in the corridors like this."
@@ -3848,21 +4221,39 @@ label en_S12:
 
     "With my mind occupied with my new goal, I verbally thank her before realising the mistake, taking off without checking her reaction."
 
+    scene bg school_staircase2 with locationchange
+
+    scene bg school_lobby with locationchange
+
     "I move as fast as I dare down the stairs and onto the lower floor, lest a teacher pull me aside to scold me for running in the hallways. I don't bother looking to this class or that any more, only the path ahead."
+
+    scene bg school_gardens with locationchange
 
     "Emerging from the main entrance into the empty school gardens, the fresh air hitting my face spurs me into a flat run. There's little point to walking now that I'm outside, and the distance from here to the dormitories isn't great."
 
     "There aren't many places someone like Suzu would be, after all. If she were in the library, it's likely one of the staff there would at least try to wake her, leaving the dormitory as the most likely place she'd retreat."
 
+    scene bg school_dormext_full with locationchange
+
     "It doesn't take long to reach the building, taking a moment to have a breath before opening the door and heading inside."
 
+    scene bg school_dormhallground with locationchange
+
     "Those horrid artificial lights above the entrance blare away, their slightly too perfect white glare sharply contrasting with the sunlight outside. Wasting little time, I stride through to the stairwell."
+
+    scene bg school_girlsdormhall with locationchange
 
     "The quiet of the dormitory building entrance is just as present in the wing housing her room. I know it's unlikely I'd hear her if she was indeed sleeping, but I can't help but wonder if I guessed the wrong location nevertheless."
 
     "With her door shut as expected, and knowing that knocking would be pointless given that she wouldn't hear it if she were asleep, I fish out her key from my pocket and insert it into the lock. The door gives a satisfying click as it unlocks, a slight push sending it swinging open."
 
+    play sound sfx_dooropen
+
+    scene black with locationchange
+
     "I have to squint a little in response to the sunlight pouring into her room from the small window, my gaze shifting to the figure seated on the side of her bed. A glint of light catches my eye as I do so."
+
+    play music music_tragic
 
     "My heart stops."
 
@@ -3896,9 +4287,16 @@ label en_S12:
 
     "I'm so sorry, Suzu..."
 
-    window hide
+    stop music fadeout 2.0
+
+    scene black with dissolve
+
     return
 label en_S13:
+
+    scene bg school_track with locationchange
+
+    play music music_pearly
 
     "The soft breeze is cool as I sit watching the gaggle of guys fooling around on the track. Seated in the shade of the trees lining the edge of the track area, I simply lack the energy to get up and join in."
 
@@ -3906,7 +4304,11 @@ label en_S13:
 
     "Suzu hasn't been at school since then, with her parents having collected her. A cover story of unspecified family issues was given as the reasoning for her temporary disappearance, which seems to have stuck. Like all good rumours, it had just enough truth to be believable, and few dared ask questions of the girl who'd just flattened a guy over her."
 
+    play sound sfx_rustling
+
     "A piece of bread in its plastic wrapper suddenly dangles in front of my face. Despite not having an appetite at all, I take the packet just to get him off my back."
+
+    play sound sfx_sitting
 
     "As expected, it's Hisao who takes a seat beside me. He and Haru are the only others who know the truth, beyond the teachers and staff. As for Suzu and her family, I haven't heard a peep since that fateful day."
 
@@ -3932,9 +4334,13 @@ label en_S13:
 
     mk "I guess that's kind of impossible now, huh?"
 
+    stop music fadeout 4.0
+
     "Hisao just looks to me expectantly. I can't keep this from him any longer, and after all the support he's given me, he deserves to know."
 
     "I take a long breath, thinking back to those days. It isn't something I enjoy doing."
+
+    play music music_night fadein 4.0
 
     mk "I suppose you've gathered by now that I used to be an unpleasant kind of person."
 
@@ -4030,6 +4436,8 @@ label en_S13:
 
     mk "That girl saved me."
 
+    stop music fadeout 5.0
+
     hi "You shouldn't forget that you saved her. It's a miracle you got to her in time."
 
     mk "Saved her? I did no such thing. It's my fault she even fell that far to begin with."
@@ -4050,9 +4458,16 @@ label en_S13:
 
     hi "It's Tsubasa..."
 
-    window hide
     return
 label en_S14:
+
+    scene bg suburb_park with shorttimeskip
+
+    play music music_moonlight fadein 1.5
+
+    $ renpy.music.set_volume(0.5, 0.0, channel="ambient")
+
+    play ambient sfx_park fadein 2.0
 
     "I can practically hear my heart thumping away as I walk through the park. While I do my best to appear casual, I don't think Hisao buys it."
 
@@ -4114,6 +4529,8 @@ label en_S14:
 
     "I wrap my arms around Suzu and bring her head to my chest, holding her shuddering body to mine in a warm embrace. It's from her that the first words come."
 
+    stop music fadeout 4.0
+
     suz "I'm sorry."
 
     mk "Come on now, none of this is your fault. I'm the one who messed everything up, but it feels like you're the one taking the fall."
@@ -4123,6 +4540,8 @@ label en_S14:
     mk "Isn't it true though?"
 
     "She picks herself off of me, wiping her eyes with the back of her wrist. She's managed to pull herself together a little, but barely."
+
+    play music music_innocence fadein 4.0
 
     suz "You're not terrible person, Miki. You're beautiful, outgoing, kind..."
 
@@ -4179,4 +4598,16 @@ label en_S14:
     "My precious Suzu, who I so nearly lost."
 
     window hide
+
+    stop ambient fadeout 2.0
+
+    stop music fadeout 2.0
+
+    scene black
+    with Fade(2.0, 0.5, 0)
+
+    play sound sfx_whiteout
+
+    play music music_credits fadein 2.0
+
     return
