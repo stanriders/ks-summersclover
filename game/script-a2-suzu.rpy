@@ -82,7 +82,7 @@ label en_S1:
 
     hi "Fine, I'm going. Miki?"
 
-    mk "Yeah, I-{w=.5}{nw}"
+    mk "Yeah, I-{w=.25}{nw}"
 
     suz "I have business with her."
 
@@ -204,7 +204,7 @@ label en_S1:
 
     suz "...Don't make me regret this."
 
-    "Regret what? What's she planning to-{w=.5}{nw}"
+    "Regret what? What's she planning to-{w=.25}{nw}"
 
     scene bg suburb_shanghaiint with openeye_shock
 
@@ -333,7 +333,7 @@ label en_S2:
 
     mk "I was confused, alright!?"
 
-    mk "I had no idea that was coming! I didn't even know she-!{w=.5}{nw}"
+    mk "I had no idea that was coming! I didn't even know she-!{w=.25}{nw}"
 
     "Hisao quickly waves his hand downwards to make me lower my volume. I quickly do so."
 
@@ -471,7 +471,7 @@ label en_S3:
 
     "The movement of Hisao draws me back into the real world, the sounds, smells, and bright lights around us suddenly reentering my conciousness. We both look on as he quietly turns and begins to walk away."
 
-    suz "Where are you-?{w=.5}{nw}"
+    suz "Where are you-?{w=.25}{nw}"
 
     hi "I'm going to run on ahead and have a poke around the festival. Enjoy yourselves."
 
@@ -1030,7 +1030,7 @@ label en_S4:
 
     "Her mother puts her elbow on the table and buries her face in her hand out of frustration, her husband's hand reaching out and rubbing her back in concern."
 
-    mk "Should I-{w=.5}{nw}"
+    mk "Should I-{w=.25}{nw}"
 
     mot "Just take her."
 
@@ -1168,7 +1168,7 @@ label en_S4:
 
     mk "Hmm... not much, really. Just a few bits of smalltalk before everyone went off to do their own thing."
 
-    suz "They hate m-{w=.5}{nw}"
+    suz "They hate m-{w=.25}{nw}"
 
     mk "Don't be like that. They were just taken off guard, that's all."
 
@@ -1265,7 +1265,7 @@ label en_S5:
 
     mot "Make the most of your time here. This is the last time you'll set foot in this house, after all."
 
-    mk "But-!{w=.5}{nw}"
+    mk "But-!{w=.25}{nw}"
 
     mot "I'd suggest you don't talk back to me. You should be glad you're still here at all."
 
@@ -1623,7 +1623,7 @@ label en_S5:
 
     "As the seconds tick by, I begin to notice the cracks in her facade. The way she fiddles with her fingers, her uneven breathing, the way her cheeks become ever more flushed. In spite of all that, she still forces herself to keep eye contact."
 
-    mk "If you're not ready, I don't want to-{w=.5}{nw}"
+    mk "If you're not ready, I don't want to-{w=.25}{nw}"
 
     suz "I am ready. I want to do this with you, Miki."
 
@@ -2325,7 +2325,7 @@ label en_S7:
 
     tsu "Don't worry about mom and dad. I'll sort them out."
 
-    suz "But they-{w=.5}{nw}"
+    suz "But they-{w=.25}{nw}"
 
     tsu "I'll sort it out."
 
@@ -2622,7 +2622,7 @@ label en_S8:
 
     "She answers my questioning look by throwing her head back to where Junko's sitting."
 
-    mk "It's not like she's wrong. I did some pretty bad things back-{w=.5}{nw}"
+    mk "It's not like she's wrong. I did some pretty bad things back-{w=.25}{nw}"
 
     suz "That's exactly why. You did bad things, but that's different to being a bad person."
 
@@ -2939,7 +2939,7 @@ label en_S8:
 
     mk "Just come back to bed, Suzu. A fresh set of eyes'll help."
 
-    suz "But I-{w=.5}{nw}"
+    suz "But I-{w=.25}{nw}"
 
     "I clamp my hand over her mouth, having expected her to protest. I feel terrible as her face goes from frustration, to displeasure, and finally, to defeat."
 
@@ -3054,7 +3054,7 @@ label en_S9:
 
     mk "You know what you did."
 
-    yuk "Me? I only told Suzu what I thought of her getting hitched to-{w=.5}{nw}"
+    yuk "Me? I only told Suzu what I thought of her getting hitched to-{w=.25}{nw}"
 
     $ renpy.music.set_volume(0.5, 0.0, channel="sound")
 
@@ -3071,7 +3071,7 @@ label en_S9:
 
     "He suddenly moves forward with surprising speed, letting fly as he raises his fist."
 
-    "Caught unawares by the speed he's apparently capable of,{w=.5}{nw}"
+    "Caught unawares by the speed he's apparently capable of,{w=.25}{nw}"
 
     $ renpy.music.set_volume(1.0, 0.0, channel="sound")
 
@@ -3081,7 +3081,7 @@ label en_S9:
 
     "Caught unawares by the speed he's apparently capable of,{fast} his swing at my face lands with a fair emount of force, sending my head jerking to the right."
 
-    "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much,{w=.5}{nw}"
+    "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much,{w=.25}{nw}"
 
     $ renpy.music.set_volume(0.5, 0.0, channel="sound")
 
@@ -3104,14 +3104,14 @@ label en_S9:
 
     "There's no doubt he can't possibly fight back, confused and disoriented as he stumbles, arms tightly crossed around his pained stomach as he reflexively doubles over."
 
-    "The boy lurches towards me for whatever reason as he begins to right himself,{w=.5}{nw}"
+    "The boy lurches towards me for whatever reason as he begins to right himself,{w=.25}{nw}"
 
     $ renpy.music.set_volume(0.85, 0.0, channel="sound")
 
     play sound sfx_impact
     with vpunch
 
-    "The boy lurches towards me for whatever reason as he begins to right himself,{fast} earning a powerful swing at his head in hopes of dropping him. It has the intended effect, his body sent{w=.5}{nw}"
+    "The boy lurches towards me for whatever reason as he begins to right himself,{fast} earning a powerful swing at his head in hopes of dropping him. It has the intended effect, his body sent{w=.25}{nw}"
 
     $ renpy.music.set_volume(1.0, 0.0, channel="sound")
 
@@ -3135,7 +3135,7 @@ label en_S9:
 
     "The feeling of impact ripples up my arm and floods my entire body. All prospect of defense deserting him as the strength leaves his arm, but it isn't enough. He deserves this. This repugnant being deserves this. Why shouldn't I enjoy teaching bad people like him a lesson?"
 
-    "I pull back my arm,{w=.5}{nw}"
+    "I pull back my arm,{w=.25}{nw}"
 
     play sound sfx_impact
     with vpunch
@@ -3159,7 +3159,7 @@ label en_S9:
 
     mk "Let go-!"
 
-    "Rage begins to fill my mind as another hand comes around my right armpit, followed by another set of hands taking a firm grasp of my left arm. I jerk my body{w=.5}{nw}"
+    "Rage begins to fill my mind as another hand comes around my right armpit, followed by another set of hands taking a firm grasp of my left arm. I jerk my body{w=.25}{nw}"
 
     with vpunch
 
@@ -3219,7 +3219,7 @@ label en_S9:
 
     "Someone like me really doesn't deserve happiness."
 
-    "With that,{w=.5}{nw}"
+    "With that,{w=.25}{nw}"
 
     with vpunch
 
@@ -3249,7 +3249,7 @@ label en_S9:
 
     "Ah, I see. By giving me these without telling me what to write, she wants to see how I'll explain myself."
 
-    "Given that I can't see any way of talking my way out this,{w=.5}{nw}"
+    "Given that I can't see any way of talking my way out this,{w=.25}{nw}"
 
     play sound sfx_sitting
 
@@ -3311,7 +3311,7 @@ label en_S9:
 
     "I know it's the easy way out, but I swallow my pride and give her a nod. I can't even think of what I'd tell her, after all."
 
-    "As Shizune closes the door behind her,{w=.5}{nw}"
+    "As Shizune closes the door behind her,{w=.25}{nw}"
 
     play sound sfx_pillow
 
@@ -3708,13 +3708,13 @@ label en_S11:
 
     play ambient sfx_alarmclock
 
-    "Tapping at the clock a couple of times before I find the button to stop the alarm,{w=.5}{nw}"
+    "Tapping at the clock a couple of times before I find the button to stop the alarm,{w=.25}{nw}"
 
     play sound sfx_switch
 
     stop ambient fadeout 0.05
 
-    "Tapping at the clock a couple of times before I find the button to stop the alarm,{fast} I blearily{w=.5}{nw}"
+    "Tapping at the clock a couple of times before I find the button to stop the alarm,{fast} I blearily{w=.25}{nw}"
 
     play sound sfx_sitting
 
@@ -3728,7 +3728,7 @@ label en_S11:
 
     play sound sfx_hammer
 
-    "The normal morning routine finds itself interrupted by a noise at the door. The question of whether it's someone knocking for me or just someone bumping against it is{w=.5}{nw}"
+    "The normal morning routine finds itself interrupted by a noise at the door. The question of whether it's someone knocking for me or just someone bumping against it is{w=.25}{nw}"
 
     play sound sfx_hammer
 
