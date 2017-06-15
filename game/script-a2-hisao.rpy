@@ -5,7 +5,7 @@ label en_H1:
 
     window show
     
-    "With the last class of the semester having ended a few hours ago, I find myself straddling a chair backwards to watch the two interlopers in my room. Aside from the occasional rustle of paper and the squeaking of my hand gripper as I exercise the hand I still have, there's litle to be heard."
+    "With the last class of the semester having ended a few hours ago, I find myself straddling a chair backwards to watch the two interlopers in my room. Aside from the occasional rustle of paper and the squeaking of my hand gripper as I exercise the hand I still have, there's little to be heard."
 
     "Hisao and Suzu work quietly as they sit on the floor, each on opposite sides of my upturned box table. On it sits one science textbook and one notebook each, equations and notes from the former carefully being written to the latter."
 
@@ -13,11 +13,11 @@ label en_H1:
 
     suz "Yes?"
 
-    mk "Have you two noticed that exams are over, right? You can stop studying now."
+    mk "You two have noticed that exams are over, right? You can stop studying now."
 
     hi "That's exactly why we're studying; to go over what we felt we didn't do well with during the exams."
 
-    mk "Uh huh. And this is happeing in my dorm room because...?"
+    mk "Uh huh. And this is happening in my dorm room because...?"
 
     suz "Because someone had the silly idea that you might actually join us."
 
@@ -149,7 +149,7 @@ label en_H1:
 
     mk "You need to loosen up, man."
 
-    mk "If you wanht to save yourself for someone special, that's fine. You can stay overnight to just study or talk if you want. I'm just saying that if you want to screw as well, I'd be up for it."
+    mk "If you want to save yourself for someone special, that's fine. You can stay overnight to just study or talk if you want. I'm just saying that if you want to screw as well, I'd be up for it."
 
     hi "How can you always be so carefree? I'm kind of envious."
 
@@ -230,7 +230,7 @@ label en_H1h:
 
     "I wonder if I'll ever get used to seeing a man's junk this closely. It might be more simple than a girl's, but it just looks so odd. Thankfully there's barely any smell, with only a faint musk left thanks to him having had a bath before coming."
 
-    "Unable to help myself, I reach forward and delicately run my finger down the stiff organ from the pink head to its fleshy base, the thing twitching in response. It amuses me how they have such a life of their own, with so any involuntary motions and reactions."
+    "Unable to help myself, I reach forward and delicately run my finger down the stiff organ from the pink head to its fleshy base, the thing twitching in response. It amuses me how they have such a life of their own, with so many involuntary motions and reactions."
 
     "My cheeky grin up to him is met with a grimace as he blushes heavily. My staring so closely and poking at him probably isn't helping his embarrassment, nor that I'm fully dressed while he's in the buff."
 
@@ -370,7 +370,7 @@ label en_H1h:
 
     "Thankfully he needs no prompting to stop being so gentle, his timidity slowly dropping as he realises he's not going to hurt me by being a little more rough. As he keeps at it, he eventually hits a pretty nice rhythm as the sounds of our lustful breathing and bodies hitting each other begin to fill the air."
 
-    "As much as I try top let myself just go with the flow, I can't help but smile at the expression of concentration he's making. He's really trying to do this right, and to engrave everything he's doing to memory. It's a funny contrast to how relaxed I feel as he thrusts into me."
+    "As much as I try to let myself just go with the flow, I can't help but smile at the expression of concentration he's making. He's really trying to do this right, and to engrave everything he's doing to memory. It's a funny contrast to how relaxed I feel as he thrusts into me."
 
     hi "Why are... you smiling like that?"
 
@@ -620,7 +620,7 @@ label en_H2:
 
     "A lot of friends have said they felt like Yamaku was home after a few months, but I always felt more like a tourist in a foreign country when I was hanging around the dormitories. A school is a school, no matter where it is, but where you sleep and eat is a very different matter."
 
-    "It could just because I'm a country bumpkin at heart. Maybe it was because of the circumstances I was in when I first entered Yamaku, or just a matter of being in the female dormitories and couped up with other girls of an evening. Either way, for the first time in years, I finally feel like I'm home."
+    "It could just because I'm a country bumpkin at heart. Maybe it was because of the circumstances I was in when I first entered Yamaku, or just a matter of being in the female dormitories and couped up with other girls every evening. Either way, for the first time in years, I finally feel like I'm home."
 
     "I quickly take my shoes off to distract myself from my meandering thoughts, with the busily gawking Hisao and Suzu doing the same. They hurridly walk past me and into the main room after depositing their shoes, leaving me to follow behind them afterwards."
 
@@ -766,7 +766,7 @@ label en_H3:
 
     "It feels refreshing to breeze along the roads like this, with the fresh air flowing past us and bright sun overhead. It's just like when I was younger, even including when my friends and I would race our bikes."
 
-    "With some effort, I manage to pull alongside Hisao. His face, or rather his smile, takes me by surprise. He barely even notices me as he power on, his mouth in a wide, childish grin."
+    "With some effort, I manage to pull alongside Hisao. His face, or rather his smile, takes me by surprise. He barely even notices me as he powers on, his mouth in a wide, childish grin."
 
     "Hisao really does look better when he's like this, finally freed from his inhibitions as he lets himself enjoy the moment."
 
@@ -804,7 +804,7 @@ label en_H3:
 
     "The explanation doesn't seem to settle her, but Hisao's already on his way. It's nice to see my assumptions about his nature proven, his sense of adventure kindled."
 
-    "Knowing she's lost, Suzu and I follow him up to the door, dirt crunching underfoot as we cross the school grounds. He stands aside to let me have the honour, the old oake door reluctantly giving way with a bit of a heave."
+    "Knowing she's lost, Suzu and I follow him up to the door, dirt crunching underfoot as we cross the school grounds. He stands aside to let me have the honour, the old oak door reluctantly giving way with a bit of a heave."
 
     "Hisao and Suzu file in as I automatically tug off my shoes. Only now do I remember that a teacher won't scold me any more for failing to carefully remove my shoes and slip them into the shoe locker beside the door. Smiling, I slip them in anyway."
 
@@ -1085,11 +1085,11 @@ label en_H3:
 
     mk "Getting nostalgic, are we?"
 
-    hi "More... whistful, I guess."
+    hi "More... wistful, I guess."
 
     "I click my fingers, finally realising the word I'd been searching for all day."
 
-    mk "That's it! Whistful!"
+    mk "That's it! Wistful!"
 
     hi "Huh?"
 
@@ -1178,7 +1178,7 @@ label en_H3:
 
     mk "Fine, how about I do myself as well? Does that sound good?"
 
-    "He moves to protest, but the words don't come out. It's a little amusing to see him to visibly ponder the question now that the scales have been tipped."
+    "He moves to protest, but the words don't come out. It's a little amusing to see him visibly ponder the question now that the scales have been tipped."
 
     "Eventually, he takes a long, shakey breath. It looks more like an admission of defeat than a teenager getting the chance to fool around with a girl."
 
@@ -1256,7 +1256,7 @@ label en_H3:
 
     "I really do like this position. Looking down at him shows a flustered face, sweaty and dazed as he looks up at me and my body. I have total control over him now, and over my own pleasure."
 
-    "Without further ado, I begin to move my hips up and down, the feeling of penetration made all the better thanks to my knees being the air. My breasts move about as I do, the tank top providing little support for them."
+    "Without further ado, I begin to move my hips up and down, the feeling of penetration made all the better thanks to my knees being in the air. My breasts move about as I do, the tank top providing little support for them."
 
     "We both do out best to keep the noise down, given our situation. I manage pretty well, I think, keeping my wits about me despite the usual huffs and puffs of being the one doing the work."
 
@@ -1290,7 +1290,7 @@ label en_H3:
 
     "And then... it's over. His hips sink back down to the wooden boards for the last time, rod still twitching away as his mouth hangs open and gasps for air. His eyes look dreamy and unfocused, the rush of hormones still leaving their mark."
 
-    "Knowing that I've had my fun for tonight, I slip myself off his slowly dwindling rod The experience has take its toll on me just as much as it has on him, leaving me flat on my back and gasping for air too."
+    "Knowing that I've had my fun for tonight, I slip myself off his slowly dwindling rod. The experience has taken its toll on me just as much as it has on him, leaving me flat on my back and gasping for air too."
 
     "The two of us must look like dying fish right now, both lying on the porch with heaving bodies, our open mouths gulping for air."
 
@@ -1317,7 +1317,7 @@ label en_H3:
 
     mk "They're just stars, man."
 
-    "Despite my expecting some joke or teasing remark, Hisao just smiles."
+    "Despite expecting some joke or teasing remark, Hisao just smiles."
 
     hi "I know."
 
@@ -1334,7 +1334,7 @@ label en_H4:
 
     "Wiping the sweat from my brow, I look down at my handiwork for the morning. A long line of freshly-planted rice seedlings, their bright green stalks poking just above the muddy brown of the water. A muddy brown that's also covered my hand, and the well-worn overalls I'm wearing."
 
-    "Hisao and Suzu work on their own columns, smartly planting their seedlings, taking a couple of steps back, and putting in the next. They seem to be slowly getting the hang of it by now, and Suzu's finally stopped complaining about the heat.."
+    "Hisao and Suzu work on their own columns, smartly planting their seedlings, taking a couple of steps back, and putting in the next. They seem to be slowly getting the hang of it by now, and Suzu's finally stopped complaining about the heat."
 
     "To be honest, this is a bit old. While they might be enjoying an activity they've never done before, helping out on the farm has always been a drag for me. I don't have a problem with the effort required; such mindless fatiguing work isn't that much different to a good run around the track, after all. It's more that I'm not being paid to work my ass off."
 
@@ -1483,7 +1483,7 @@ label en_H4:
 
     "I guess it's at least a reality check for them. Life on a farm isn't all frolicking about in the wilderness."
 
-    "After some time, dad eventually arrives with a large plate in his hands. Hisao and Suzu couldn't look less excised to eat, with the thought of one of them hurling at the sight of chicke passing my mind."
+    "After some time, dad eventually arrives with a large plate in his hands. Hisao and Suzu couldn't look less excised to eat, with the thought of one of them hurling at the sight of chicken passing my mind."
 
     play sound sfx_tray_rattling
 
@@ -1501,7 +1501,7 @@ label en_H4:
 
     jun "Go on, eat. Kids your age need all the food you can get."
 
-    "Hisao manages to force a bite own after taking his food, followed by more in quick succession as his appetite returns. I have no such reluctance, taking my chopsticks in hand and starting on my fish without any reluctance."
+    "Hisao manages to force a bite down after taking his food, followed by more in quick succession as his appetite returns. I have no such qualms, taking my chopsticks in hand and starting on my fish without any reluctance."
 
     "I guess you can take a city boy out of the city, but you can't make him into a country boy so quickly."
 
@@ -1589,7 +1589,7 @@ label en_H4:
 
     "So now we finally get to the heart of the topic. She thinks I've been showing Hisao my past out of affection."
 
-    "I guess I have been somewhat selfish in how I've been dragging them around with me whereever I wanted to go."
+    "I guess I have been somewhat selfish in how I've been dragging them around with me wherever I wanted to go."
 
     suz "Don't worry about me or Hisao. If you have past debts to settle, go ahead and deal with them."
 
@@ -1839,7 +1839,7 @@ label en_H5:
 
     suz "That must be frustrating."
 
-    jun "Frustrating? Nah. Some of the older folks 'round here have Opinions when it comes to today's kids, but I don't hold it against 'em."
+    jun "Frustrating? Nah. Some of the older folks 'round here have opinions when it comes to today's kids, but I don't hold it against 'em."
 
     jun "You two would know better than most how inviting city life must be. 'Convenient' was the word they used when they described it after leaving."
 
@@ -1925,7 +1925,7 @@ label en_H5:
 
     hi "They visited damn near every day at first, All of us chatting away as they kept me up to date on what was happening at school and at soccer."
 
-    hi "Then it became once every few days. Then once a week. As time went on, we stopped talking so much. None of us outright said it, but it was pretty obvious I was moving further and further from ym circle of friends. They were living lives full of new experiences every day, while I just saw the occasional new patient wheeled into the room every so often."
+    hi "Then it became once every few days. Then once a week. As time went on, we stopped talking so much. None of us outright said it, but it was pretty obvious I was moving further and further from my circle of friends. They were living lives full of new experiences every day, while I just saw the occasional new patient wheeled into the room every so often."
 
     hi "Then finally, one day... they stopped coming at all."
 
@@ -2015,7 +2015,7 @@ label en_H6:
 
     hi "There's a lot of waiting around, for one. Waiting in lines, waiting at the terminal, waiting at the gate, waiting for takeoff."
 
-    hi "Then once you're in the air, you're really just siitting in a metal tube for a few hours. Your ears go all funny from the changing pressure, and your eyes dry out from the recirculated air. The food's pretty miserable, too."
+    hi "Then once you're in the air, you're really just sitting in a metal tube for a few hours. Your ears go all funny from the changing pressure, and your eyes dry out from the recirculated air. The food's pretty miserable, too."
 
     hi "And don't get me started on crying kids, or being stuck next to some chatty person for ages when you just want to watch an inflight movie or look out the window."
 
@@ -2125,7 +2125,7 @@ label en_H6:
 
     "Oh, it's just that. I probably should have said something about it to him before it became the elephant in the room."
 
-    "COme to think of it, I wonder how long that's been on his mind, and Suzu's for that matter. Don't tell me he's been trying to ask me about that for the entire time he's been here..."
+    "Come to think of it, I wonder how long that's been on his mind, and Suzu's for that matter. Don't tell me he's been trying to ask me about that for the entire time he's been here..."
 
     mk "Man, you don't need to pussyfoot around that stuff."
 
@@ -2283,7 +2283,7 @@ label en_H7:
 
     window show
 
-    "Nothing gets me going like a good sprint. One foot htting the ground quickly after the other, the buildings and plants around me seem to fly past. My breaths short but measured as I throw myself forwards with glee."
+    "Nothing gets me going like a good sprint. One foot hitting the ground quickly after the other, the buildings and plants around me seem to fly past. My breath is short but measured as I throw myself forwards with glee."
 
     "Guard" "Stop! I'm telling you, stop right there!"
 
@@ -2399,7 +2399,7 @@ label en_H7:
 
     mk "Seriously?"
 
-    mu "We take training, mark tests, and prepare lesson plans the next semester. As much as I'd like to rest, there isn't much time for it."
+    mu "We take training, mark tests, and prepare lesson plans for the next semester. As much as I'd like to rest, there isn't much time for it."
 
     mk "That's terrible. How can anyone live like that?"
 
@@ -2447,7 +2447,7 @@ label en_H7:
     scene bg school_library
     with locationchange
 
-    "Walking into the library, it looks just as it always has. Students quietly read away, with the odd sign that this is unmistkably Yamaku lying around, like the cane propped against a desk, or braille book being scanned over by the fingers of a pretty blonde."
+    "Walking into the library, it looks just as it always has. Students quietly read away, with the odd sign that this is unmistakably Yamaku lying around, like the cane propped against a desk, or braille book being scanned over by the fingers of a pretty blonde."
 
     "Hanako, as always is just visible in her little corner, burying her face in some novel or another while she sits on that big beanbag of hers. It's too bad the couple of times I tried to get closer to her failed so utterly."
 
@@ -2845,7 +2845,7 @@ label en_H8:
 
     "His warm body held to mine, the tickling of his breath against my face, the brushing of his hair against my forehead.... Even if it's not exactly a passionate embrace, I can still feel my heart skip a beat."
 
-    "It's terrible how I fold so quickly like that when take off guard. It takes me a moment to notice Hisao's hand retrieving something from the bag, leaving me to look up stupified as he plops the object onto my head."
+    "It's terrible how I fold so quickly like that when taken off guard. It takes me a moment to notice Hisao's hand retrieving something from the bag, leaving me to look up stupified as he plops the object onto my head."
 
     "My eyes open wide as I realise what it is."
 
@@ -3004,7 +3004,7 @@ label en_H9:
 
     mk "You got that right."
 
-    "I run my hand through my hair as I look about, seeing little but trees, bushes, and undergrowth. Listening intently reveals that we're not quite alone, with fallen leaves shuffling in the distance from some squirrel darting about. As far as human go, though, there are few who'd venture this far on a whim."
+    "I run my hand through my hair as I look about, seeing little but trees, bushes, and undergrowth. Listening intently reveals that we're not quite alone, with fallen leaves shuffling in the distance from some squirrel darting about. As far as humans go, though, there are few who'd venture this far on a whim."
 
     "My companion slowly stops walking as we reach the heart of the forest. Turning to see him, Hisao backs up to a tree and lets himself slide to the ground, letting his head fall back onto the trunk in defeat."
 
@@ -3032,7 +3032,7 @@ label en_H9:
 
     "As expected, the temptation soon becomes too great for him to resist. I let myself settle back into him as his hands come around my waist, his face coming beside mine."
 
-    "The feeling of his large hands cuping my breasts makes me roll my head to the side, every muscle relaxing as he begins to knead and move them. There's a charming mix of curiosity and desire in his movements, which only makes this all the better."
+    "The feeling of his large hands cupping my breasts makes me roll my head to the side, every muscle relaxing as he begins to knead and move them. There's a charming mix of curiosity and desire in his movements, which only makes this all the better."
 
     mk "Nice, aren't they?"
 
@@ -3040,9 +3040,9 @@ label en_H9:
 
     mk "Worth it. Totally."
 
-    "His hands snake underneath my gym top, the feeling of his skin against mine sending a shiver up my spine as he takes in the feeling of my taut stomach. I'm starting to think he likes it, with the way his hands linger over area."
+    "His hands snake underneath my gym top, the feeling of his skin against mine sending a shiver up my spine as he takes in the feeling of my taut stomach. I'm starting to think he likes it, with the way his hands linger over the area."
 
-    "Slowly, teasingly, he moves his hands upward. I can't help but sigh as he begins to grop me directly, my bra doing little to lessen the sensation of his playing with my breasts."
+    "Slowly, teasingly, he moves his hands upward. I can't help but sigh as he begins to grope me directly, my bra doing little to lessen the sensation of his playing with my breasts."
 
     "This is the best. Just sitting here being played with, drifting on the current of pleasure without a care in the world. I don't think he's really trying to get me off so much as explore how my body feels, but I enjoy that fact."
 
@@ -3100,7 +3100,7 @@ label en_H9:
 
     "I can't help but laugh, my body convulsing with hilarity at the ridiculous sight. It makes me glad to see him bring forceful like this, taking what he wants. It sure is a change from the subdued and hesitant kid who so akwardly introduced himself to class all that time ago."
 
-    "I reach up and take the side of his cheek in my hand, quite take with the fellow holding himself above me. My breathing finally under control, I smile and say four simple words."
+    "I reach up and take the side of his cheek in my hand, quite taken with the fellow holding himself above me. My breathing finally under control, I smile and say four simple words."
 
     mk "Then take me, Hisao."
 
@@ -3112,11 +3112,11 @@ label en_H9:
 
     "He jams himself into me with enough strength to cause a damn lot of pain, our hips hitting with a loud sound. The pain and surprising force that he's become comfortable in using against me combine to send my front falling back to the ground, the side of my face hitting the dirt as as he pulls back and begins to thrust."
 
-    "He grips my butt tightly as he hits himself against it, each thrust slow but powerful. I can't help but yelp and moan loudly, all of my senses overwhelemed by the strange mixture of pain and pleasure. He goes harder and harder if anything, his confidence and lust building within him."
+    "He grips my butt tightly as he hits himself against it, each thrust slow but powerful. I can't help but yelp and moan loudly, all of my senses overwhelmed by the strange mixture of pain and pleasure. He goes harder and harder if anything, his confidence and lust building within him."
 
     "With little to grip onto, my hand grabs into the dirt and dead leaves, sweat pouring off me. More, I want him to move more. I like this Hisao, I love this Hisao..."
 
-    "His desire not sated by his current motions, he picks up a knee and uses one his his hands to push down hard between my shoulderblades. I try to squirm out reflexively, but he simply pushes harder while shoving his rod ever deeper into me."
+    "His desire not sated by his current motions, he picks up a knee and uses one of his his hands to push down hard between my shoulderblades. I try to squirm out reflexively, but he simply pushes harder while shoving his rod ever deeper into me."
 
     mk "Hisao... ahn...!"
 
@@ -3124,7 +3124,7 @@ label en_H9:
 
     "Keep going, Hisao! I want more of you, I want more...!"
 
-    "A huttural growl rises in my throat as a familiar sensation begins to rise, my heart racing as every sense starts to converge into a raging torrent of euphoria. Try as I might, I can't hold back the surge quickly rising with me."
+    "A guttural growl rises in my throat as a familiar sensation begins to rise, my heart racing as every sense starts to converge into a raging torrent of euphoria. Try as I might, I can't hold back the surge quickly rising with me."
 
     "It's a bizarre but deeply satisfying mixture of bliss, pain, and exhaustion that I've never felt before, the adrenaline filling my body in response to being held down mixing with the arousal threatening to so quickly send me over the edge."
 
@@ -3184,7 +3184,7 @@ label en_H10:
 
     window show
 
-    "I idly watch the scene before me from afar, an impenetrable wall standing between they and I."
+    "I idly watch the scene before me from afar, an impenetrable wall standing between them and me."
 
     "About seven boys, likely first years by the looks of them, seem to have gotten their hands on a baseball bat and gloves from the storage shed. With their blazers piled near a tree, they've take to the field with gusto. Not a bad way to kill some time after school's finished for the day, really."
 
@@ -3516,11 +3516,11 @@ label en_H11:
 
     hi "It's a funny place, this."
 
-    hi "Half in the country, half in the city. A school for students with disabilities; an idea strange enough to feel surreal when you first enrol, but utterly normal once you've been here a while. Isolated enough that some are dumped here to hide them away, but with staff and facilities so good that others think it's their kid's best chance."
+    hi "Half in the country, half in the city. A school for students with disabilities; an idea strange enough to feel surreal when you first enroll, but utterly normal once you've been here a while. Isolated enough that some are dumped here to hide them away, but with staff and facilities so good that others think it's their kid's best chance."
 
     mk "I have to admit, I've only ever seen it as just another school. Sure, most of the students have disabilities of whatever kind, but it's still just a bunch of regular teenagers, and some teachers trying and make them learn."
 
-    hi "All depends on your poit of view, I guess. Just like everything."
+    hi "All depends on your point of view, I guess. Just like everything."
 
     mk "Are we seriously gonna do we 'say sorry to each other and make up' thing?"
 
@@ -3543,7 +3543,7 @@ label en_H11:
 
     hi "In the end, I just can't keep up with you. You might want me to run about and play rough, but I just can't do that any more. I wish I could."
 
-    mk "Well what about me? It's too late for me to rescue my studies, and I'm an idiot anyway. Sure, I might get some scholarship or anther, but I'd just flunk the academics anyway."
+    mk "Well what about me? It's too late for me to rescue my studies, and I'm an idiot anyway. Sure, I might get some scholarship or another, but I'd just flunk the academics anyway."
 
     mk "We started from such a similar place, but our paths are already drifting apart so fast..."
 
@@ -3557,7 +3557,7 @@ label en_H11:
 
     hi "You worked so hard in your baseball team, and your body is proof you kept working hard at staying physically strong. You made such tight bonds with the friends you had back home, and with the ones at Yamaku, too."
 
-    hi "Maybe you're right, and it will fall apart. Maybe might get into the same unversity, or we might not. We might not stay together even if we do."
+    hi "Maybe you're right, and it will fall apart. We might get into the same unversity, or we might not. We might not stay together even if we do."
 
     hi "But I want to try, Miki. Because I love you."
 
@@ -3565,7 +3565,7 @@ label en_H11:
 
     "After all this time, I'd forgotten what that was like. All I can do in response is give a long sigh."
 
-    mk "It's ironic, isn't it? The first time we truly feel like a couple, is after we've broke up."
+    mk "It's ironic, isn't it? The first time we truly feel like a couple, is after we've broken up."
 
     hi "We don't need to stay that way."
 
@@ -3577,7 +3577,7 @@ label en_H11:
 
     "There is it again; I really do like that smile of his. I could forgive a lot about him, just for the chance to see more of that face."
 
-    "As I take to my feet and dust myself off, Hisao doing the same. For some reason, I don't feel tired at all."
+    "As I take to my feet and dust myself off, Hisao does the same. For some reason, I don't feel tired at all."
 
     mk "Whatever am I gonna do with you, boy?"
 

@@ -359,7 +359,7 @@ label en_S2:
 
     mk "I mean, I like looking at girls as well as guys. I can appreciate a girl's body, you know? But that's pretty different to this."
 
-    mk "I'd a lot less freaked out if it was anybody but Suzu, to be honest. It's like everything I knew just got turned upside down."
+    mk "I'd be a lot less freaked out if it was anybody but Suzu, to be honest. It's like everything I knew just got turned upside down."
 
     "I think to myself about what I'd just said. I think I'm happy with that explanation. Hisao nods as though he understands, but that's only half the story."
 
@@ -1549,7 +1549,7 @@ label en_S5:
 
     centered "~ Timeskip ~" with dissolve
 
-    "Having settled in for the night, Suzu lies at the end of the bed on her stomach watching TV. The small flatscreen, perched on a low dresser at the end of the room, is unsurprisngly tuned to some late-night animated series."
+    "Having settled in for the night, Suzu lies at the end of the bed on her stomach watching TV. The small flatscreen, perched on a low dresser at the end of the room, is unsurprisingly tuned to some late-night animated series."
 
     "It's kind of cute how she gets so taken with whatever she's doing. From studying to games, she really does take everything in her life seriously."
 
@@ -1687,7 +1687,7 @@ label en_S5:
 
     "She goes quiet out of anxiety as my fingers slide downwards, gently brushing through her lower hair before reaching my goal."
 
-    "Her breath and muscles tense catches as my fingers slide between her legs, the mere fact I'm touching her down there making my own heart skip a beat. I desperately want to avoid hurting Suzu, but my own lusts are starting to get the better of me."
+    "Her breath catches and muscles tense as my fingers slide between her legs, the mere fact I'm touching her down there making my own heart skip a beat. I desperately want to avoid hurting Suzu, but my own lusts are starting to get the better of me."
 
     "I begin to delicately stroke her nub, being as delicate as I possibly can. Her excitement has already left my fingers faintly moist, evidently already taken by the experience."
 
@@ -1836,7 +1836,7 @@ label en_S6:
 
     "Accepting my fate and doing my best to avoid falling asleep before it ends, a familiar smell enters the room. 'Musty' would be the best word for it. Miyu's head perks up, practically trained to recognise the scent."
 
-    "Sure enough, Tsubasa strolls into the room with a cigarette perhced in her mouth. She takes a hold of her shoulder before rolling her arm about in its socket to try and free up the joint."
+    "Sure enough, Tsubasa strolls into the room with a cigarette perched in her mouth. She takes a hold of her shoulder before rolling her arm about in its socket to try and free up the joint."
 
     hi "You're not old yet."
 
@@ -1912,7 +1912,7 @@ label en_S6:
 
     "It probably means nothing to Tsubasa, but after so long living within the school campus and nearby town, what passes for normality takes on a new significance. Maybe that's one of the reasons I wanted to come here beyond Suzu; a chance to live the normal middle-class life I've never had, at least for a time."
 
-    "I turn out to be a lost cause for Suzu as she tugs at an obstinate Miyu, eventually managiong to get her to walk once more."
+    "I turn out to be a lost cause for Suzu as she tugs at an obstinate Miyu, eventually managing to get her to walk once more."
 
     "Noticing Tsubasa walking a little slower than usual, I match her pace as we end up falling a few more yards behind the other two. Our voices are little more than a whisper."
 
@@ -2405,7 +2405,7 @@ label en_S7:
 
     "While she might not do the same, it earns me an amused smile. It only makes me laugh harder in happiness, all the more glad that I've lifted her spirits."
 
-    "With the two of us basking in each other's joy in the setting sun, I know that I'll ever forget this holiday with Suzu."
+    "With the two of us basking in each other's joy in the setting sun, I know that I'll never forget this holiday with Suzu."
 
     scene black with dissolve
 
@@ -2506,7 +2506,7 @@ label en_S8:
 
     "Yes, Yuuko's outfit is definitely better."
 
-    "As she passes by the table of first-year students, it's they who next enter my thoughts. I've seen the others our of the uniforms plenty of times, but this lot are new to me. Despite only being a couple of years younger, their styles as a whole are all subtly different to ours."
+    "As she passes by the table of first-year students, it's they who next enter my thoughts. I've seen the others in uniforms plenty of times, but this lot are new to me. Despite only being a couple of years younger, their styles as a whole are all subtly different to ours."
 
     mk "What's with all the brats?"
 
@@ -2528,7 +2528,7 @@ label en_S8:
 
     "My brief look of confusion at whether she's deaf, and if so, whether she could read my lips, is quickly answered as she points to her mouth and makes a shaking motion with a balled fist. At least being mute wouldn't be as troublesome as being deaf."
 
-    "The wairtres returns with the tea for Suzu and I, gently placing it down before each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
+    "The waitress returns with the tea for Suzu and I, gently placing it down in front of each of us before bowing and taking her leave. Suzu blows on hers to try and cool it down, while I just leave mine for later."
 
     "Evidently wanting to continue the conversation futher, Junko quickly takes out her blue pen and scrawls on the notepad with both astonishing speed and immaculate handwriting. I guess this must be what Shizune's like when she's separated from her bright, bubbly shadow."
 
@@ -2819,8 +2819,8 @@ label en_S8:
     "I pull away with reluctance, as much to gasp for air as take in the sight of her. Suzu's face is dreamy as she looks back into my eyes, breathing heavily as her lips remain just slightly open, as if hoping they were met again."
 
     "My shirt and undershirt find themselves dropped to the floor, my temptation getting the better of me after I shirk my jeans as I dive at her neck and collar, licking them to take in her taste. She merely lifts her chin to allow my indulgence, saying not a word."
-
-    "My lips meet the skin between her breasts soon after, my knees bending as I work my way down. A peck to her left breast is followed by another to her navel, my hand taking hold of herleg and working its way up her supple thigh underneath her dress."
+    #^ to shirk is not used for clothing, i think. should maybe be changed
+    "My lips meet the skin between her breasts soon after, my knees bending as I work my way down. A peck to her left breast is followed by another to her navel, my hand taking hold of her leg and working its way up her supple thigh underneath her dress."
 
     "Her shyness makes her hesitate, but I need not ask as she timidly brings her forearms underneath her dress, holding up its front. Her reward is a kiss to her pink underwear, her breath catching in response."
 
@@ -2842,7 +2842,7 @@ label en_S8:
 
     "Her moan of joy is suddenly silenced, all control of her body lost as her knees buckle from underneath her. I quickly jerk my head back as Suzu's crumples to the ground before me, her upper body thrown forwards with what little energy she has left."
 
-    "Exhausted, her head lies on my shoulder with hair dishevelled, arms slung around me in a loose embrace as she pants. The sweat on her cheek is cold, gently pressed againstmy own in her near-lifeless state."
+    "Exhausted, her head lies on my shoulder with hair dishevelled, arms slung around me in a loose embrace as she pants. The sweat on her cheek is cold, gently pressed against my own in her near-lifeless state."
 
     "But it's not enough. I want more of her. I want every inch of her, my hand taking a hold of her shoulder and pushing her back onto the floor with a thud."
 
@@ -2933,7 +2933,7 @@ label en_S8:
 
     "If Hisao had his physical prowess torn from him thanks to his heart attack, it's Suzu's intelligence and work ethic that were torn from her by this troublesome condition. No matter how smart she may be, or how stubbornly she may stick to a task, she still hits the wall created by her permanent state of sleep deprivation."
 
-    "I think over the tak I had with her sister earlier. Perhaps, thanks to that, she might get a new medicine regime that'll work better. It's not like the current one seems to be doing her much good."
+    "I think over the talk I had with her sister earlier. Perhaps, thanks to that, she might get a new medicine regime that'll work better. It's not like the current one seems to be doing her much good."
 
     "She saved me, I have absolutely no doubt of that, yet I can't help her. My heart sinks as I wrap her in a hug, able to do little else."
 
@@ -3042,7 +3042,7 @@ label en_S9:
 
     yuk "What are you doing here?"
 
-    "The way he addresses me, in both his angered expression and acidic tone of voice, only makes me even more pissed off with him. This is all his fault, what the Hell reason does he have for looking at me with such disdain."
+    "The way he addresses me, in both his angered expression and acidic tone of voice, only makes me even more pissed off with him. This is all his fault, what the hell reason does he have for looking at me with such disdain."
 
     "The guy he was talking to backs away. He'd have been around long enough to know how this will probably turn out."
 
@@ -3079,7 +3079,7 @@ label en_S9:
     with vpunch
     with vpunch
 
-    "Caught unawares by the speed he's apparently capable of,{fast} his swing at my face lands with a fair emount of force, sending my head jerking to the right."
+    "Caught off guard by the speed he's apparently capable of,{fast} his swing at my face lands with a fair emount of force, sending my head jerking to the right."
 
     "But I know what to do. No, my body knows what to do. Still dazed by the blow, I reflexively raise my arms in front of my face as a shield. Even without a hand, my left arm is more than capable of this much,{w=.25}{nw}"
 
@@ -3142,7 +3142,7 @@ label en_S9:
 
     "I pull back my arm,{fast} slamming it into him once more. I can feel my face distorted by the wild grin my mouth has twisted into. This is fun. He'll remember me for this. He always will. He'll never forget how it was his fault this happened."
 
-    "He'll never forget how powerful I am compared to him. That's what truly matters. He's a bug. That's all he is, an ugly little bug under my foot. And now, he'll never forget it"
+    "He'll never forget how powerful I am compared to him. That's what truly matters. He's a bug. That's all he is, an ugly little bug under my foot. And now, he'll never forget it."
 
     "I pull my fist back, my knuckles covered in a mix of his blood and dirt from the ground. This bug can't even defend itself now. It's at my mercy. I can stomp on it as much as I want!"
 
@@ -3535,7 +3535,7 @@ label en_S10:
     "I raise an arm and take a sniff. I guess I have been more anxious than usual during the day, given all that's happened."
 
     "Giving up without an argument, I stand and begin to fossick around my room for wherever my pajamas gave gotten to."
-
+    #^ to fossick is Australian slang, and should maybe be changed
     mk "You should probably head back to your own room sometime, too."
 
     "With no reply forthcoming, I pause and look back to her. Eyes still closed, a few seconds pass as I wait for any kind of response."
@@ -3578,7 +3578,7 @@ label en_S10:
 
     mk "Suzu... what's going on?"
 
-    "The words seem to stir her into action, arms wrapping around my back as she lips come to mine. It doesn't take long for me to reciprocate, my resistance melting away as our tongues intermingle."
+    "The words seem to stir her into action, arms wrapping around my back as her lips come to mine. It doesn't take long for me to reciprocate, my resistance melting away as our tongues intermingle."
 
     "Her wet body feels wonderful, my hands running over the nape of her neck, her impossibly smooth back, her petite butt, every inch of her that I can get my hand over. I can't get enough of this feeling, out bodies pressed against one another and simply taking in each other's forms."
 
@@ -3872,7 +3872,7 @@ label en_S11:
 
     "With lunch eaten and a nap had, we end up aimlesly wandering around for something to do."
 
-    "As the day's worn on, more and more people have stgarted to show up around the place, including hawkers for tissue packs and flyers. "
+    "As the day's worn on, more and more people have started to show up around the place, including hawkers for tissue packs and flyers. "
 
     "My feet stop as we almost pass a sports good store, my attention taken by a particular item sitting on a mannequin in the window. Nothing all that unusual for a store to carry, but something that I can't help but notice."
 
@@ -4000,7 +4000,7 @@ label en_S11:
 
     mk "Not yet. To be honest, though, I think he'd be more surprised if I came out as straight."
 
-    "She mamages to eke out a smile, which I count as a small victory. What I say is true though; I often had guys visit my house as friends without any romantic undertones, and got along with them as any other guy would. Not that I didn't like the odd peek at their bodies."
+    "She manages to eke out a smile, which I count as a small victory. What I say is true though; I often had guys visit my house as friends without any romantic undertones, and got along with them as any other guy would. Not that I didn't like the odd peek at their bodies."
 
     "Our conversation enters a lull as we notice the waiter coming up with what we presume to be our dishes, only for him to walk past and serve them to a different table."
 
@@ -4022,7 +4022,7 @@ label en_S11:
 
     mk "Delicious is what it is. Less talk, more eat."
 
-    "I quickly dig in, fork in hand. Managing to burn my tongue with my eageerness, I end up taking a swig of my drink to try and soothe the pain before carefully blowing on the next mouthful."
+    "I quickly dig in, fork in hand. Managing to burn my tongue with my eagerness, I end up taking a swig of my drink to try and soothe the pain before carefully blowing on the next mouthful."
 
     "It really is nice. The sauce is delightfully rich, and the pasta's well-cooked. Not too dry, but not too soggy. The smell makes the taste all the better, making me savour the somewhat small portion as best I can."
 
@@ -4034,7 +4034,7 @@ label en_S11:
 
     "A girl of few words, and even fewer when eating."
 
-    "I move to speak, but pause as I realise that her usual quiet nature and slow eating aren't what's at play. All of her movements are terribly slow, and what I'd taken as her simply looking at her food now appears to be an attempt to hide the effort she's putting in to do eve that much."
+    "I move to speak, but pause as I realise that her usual quiet nature and slow eating aren't what's at play. All of her movements are terribly slow, and what I'd taken as her simply looking at her food now appears to be an attempt to hide the effort she's putting in to do even that much."
 
     "It's been a long day for the both of us, and now that I think of it, a single short nap at lunch probably wouldn't be enough for her. We've been at this since the very beginning of the day, after all."
 
@@ -4283,7 +4283,7 @@ label en_S12:
 
     "All semblance of composure shatters as the dam breaks, her whimpers breaking out into wild bawling. My heart breaks as I watch her body seize and convulse beneath mine, her wailing face overflowing with tears."
 
-    "Everything is messed up. It wasn't supposed to be like this. It wasn't suppoed to be anything like this."
+    "Everything is messed up. It wasn't supposed to be like this. It wasn't supposed to be anything like this."
 
     "I'm so sorry, Suzu..."
 
@@ -4300,7 +4300,7 @@ label en_S13:
 
     "The soft breeze is cool as I sit watching the gaggle of guys fooling around on the track. Seated in the shade of the trees lining the edge of the track area, I simply lack the energy to get up and join in."
 
-    "It's been a week since that terrible day. Might as well have been yesterday, as far as my memory is concerned. The image of her sitting there, knife in hand, solemnly contemplating the end of her existance with those distant eyes still makes me feel physically sick. I'll never for get that scene, no matter how long I live."
+    "It's been a week since that terrible day. Might as well have been yesterday, as far as my memory is concerned. The image of her sitting there, knife in hand, solemnly contemplating the end of her existance with those distant eyes still makes me feel physically sick. I'll never forget that scene, no matter how long I live."
 
     "Suzu hasn't been at school since then, with her parents having collected her. A cover story of unspecified family issues was given as the reasoning for her temporary disappearance, which seems to have stuck. Like all good rumours, it had just enough truth to be believable, and few dared ask questions of the girl who'd just flattened a guy over her."
 
@@ -4493,7 +4493,7 @@ label en_S14:
 
     mk "Sorry, Hisao, but..."
 
-    "He just smiles. It's always bugged me how easy it is to make him wear a smile, but how hard to is to make him genuinely do so. This, at least, is the latter."
+    "He just smiles. It's always bugged me how easy it is to make him wear a smile, but how hard it is to make him genuinely do so. This, at least, is the latter."
 
     hi "I understand. Good luck."
 
@@ -4553,7 +4553,7 @@ label en_S14:
 
     suz "For so long I stood on the sidelines and tried to help you improve yourself, and saw your circle of friends getting greater and greater. When I saw you with Hisao, I realised that you'd finally become someone who might have a bright future ahead of them."
 
-    suz "But then, when you mentioned you that chose to come to my house..."
+    suz "But then, when you mentioned that you chose to come to my house..."
 
     suz "To put it in your terms, I guess it was like instinctively reaching for something thrown towards you."
 
@@ -4593,7 +4593,7 @@ label en_S14:
 
     "For the first time, I feel like we truly understand each other. There are no walls any more. All there is, is me and her."
 
-    "I lost everything, all thos eyears ago. But now, I realise I've found someone truly worth the pain I've felt since then."
+    "I lost everything, all those years ago. But now, I realise I've found someone truly worth the pain I've felt since then."
 
     "My precious Suzu, who I so nearly lost."
 

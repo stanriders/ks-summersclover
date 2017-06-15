@@ -995,7 +995,7 @@ label en_C5:
     scene bg suburb_shanghaiext
     with locationchange
     
-    "By the time we reach the Shanghai, I feel like I've run through a gauntlet with the of them pecking away. Suzu throws the odd snark while alone, but she and Hisao egg each other on."
+    "By the time we reach the Shanghai, I feel like I've run the gauntlet with the two of them pecking away. Suzu throws the odd snark while alone, but she and Hisao egg each other on."
 
     "I don't really hate it, though. It's maybe even a little cute."
     
@@ -1267,7 +1267,7 @@ label en_C5:
 
     hi "Suzu trusts you enough to be okay with you manhandling her, and you put yourself out to carry her around. You both seem to have a good handle on each other, too."
 
-    "I think to myself a bit about his words. I suppose it's reasonable for an observer to think that, but I wouldn't really way we're close at all. I struggle for a bit to put our relationship into words, as much for me as for him."
+    "I think to myself a bit about his words. I suppose it's reasonable for an observer to think that, but I wouldn't really say we're close at all. I struggle for a bit to put our relationship into words, as much for me as for him."
 
     mk "It's... practical. Yeah, I think that's the best way to describe our relationship."
 
@@ -1668,7 +1668,7 @@ label en_C6:
 
     hi "You're the last person I expected to defend them."
 
-    mk "Pfft, they're fine. I can appreciate pople who take their work seriously, you know."
+    mk "Pfft, they're fine. I can appreciate people who take their work seriously, you know."
 
     hi "Maybe you should try doing that yourself."
 
@@ -1809,7 +1809,7 @@ label en_C7:
 
     "Hisao stands with his back to the door, busily chatting with someone else."
 
-    "Everything about the other guy seems a little bit off. His height is a little too short. His hair is a little too scruffy. His glasses are a little too thick. His scarfe... well, that's more than just a little off, and not just given that it's summer."
+    "Everything about the other guy seems a little bit off. His height is a little too short. His hair is a little too scruffy. His glasses are a little too thick. His scarf... well, that's more than just a little off, and not just given that it's summer."
 
     "The scrawny guy notices me over Hisao's shoulder, their conversation abruptly ending as the two of them turn their visitor."
 
@@ -1817,7 +1817,7 @@ label en_C7:
 
     hi "Haven't you heard of knocking?"
 
-    "I obediently knock a few times on the door. She short guy just raises an eyebrow as Hisao sighs and motions in my direction."
+    "I obediently knock a few times on the door. The short guy just raises an eyebrow as Hisao sighs and motions in my direction."
 
     hi "Kenji, this is Miki Miura. Miki, this is Kenji Setou."
 
@@ -1952,7 +1952,7 @@ label en_C8:
 
     har "Sounds like you've got a good head on your shoulders."
 
-    "Hisao gives a grin and quick snort to pass off the praise, tucking into a drink aftewards. Praise seems to slide off him, which I've never quite understood. Why work so hard for no reward? I thought academic types lived for a pat on the head."
+    "Hisao gives a grin and quick snort to pass off the praise, tucking into a drink afterwards. Praise seems to slide off him, which I've never quite understood. Why work so hard for no reward? I thought academic types lived for a pat on the head."
 
     "Haru cares much less than I about the matter, plucking out a familiar magazine from his bag with his free hand while chomping at the onigiri held in the other."
 
